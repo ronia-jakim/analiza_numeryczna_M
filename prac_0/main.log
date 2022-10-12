@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.5)  12 OCT 2022 20:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.5)  12 OCT 2022 21:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -10,7 +10,9 @@ L3 programming layer <2022-08-30> (/opt/texlive/2022/texmf-dist/tex/latex/mwcls/
 Document Class: mwart 2017/05/13 v0.75 A LaTeX document class (MW)
 *** Beta version. Formatting may change
 *** in future versions of this class.
-(/opt/texlive/2022/texmf-dist/tex/latex/mwcls/mw11.clo
+(/opt/texlive/2022/texmf-dist/tex/latex/base/leqno.clo
+File: leqno.clo 2016/12/29 v1.2b Standard LaTeX option (left equation numbers)
+) (/opt/texlive/2022/texmf-dist/tex/latex/mwcls/mw11.clo
 File: mw11.clo 2017/05/13 v0.75 A document class size option (MW)
 )
 \@parindent=\dimen138
@@ -803,15 +805,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5207EDE457F5F53AD62C21FB90EC975D;328.
  ) 
 Here is how much of TeX's memory you used:
- 37568 strings out of 475075
- 840326 string characters out of 5755557
- 1339199 words of memory out of 5000000
- 58277 multiletter control sequences out of 15000+600000
- 487075 words of font info for 106 fonts, out of 8000000 for 9000
+ 37573 strings out of 475075
+ 840491 string characters out of 5755557
+ 1339323 words of memory out of 5000000
+ 58282 multiletter control sequences out of 15000+600000
+ 487023 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,12n,105p,7158b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
-Output written on main.pdf (2 pages, 71726 bytes).
+Output written on main.pdf (2 pages, 71720 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
