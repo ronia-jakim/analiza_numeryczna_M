@@ -1,0 +1,128 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{template}
+
+% w pliku zalaczonym do przykladu mamy
+% \documentclass[11pt,wide]{mwart}
+% dokumentacja tej paczki znajduje sie tutaj:
+% https://texdoc.org/serve/mwclsdoc.pdf/0
+
+%% ====  USTAWIENIA PODSTAWOWE  ==== %%
+
+\RequirePackage[T1]{fontenc}
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[OT4,plmath]{polski}      % wspieranie polskiego jezyka
+\RequirePackage[polish]{babel}
+
+\RequirePackage{microtype}           % przerzucanie ostatnich sylab
+
+\RequirePackage{ragged2e}            % przydatne przy justowaniu do roznych stron
+\justifying
+
+
+\author{
+    Łukasz Magnuszewski \and
+    Weronika Jakimowicz
+}
+
+\date{Wrocław, \today, 21:37}
+
+\newcommand{\tit}[1]{\title{
+    \LARGE\textbf{Pracownia z analizy numerycznej}\medskip\\
+    \Large Sprawozdanie do zadania \textbf{#1}\\
+    \large Prowadzący: mgr. Filip Chudy
+}}
+
+%% ==== MATEMATYKA  ==== %%
+
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{mathtools}
+\RequirePackage{dsfont}
+
+\RequirePackage{graphicx}            % dla wklejania grafik oraz zeby obrocic znak obciecia do zbioru
+\graphicspath{ {./} }
+
+
+% symbol obciecia do zbioru
+\newcommand{\obet}{\rotatebox[origin=c]{90}{$\rightharpoondown$}}
+
+% szybsze notacje kluczowych zbiorow
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+% do krotek
+\newcommand{\parl}{\langle}
+\newcommand{\parr}{\rangle}
+
+\newcommand{\rodz}[1]{\mathcal{#1}}
+\newcommand{\rarrow}[2]{\xrightarrow[#1]{#2}}
+
+
+%% ====  KOLORY  ==== %%
+
+\RequirePackage{xcolor}
+
+\definecolor{czerw}{HTML}{cc5b5b}
+\definecolor{ziel}{HTML}{a0a01c}
+\definecolor{pom}{HTML}{cb8e17}
+\definecolor{nieb}{HTML}{cb8e17}
+\definecolor{fiol}{HTML}{a95f80}
+\definecolor{roz}{HTML}{ce8395}
+\definecolor{turk}{HTML}{ce8395}
+
+\RequirePackage[hidelinks]{hyperref} % niewidoczne linki
+\hypersetup {
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=czerw,
+    urlcolor=nieb
+}
+
+
+%% ====  SRODOWISKO DO ILUSTRACJI  ==== %%
+
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
+\pgfplotsset{compat=1.16}
+
+% skrocone tworzenie grafow matematycznych
+\newcommand{\paxis}[1]
+    {\begin{axis}[
+        axis y line = middle, 
+        axis x line = middle, 
+        enlarge y limits = true, 
+        enlarge x limits = true, 
+        #1
+    ]
+}
+\newcommand{\kaxis}{\end{axis}}
+
+
+%% ====  TABELKI  ==== %%
+
+\RequirePackage{tabularx} % jesli tabelka ma miec ustalona szerokosc
+%\RequirePackage{makecell}
+
+
+%% ====  STUDENTY  ==== %%
+
+\RequirePackage{tikzducks}
+
+\definecolor{ducky-yellow}{HTML}{f2ca63}
+\newcommand{\koneic}{\begin{flushright}\emph{\scriptsize\color{def}i śmiga}\\ \begin{tikzpicture}\duck[body=ducky-yellow, bill=title-color,scale=0.36, bowtie, devil=title-color];\end{tikzpicture}\end{flushright}}
+
+\RequirePackage{marvosym} % śmieszne znaczki
+\RequirePackage{phaistos} % paczuszka pozwalająca pisać hieroglify
+
+\newcommand{\kawa}{\text{\color{def}\large\Coffeecup}}
+\newcommand{\nietoperz}{\text{\color{emp}\large\Bat}}
+
+\newcommand{\kotek}{\text{\PHcat}}
+\newcommand{\baranek}{\text{\PHram}}
+\newcommand{\kwiatuszek}{\text{\PHrosette}}
+
+\endinput
