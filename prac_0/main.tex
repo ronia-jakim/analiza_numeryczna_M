@@ -18,4 +18,20 @@ function guwno()  # no guwno no
 end
 \end{lstlisting}
 
+\section{Wstęp}
+
+W matematyce bardzo często pojawiają się wartości niewymierne, takie jak $\log_2 3$, których nie możemy wyrazić w sposób przystępny dla człowieka. Z tego powodu, powstało wiele metod przybliżania funkcji w określonych punktach. Jedną z nich jest użycie szeregu Taylora, opisanego przez Brooka Taylora w 1715 roku oraz wspomniana przez Jamesa Gregory'a w 1671 r.
+\medskip
+
+W swojej istocie twierdzenie Taylora mówi, że jeśli dana jest funkcja $f$ klasy $C^n$, czyli różniczkowalna $n$ razy w każdym punkcie jej dziedziny, to możemy ją przybliżyć w otoczeniu dowolnego punktu $a$ za pomocą szeregu:
+$$f(x)=\sum\limits_{k=0}^n\big({(x-a)^k\over k!} f^{(k)}(a)\big)+R_n(x, a),$$
+gdzie $R_n(x, a)$ spełnia
+$$\lim\limits_{x\to a}{R_n(x,a)\over\|x-a\|^n}=0.$$
+% nie chce tutaj indentu
+Jak nietrudno zauważyć, wartość $R_n(x, a)$ przy $x$ bardzo blisko $a$ jest zaniedbywalnie mała, więc w trakcie obliczeń możemy ją pominąć.
+
+Innym ciekawym zastosowaniem szeregów Taylora jest tworzenie grafów funkcji. Możemy zdefiniować na przykład $\tan x$ w pobliżu punktu $0$ jako zwykły wielomian, co pozwala na obliczenie przybliżonych wartości funkcji i naniesienie ich na oś współrzędnych. W matematyce szereg Taylora, który aproksymuje funkcje w pobliżu punktu $0$ nosi nazwę szeregu Maclaurina.
+
+Celem niniejszego sprawozdania jest sprawdzenie dokładności przybliżania funkcji za pomocą szeregów Taylora. W \$\$2-3 omówiono dwa ważne zastosowania szeregów Taylora: przybliżanie wartości niewymiernych oraz rysowanie grafów funkcji. Dokładniej, w \$\$2. przedstawiono wyniki przybliżania wartości $\log_2 3$ przy pomocy szeregów Taylora różnego stopnia. \$\$3. zajmuje się natomiast rysowaniem grafu funkcji $\tan x$ w pobliżu $0$ oraz porównaniem tego z wartościami otrzymanymi za pomocą bibliotecznej funkcji $\tan$ w języku Julia.
+
 \end{document}
