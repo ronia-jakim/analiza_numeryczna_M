@@ -105,8 +105,42 @@
 %% ====  TABELKI  ==== %%
 
 \RequirePackage{tabularx} % jesli tabelka ma miec ustalona szerokosc
-%\RequirePackage{makecell}
+\RequirePackage{makecell}
 
+
+%% ====  PSEUDOKOD  ==== %%
+
+\RequirePackage{listings}
+
+\definecolor{git25gray}{HTML}{89929B}
+\definecolor{codeback}{HTML}{fffef5}
+
+\lstdefinestyle{IIcolors} {
+    keywordstyle=[1]{\color{czerw}},%{\color{gitred}},
+    keywordstyle=[2]{\color{ziel}},%{\color{gitgreen}},
+    keywordstyle=[3]{\color{nieb}},%{\color{gitblue}},
+    keywordstyle=[4]{\color{fiol}},%{\color{gitpurple}},
+    commentstyle=\color{git25gray},
+    showtabs=true,
+    keepspaces=true,
+    numbers=left,
+    numberstyle=\tiny\ttfamily\color{git25gray},
+    breaklines=true,
+    backgroundcolor=\color{codeback},
+    literate={[}{{{\color{nieb}[}}}1 {]}{{{\color{nieb}]}}}1 {+}{{{\color{nieb}+}}}1 {-}{{{\color{nieb}-}}}1 {*}{{{\color{nieb}*}}}1 {/}{{{\color{nieb}/}}}1 {=}{{{\color{nieb}=}}}1 {>}{{{\color{nieb}>}}}1 {<}{{{\color{nieb}<}}}1 {!}{{{\color{nieb}<}}}1,
+}
+\lstset{style=IIcolors}
+
+\lstdefinelanguage{ps}{
+    keywords=[1]{function, end, break, return},
+    morekeywords=[2]{for, while, do, if, elseif, else},
+    morekeywords=[3]{type, zero, one, in},
+    morekeywords=[4]{false, true},
+    morecomment=[l]{\#}
+}
+
+%\newcommad{\pkod}{\begin{lstlisting}}
+%\newcommand{\kkod}{\end{lstlisting}}
 
 %% ====  STUDENTY  ==== %%
 
