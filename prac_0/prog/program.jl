@@ -1,23 +1,36 @@
 using Base
-using Graphs
+#using Graphs
 
-function approx_ln(a, deg::Int)
-    ret = zero(a)
+function approx_ln(x::Float64, deg::Int)
+    point = Float64(2.72)
+    # x - one(x)
+    fac = 1.0
+    k = zero(x)
 
-    point = a - one(a)
-    n = one(a)
+    ret = zero(x)
 
-    for i in 1:deg
-        val = point^i
-        val /= n
-        val *= (-1)^(i+1)
+    for i in 0:deg
+        val = zero(x)
+        if k != zero(x)
+            val = (x-point)^k
+            val /= k * (point^k)
+        else
+            val = 1
+            val /= point^k
+        end
+        k += one(x)
+        val *= (-1)^k
         ret += val
     end
 
     return ret
 end
 
-test = approx_ln(3, 4)
+t = approx_ln(Float64(3), 4)
+println(t, " ", log(3))
 
-println(test)
-println(log(3))
+t = approx_ln(Float64(3), 8)
+println(t, " ", log(3))
+
+t = approx_ln(Float64(3), 16)
+println(t, " ", log(3))

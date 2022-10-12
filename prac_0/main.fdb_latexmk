@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1665601642 "/home/maruda/uni-stuff/anal_num_prac/prac_0/main.tex" "main.pdf" "main" 1665601643
+["pdflatex"] 1665603777 "/home/maruda/uni-stuff/anal_num_prac/prac_0/main.tex" "main.pdf" "main" 1665603778
   "../template.sty" 1665597374 4260 1e7b2f49b3a582c92b01bb72c3eb452d ""
-  "/home/maruda/uni-stuff/anal_num_prac/prac_0/main.tex" 1665601642 2606 1d3a61c365ff4316accccbceda64fd97 ""
+  "/home/maruda/uni-stuff/anal_num_prac/prac_0/main.tex" 1665603776 2694 30dfdc29f7b838b00c62fa359a6000c3 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1662412356 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1662412356 2005 f094775651a1386335c158fb632529f1 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc" 1662412356 2468 3f9e2f3088bcf5b581dfc367d71e7d95 ""
@@ -250,10 +250,10 @@
   "/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1662412356 4595804 11fe22e8d6c953cbd46eceb3b756c4b3 ""
   "/opt/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1662412356 3059192 2d03a8e03a55885dc60fae34798f2c14 ""
   "/opt/texlive/2022/texmf.cnf" 1662412356 585 9e8504408f25e5ac7fa614e58817b8d1 ""
-  "main.aux" 1665601643 1051 83e4db397e7ff0cc30e48a0395bc3eee "pdflatex"
-  "main.out" 1665601643 328 5207ede457f5f53ad62c21fb90ec975d "pdflatex"
-  "main.tex" 1665601642 2606 1d3a61c365ff4316accccbceda64fd97 ""
-  "main.toc" 1665601643 301 1eec817d4565709af43e9f6899524b04 "pdflatex"
+  "main.aux" 1665603778 1051 83e4db397e7ff0cc30e48a0395bc3eee "pdflatex"
+  "main.out" 1665603778 328 5207ede457f5f53ad62c21fb90ec975d "pdflatex"
+  "main.tex" 1665603776 2694 30dfdc29f7b838b00c62fa359a6000c3 ""
+  "main.toc" 1665603778 301 1eec817d4565709af43e9f6899524b04 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

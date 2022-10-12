@@ -36,7 +36,9 @@ Wzór na pochodną funkcji $\ln x$ jest powszechnie znany:
 $${d\over dx}\ln x=\frac1x,$$
 natomiast wzór na pochodną $k$-tego stopnia, można wyliczyć w prosty sposób:
 \begin{align}
-    {d^k\over dx^k}\ln x={d^{k-1}\over dx^{k-1}}\frac1x={d^{k-2}\over dx^{k-2}}\Big(-\frac1{x^2}\Big)=...=(-1)^{k-1}\frac1{x^{-k}}.
+    {d^k\over dx^k}\ln x={d^{k-1}\over dx^{k-1}}\frac1x={d^{k-2}\over dx^{k-2}}\Big(-\frac1{x^2}\Big)=...=(-1)^{k-1}(k-1)!\frac1{x^{k}}.
 \end{align}
+
+$$f(x)\approx\sum\limits_{k=1}^n\Big((-1)^{k+1}{(x-a)^k\over k\cdot a^{k}}\Big)$$
 
 \end{document}
