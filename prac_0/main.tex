@@ -22,23 +22,27 @@ Jak nietrudno zauważyć, wartość $R_n(x, a)$ przy $x$ bardzo blisko $a$ jest 
 
 Innym ciekawym zastosowaniem szeregów Taylora jest tworzenie grafów funkcji. Możemy zdefiniować na przykład $\tan x$ w pobliżu punktu $0$ jako zwykły wielomian, co pozwala na obliczenie przybliżonych wartości funkcji i naniesienie ich na oś współrzędnych. W matematyce szereg Taylora, który aproksymuje funkcje w pobliżu punktu $0$ nosi nazwę szeregu Maclaurina.
 
-Celem niniejszego sprawozdania jest sprawdzenie dokładności przybliżania funkcji za pomocą szeregów Taylora. W \$\$2-3 omówiono dwa ważne zastosowania szeregów Taylora: przybliżanie wartości niewymiernych oraz rysowanie grafów funkcji. Dokładniej, w \$\$2. przedstawiono wyniki przybliżania wartości $\ln 3$ przy pomocy szeregów Maclaurina różnego stopnia. \$\$3. zajmuje się natomiast rysowaniem grafu funkcji $\tan x$ w pobliżu $0$ oraz porównaniem tego z wartościami otrzymanymi za pomocą bibliotecznej funkcji $\tan$ w języku Julia.
+Celem niniejszego sprawozdania jest sprawdzenie dokładności przybliżania funkcji za pomocą szeregów Taylora. W \$\$2-3 omówiono dwa ważne zastosowania szeregów Taylora: przybliżanie wartości niewymiernych oraz rysowanie grafów funkcji. Dokładniej, w \$\$2. przedstawiono wyniki przybliżania wartości $\ln \frac12$ przy pomocy szeregów Maclaurina różnego stopnia. \$\$3. zajmuje się natomiast rysowaniem grafu funkcji $\tan x$ w pobliżu $0$ oraz porównaniem tego z wartościami otrzymanymi za pomocą bibliotecznej funkcji $\tan$ w języku Julia.
 
-\section{Przybliżanie wartości $\ln3$}
+\section{Przybliżanie wartości $\ln\frac12$}
 
 \subsection{Metoda}
 
-W celu obliczenia wartości $\ln3$ użyte zostanie przybliżanie funkcji
-$$f(x)=\ln x$$
-w punkcie $a=3$ za pomocą szeregów Maclaurina $4, 8, 16$ stopnia.
+W celu obliczenia wartości $\ln\frac12$ użyte zostanie przybliżanie funkcji
+$$f(x)=\ln (1+x)$$
+w pobliżu $a=0$ za pomocą szerega Maclaurina.
 
-Wzór na pochodną funkcji $\ln x$ jest powszechnie znany:
-$${d\over dx}\ln x=\frac1x,$$
+Wzór na pochodną funkcji $\ln (x+1)$ jest powszechnie znany:
+$${d\over dx}\ln x=\frac1{x+1},$$
 natomiast wzór na pochodną $k$-tego stopnia, można wyliczyć w prosty sposób:
 \begin{align}
-    {d^k\over dx^k}\ln x={d^{k-1}\over dx^{k-1}}\frac1x={d^{k-2}\over dx^{k-2}}\Big(-\frac1{x^2}\Big)=...=(-1)^{k-1}(k-1)!\frac1{x^{k}}.
+    {d^k\over dx^k}\ln (x+1)=(-1)^{k+1}{(k-1)!\over(1+x)^{k}}.
 \end{align}
 
-$$f(x)\approx\sum\limits_{k=1}^n\Big((-1)^{k+1}{(x-a)^k\over k\cdot a^{k}}\Big)$$
+Wzór na szereg Taylora $\ln (1+x)$ w pobliżu $a=0$, to:
+$$f(0)=\sum\limits_{i=0}^n{f^{(k)}(x)\over k!}(x-0)^n + R(x, 0)=\sum\limits_{i=1}^n(-1)^{i+1}{x^i\over i}+R(x, 0).$$
 
+
+
+\koniec
 \end{document}
