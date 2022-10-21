@@ -72,7 +72,7 @@ module program
 
     function print_err_graph(ab::Vector{Float64}, re::Vector{Float64})
         x = 1:length(ab)
-        p = plot(x, ab, title = "Błąd przybliżenia w zależności od stopnia szeregu Taylora", xlabel = "stopień wielomianu", label = "błąd bezwzgledny")
+        p = plot(x, ab, title = "Błąd przybliżenia w zależności\n od stopnia szeregu Taylora", xlabel = "stopień wielomianu", label = "błąd bezwzgledny")
         plot!(p, x, re, label="błąd względny")
         # plot!(p, x, re, label="błąd względny")
         savefig(p, "err_plot")
@@ -87,13 +87,13 @@ module program
         re = program.calc_rel(ab, b)
         relog = map(x -> log(abs(x)), re)
         x = 1:length(relog)
-        p = plot(x, relog, title = "Logarytm z wartości bezwględnej: błędu względnego w zależności od stopnia szeregu Taylora", xlabel = "stopień wielomianu", label = "log |błąd wzgledny|")
+        p = plot(x, relog, title = "Logarytm z wartości bezwględnej: błędu względnego \n w zależności od stopnia szeregu Taylora", xlabel = "stopień wielomianu", label = "log |błąd wzgledny|")
         display(p)
     end
 
     function print_val_graph(vv::Vector{Float64}, ln::Float64)
         x = 1:length(vv)
-        p = plot(x, vv, title = "Wynik przybliżenia w zależności od stopnia szeregu Taylora", xlabel = "stopień wielomianu", label = "wartość przybliżona")
+        p = plot(x, vv, title = "Wynik przybliżenia w zależności \n od stopnia szeregu Taylora", xlabel = "stopień wielomianu", label = "wartość przybliżona")
 
         maruda = Vector{Float64}([])
         for i in x
