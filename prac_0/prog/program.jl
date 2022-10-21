@@ -2,7 +2,7 @@ using Base
 
 module program
     using Plots
-
+    using DataFrames
     function approx_ln(x::Float64, deg::Int)
         ret = zero(x)
         for i in 1:deg
@@ -79,6 +79,18 @@ module program
         display(p)
     end
 
+    function print_rel_err_log_graph(deg::Int, x:: Float64)
+        b = log(x)
+        vv = program.calc_val(x, deg)
+
+        ab = program.calc_abs(vv, b)
+        re = program.calc_rel(ab, b)
+        relog = map(x -> log(abs(x)), re)
+        x = 1:length(relog)
+        p = plot(x, relog, title = "Logarytm z wartości bezwględnej: błędu względnego w zależności od stopnia szeregu Taylora", xlabel = "stopień wielomianu", label = "log |błąd wzgledny|")
+        display(p)
+    end
+
     function print_val_graph(vv::Vector{Float64}, ln::Float64)
         x = 1:length(vv)
         p = plot(x, vv, title = "Wynik przybliżenia w zależności od stopnia szeregu Taylora", xlabel = "stopień wielomianu", label = "wartość przybliżona")
@@ -101,6 +113,14 @@ module program
         re = program.calc_rel(ab, b)
 
         print_err_graph(ab, re)
+    end
+
+    function show_error_deg_table(deg:: Int, b::Float64, x::Float64)
+        vv = program.calc_val(x, deg)
+        ab = program.calc_abs(vv, b)
+        re = program.calc_rel(ab, b)
+        z = DataFrame(abs_error = ab, relative_error = re)
+        show(z)
     end
 
     function calc_val_deg(deg::Int, b::Float64, x::Float64)
