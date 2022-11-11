@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1668187665 "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1668187666
+["pdflatex"] 1668188061 "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1668188062
   "../../template.sty" 1666629784 4284 8a71eb5c11272c9e5abd0bdae3fbebc7 ""
-  "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" 1668187665 467 8059f056a46a17bed1368bb7168dbf76 ""
+  "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" 1668188060 490 6d3f2eb2d14ff12c39ad517553efe6ad ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plit.enc" 1662412356 1946 62ba825cda1ff16dbaa60d53ac60525a ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1662412356 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1662412356 2005 f094775651a1386335c158fb632529f1 ""
@@ -256,10 +256,11 @@
   "/opt/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1662412356 3059192 2d03a8e03a55885dc60fae34798f2c14 ""
   "/opt/texlive/2022/texmf.cnf" 1662412356 585 9e8504408f25e5ac7fa614e58817b8d1 ""
   "pierwsze-proby.tex" 1668187391 2902 3967bd6ec724d7bcc32db86b12511d80 ""
-  "sprawozdanie.aux" 1668187666 1421 9e5f63d11b3c63246711776b92fd3eb5 "pdflatex"
-  "sprawozdanie.out" 1668187666 611 182fdefb7cf552efa6bce40484181cf4 "pdflatex"
-  "sprawozdanie.tex" 1668187665 467 8059f056a46a17bed1368bb7168dbf76 ""
-  "sprawozdanie.toc" 1668187666 493 e103039f27d62a48ca2b46592cb4d03d "pdflatex"
+  "ramanujan.tex" 1668188029 27 867d57b43eaef227e52f755f0a3624b9 ""
+  "sprawozdanie.aux" 1668188062 1553 92816510cfeb47199675986625813d8c "pdflatex"
+  "sprawozdanie.out" 1668188062 742 38051dccaf7354a93b0412b213849350 "pdflatex"
+  "sprawozdanie.tex" 1668188060 490 6d3f2eb2d14ff12c39ad517553efe6ad ""
+  "sprawozdanie.toc" 1668188062 583 d2773011244c39420ebba4bfb88a78ba "pdflatex"
   (generated)
   "sprawozdanie.aux"
   "sprawozdanie.log"

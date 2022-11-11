@@ -1186,6 +1186,10 @@ INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plmi12.tfm
 INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plsy10.tfm
 INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT ./ramanujan.tex
+INPUT ramanujan.tex
+INPUT ./ramanujan.tex
+INPUT ramanujan.tex
 INPUT sprawozdanie.aux
 INPUT ./sprawozdanie.out
 INPUT ./sprawozdanie.out

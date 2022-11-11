@@ -4,3 +4,4 @@
 \contentsline {subsection}{\numberline {2.1\relax .\enspace }Szereg Taylora}{1}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2\relax .\enspace }Algorytm Monte Carlo}{2}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3\relax .\enspace }Wzór Wallisa?}{2}{subsection.2.3}%
+\contentsline {section}{\numberline {3\relax .\enspace }Metoda Ramanujana}{2}{section.3}%
