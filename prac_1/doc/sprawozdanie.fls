@@ -1172,10 +1172,11 @@ INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 OUTPUT sprawozdanie.toc
-INPUT ./monte_carlo.tex
-INPUT monte_carlo.tex
-INPUT ./monte_carlo.tex
-INPUT monte_carlo.tex
+INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plti10.tfm
+INPUT ./pierwsze-proby.tex
+INPUT pierwsze-proby.tex
+INPUT ./pierwsze-proby.tex
+INPUT pierwsze-proby.tex
 INPUT /opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plmi12.tfm
 INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plsy10.tfm
@@ -1188,10 +1189,11 @@ INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT sprawozdanie.aux
 INPUT ./sprawozdanie.out
 INPUT ./sprawozdanie.out
-INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc
+INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc
+INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plit.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb
@@ -1202,3 +1204,4 @@ INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb
+INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plti10.pfb

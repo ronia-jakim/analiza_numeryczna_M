@@ -1,7 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1668187392 "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1668187392
+["pdflatex"] 1668187665 "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1668187666
   "../../template.sty" 1666629784 4284 8a71eb5c11272c9e5abd0bdae3fbebc7 ""
-  "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" 1668183438 278 e4d4a08ee5882319d2480b393bb585e9 ""
+  "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" 1668187665 467 8059f056a46a17bed1368bb7168dbf76 ""
+  "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plit.enc" 1662412356 1946 62ba825cda1ff16dbaa60d53ac60525a ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1662412356 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1662412356 2005 f094775651a1386335c158fb632529f1 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc" 1662412356 2468 3f9e2f3088bcf5b581dfc367d71e7d95 ""
@@ -37,6 +38,7 @@
   "/opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plsy6.tfm" 1662412356 1300 730d55d47130c8c9a62c9e7eab4ae96a ""
   "/opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plsy7.tfm" 1662412356 1304 a6a2c86c403d8bc56664eeac17804b8a ""
   "/opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plsy8.tfm" 1662412356 1304 3b6e6a90176144a582c7bcae45156f9b ""
+  "/opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plti10.tfm" 1662412356 2240 33876944658f33d5fc3eacb794ebb2f3 ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb" 1662412356 27050 0da5f310861fb948b3c5e6a53aad685b ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb" 1662412356 26733 3fa55bab1df289b642fa8cd9e61fb25f ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb" 1662412356 22371 094f80a5a689f2eefc72bff87ecbc407 ""
@@ -47,6 +49,7 @@
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb" 1662412356 27613 078d72cee58a40f102986ecdd23ed1c6 ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb" 1662412356 26714 6fe260cd3a16c4a700b121f4edac67f2 ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb" 1662412356 26387 98cf0141874ba26c215635f2b6f404e5 ""
+  "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plti10.pfb" 1662412356 32502 73b348676aac6ae1f3a22f93f5f2370b ""
   "/opt/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1662412356 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/opt/texlive/2022/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1662412356 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/opt/texlive/2022/texmf-dist/tex/generic/babel-polish/polish.ldf" 1662412356 5224 54b136d5d57ebf87f319fcfb9b2d5f4c ""
@@ -252,11 +255,11 @@
   "/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1662412356 4595804 11fe22e8d6c953cbd46eceb3b756c4b3 ""
   "/opt/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1662412356 3059192 2d03a8e03a55885dc60fae34798f2c14 ""
   "/opt/texlive/2022/texmf.cnf" 1662412356 585 9e8504408f25e5ac7fa614e58817b8d1 ""
-  "monte_carlo.tex" 1668187391 2902 3967bd6ec724d7bcc32db86b12511d80 ""
-  "sprawozdanie.aux" 1668187392 1421 9e5f63d11b3c63246711776b92fd3eb5 "pdflatex"
-  "sprawozdanie.out" 1668187392 611 182fdefb7cf552efa6bce40484181cf4 "pdflatex"
-  "sprawozdanie.tex" 1668183438 278 e4d4a08ee5882319d2480b393bb585e9 ""
-  "sprawozdanie.toc" 1668187392 493 e103039f27d62a48ca2b46592cb4d03d "pdflatex"
+  "pierwsze-proby.tex" 1668187391 2902 3967bd6ec724d7bcc32db86b12511d80 ""
+  "sprawozdanie.aux" 1668187666 1421 9e5f63d11b3c63246711776b92fd3eb5 "pdflatex"
+  "sprawozdanie.out" 1668187666 611 182fdefb7cf552efa6bce40484181cf4 "pdflatex"
+  "sprawozdanie.tex" 1668187665 467 8059f056a46a17bed1368bb7168dbf76 ""
+  "sprawozdanie.toc" 1668187666 493 e103039f27d62a48ca2b46592cb4d03d "pdflatex"
   (generated)
   "sprawozdanie.aux"
   "sprawozdanie.log"
