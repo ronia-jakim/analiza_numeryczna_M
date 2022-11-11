@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.9)  31 OCT 2022 09:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.5)  11 NOV 2022 18:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/maruda/uni-stuff/anal_num_prac/parc_1/doc/sprawozdanie.tex
-(/home/maruda/uni-stuff/anal_num_prac/parc_1/doc/sprawozdanie.tex
+**/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex
+(/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-08-30> (/opt/texlive/2022/texmf-dist/tex/latex/mwcls/mwart.cls
 Document Class: mwart 2017/05/13 v0.75 A LaTeX document class (MW)
@@ -800,25 +800,36 @@ LaTeX Font Info:    External font `plex10' loaded for size
 \tf@toc=\write5
 \openout5 = `sprawozdanie.toc'.
 
- [1
+ (./monte_carlo.tex
 
-{/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./sprawozdanie.aux)
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 9.
+
+[1
+
+{/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <14.4> on input line 43.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 44.
+) [2] (./sprawozdanie.aux)
 Package rerunfilecheck Info: File `sprawozdanie.out' has not changed.
-(rerunfilecheck)             Checksum: 8C9D7E943D987CA081686106D4F6D92E;71.
+(rerunfilecheck)             Checksum: 182FDEFB7CF552EFA6BCE40484181CF4;611.
  ) 
 Here is how much of TeX's memory you used:
- 39284 strings out of 475075
- 879882 string characters out of 5755557
- 1364851 words of memory out of 5000000
- 59997 multiletter control sequences out of 15000+600000
- 485798 words of font info for 98 fonts, out of 8000000 for 9000
+ 39429 strings out of 475075
+ 882775 string characters out of 5755557
+ 1378855 words of memory out of 5000000
+ 60123 multiletter control sequences out of 15000+600000
+ 488144 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,7n,105p,7170b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb>
-Output written on sprawozdanie.pdf (1 page, 33211 bytes).
+ 103i,16n,105p,7170b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
+Output written on sprawozdanie.pdf (2 pages, 76849 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
- 28693 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 110 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 28725 words of extra memory for PDF output out of 29859 (max. 10000000)
 

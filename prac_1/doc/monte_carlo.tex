@@ -1,0 +1,57 @@
+\section{Pierwsze próby}
+
+\subsection{Szereg Taylora}
+W matematyce bardzo często w celu przybliżania porządanych wartości używa się szeregów Taylora. Tak dla przykładu, korzystając z rozszerzenia funkcji $\arctan x$ w punkcie $0$ możemy oszacować wartość $\frac\pi4$:
+\begin{equation}
+\begin{split}
+    \frac\pi4&=\arctan1=\sum\limits_{k=0}^\infty{\arctan^{(k)}0\over k!}(1-0)^k=\\
+    &=1-\frac13+\frac15-\frac17+...=\sum\limits_{k=0}^\infty{(-1)^k\over 2k+1}.
+\end{split}
+\end{equation}
+
+W obliczeniach praktycznych nie możliwe jest dodawanie kolejnych elementów sumy w nieszkończoność. Konieczne jest więc zatrzymanie się na pewnym $N$, co daje pewien błąd, $R_N$:
+$$\frac\pi4\approx \sum\limits_{k=0}^N{(-1)^k\over 2k+1}+R_N.$$
+Oznaczmy tę sumę jako $P_N$. Ponieważ dla przybliżeń funkcji szeregiem Taylora coraz wyższego stopnia dostajemy coraz dokładniejszy wynik, to $P_{N+1}$ powinno być dokładniejsze niż $P_N$. Zauważamy też, że
+$$P_{N+1}-P_N={(-1)^{N+1}\over 2N+3}$$
+w takim razie możemy oszacować błąd dla szeregu Taylora $N$-tego stopnia za pomocą
+$$R_N\approx \max{(-1)^{N+1}\over 2N+3},$$
+co daje zbieżność liniową.
+
+Problem tego przybliżenia $\pi$ został przeanalizowany już przez Madhawa z Sangamagramy w XIV wieku. Zaproponował on następującą korekcję wzoru dla skończonych sum:
+\begin{equation}
+    \frac\pi4\approx \sum\limits_{k=0}^N{(-1)^k\over 2k+1}\pm{N^2+1\over 4N^3+5N}.
+\end{equation}
+
+{\color{cyan}WYPADAŁOBY NAKLEPAĆ I PRZEDSTAWIĆ WYNIKI}
+
+
+\subsection{Algorytm Monte Carlo}
+
+Ponieważ $\pi$ jest stosunkiem pola koła jednostkowego do jego promienia, do przybliżania jego wartości można skorzystać z kwadratu i ćwiartki koła. Zauważmy, że jeżeli będziemy wybierać losowo punkty kwadratu o polu 1, to $\frac\pi4$ z nich powinno znaleźć się w ćwiartce koła o środku w jednym z wierzchołków tego kwadratu:
+
+\begin{center}
+\begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (4,0);
+    \coordinate (C) at (4,4);
+    \coordinate (D) at (0,4);
+
+    \filldraw[fill=ziel!40!white, draw=ziel] (B) arc[start angle=0, end angle=90, radius=4];
+    \filldraw[color=ziel!40!white] (A)--(B)--(D)--cycle;
+    \draw[thick] (A)--(B)--(C)--(D)--cycle;
+
+    \node at (1.5, 2) {\Large$\frac\pi4$};
+    \node at (2, -0.3) {\large$1$};
+    \node at (-0.3, 2) {\large$1$};
+\end{tikzpicture}
+\end{center}
+
+Korzystając z algorytmu Monte Carlo możemy wybierać losowo współrzędne $x,y\in[0,1]$ kolejnych punktów, a następnie sprawdzać ile z nich spełnia warunek
+$$x^2+y^2\leq1.$$
+Otrzymany stosunek będzie coraz bliższy $\frac\pi4$ wraz ze zwiększaniem ilości testowanych punktów.
+
+{\color{cyan}NAKLEPAĆ I TYM LOGIEM PRZYBLIŻYĆ ZBIEŻNOŚĆ CZY INNE CHUJU MUJU}
+
+\subsection{Wzór Wallisa?}
+9.4 ze skryptu szwarca do analizy I
+$$\sqrt\pi=\lim_{n\to\infty}{(n!)^24^n\over(2n)!\sqrt n}$$
