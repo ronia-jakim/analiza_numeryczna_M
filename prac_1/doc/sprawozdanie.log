@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.5)  11 NOV 2022 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.5)  12 NOV 2022 23:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -802,34 +802,37 @@ LaTeX Font Info:    External font `plex10' loaded for size
 
  (./pierwsze-proby.tex
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 9.
+(amsmath)                 on input line 57.
 
 [1
 
 {/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <14.4> on input line 43.
+(Font)              <14.4> on input line 93.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 44.
-) (./ramanujan.tex) [2] (./sprawozdanie.aux)
+(Font)              <12> on input line 94.
+ [2] [3]) (./wzor-viete.tex) (./ramanujan.tex) (./super-szybki-super-ciezki.tex) [4] (./sprawozdanie.aux)
 Package rerunfilecheck Info: File `sprawozdanie.out' has not changed.
-(rerunfilecheck)             Checksum: 38051DCCAF7354A93B0412B213849350;742.
+(rerunfilecheck)             Checksum: 36579357D23DB4C011893C6E466D4A6E;1082.
  ) 
 Here is how much of TeX's memory you used:
- 39444 strings out of 475075
- 882991 string characters out of 5755557
- 1379855 words of memory out of 5000000
- 60129 multiletter control sequences out of 15000+600000
- 488902 words of font info for 113 fonts, out of 8000000 for 9000
+ 39589 strings out of 475075
+ 884990 string characters out of 5755557
+ 1384077 words of memory out of 5000000
+ 60259 multiletter control sequences out of 15000+600000
+ 488352 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,16n,105p,7170b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plit.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plti10.pfb>
-Output written on sprawozdanie.pdf (2 pages, 86989 bytes).
+ 103i,16n,105p,7170b,707s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
+Output written on sprawozdanie.pdf (4 pages, 90501 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 30781 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 143 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 28749 words of extra memory for PDF output out of 29859 (max. 10000000)
 
