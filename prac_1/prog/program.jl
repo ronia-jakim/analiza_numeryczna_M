@@ -96,7 +96,7 @@ module taylor
 
 end
 
-module Viete
+module viete
 
 
     function calc(iterations::Int)
@@ -108,5 +108,30 @@ module Viete
         end
         return pot * sqrt(BigFloat(2) - ak)
     end
-    
+
+end
+
+
+module gauss_legendre
+
+    function  calc(iterations::Int)
+        a = BigFloat(1)
+        b = BigFloat(1) / sqrt(BigFloat(2))
+        t = BigFloat(1) / BigFloat(4)
+        p = BigFloat(1)
+        
+        for i in 1::iterations
+            an = (a + b) / BigFloat(2)
+            bn = sqrt(a * b)
+            tn = t - p * (a - an) * (a - an)
+            pn = 2 * p
+
+            a = an
+            b = bn
+            t = tn
+            p = pn
+        end
+        return (a + b) * (a + b) / (BigFloat(4) * t)
+    end
+
 end
