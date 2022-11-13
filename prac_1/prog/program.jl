@@ -95,3 +95,18 @@ module taylor
     end
 
 end
+
+module Viete
+
+
+    function calc(iterations::Int)
+        ak = BigFloat(0)
+        pot = BigFloat(2)
+        for i in 1::(iterations-1)
+            ak = sqrt(BigFloat(2) + ak)
+            pot = pot * BigFloat(2)
+        end
+        return pot * sqrt(BigFloat(2) - ak)
+    end
+    
+end
