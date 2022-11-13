@@ -12,7 +12,7 @@ module chudnowsky
 
 
 
-    function chud(iterations::Int)
+    function calc(iterations::Int)
         res = BigFloat(0)
         for q in 0:iterations
             sign = 1 
@@ -32,7 +32,7 @@ end
 module ramanujan
 # https://en.wikipedia.org/wiki/Srinivasa_Ramanujan#Mathematical_achievements
 
-    function ram(iterations::Int)
+    function calc(iterations::Int)
         res = BigFloat(0)
         for q in 0:iterations
             a = fact(4 * q) * (1103 + 26390 * k)
@@ -56,15 +56,42 @@ module montecarlo
         end
     end
 
-    function monte(iterations::Int)
+    function calc(iterations::Int)
         inside = BigFloat(0)
         one = BigFloat(1)
-        for i in 0::iterations
+        for i in 1::iterations
             if experiment()
                 inside += one
             end
         end
-        return inside / BigFloat(iterations)
+        return BigFloat(4) * inside / BigFloat(iterations)
     end
 
 end 
+
+module taylor 
+
+
+
+    function remainder(iterations::Int)
+        if (n + 1) % 2 == 0
+            BigFloat(1) / (BigFloat(2) * BigFloat(iterations) + BigFloat(3))
+        else 
+            BigFloat(-1) / (BigFloat(2) * BigFloat(iterations) + BigFloat(3))
+        end
+    end
+
+    function calc(iterations::Int)
+        res = BigFloat(0) 
+        for i in 0::iterations
+            el = BigFloat(1) / (BigFloat(2 * i) + BigFloat(1))
+            if i % 2 == 0
+                res += el
+            else 
+                res -= el
+            end
+        end
+        return res
+    end
+
+end
