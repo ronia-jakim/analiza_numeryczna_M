@@ -311,7 +311,7 @@ function log_error_graph_gen(iterations::Int, method, name::String, file_name::S
     relog = map(x -> log(abs(x)), rel)
     x = 1:length(relog)
 
-    p = plot(x, relog, title = "Wykres zbieżności metody: " * name, xlabel = "liczba iteracji", label = "log |błąd wzgledny|")
+    p = plot(x, relog, title = "Wykres zbieżności metody:\n" * name, xlabel = "liczba iteracji", label = "log |błąd wzgledny|")
     savefig(p, file_name  * "_log_error.png")
 end
 
@@ -331,7 +331,7 @@ end
 
 # fajne pi https://julialang.org/blog/2017/03/piday/ 
 function main()
-    #log_error_graph_gen(8000, geometry3.calc_steps, "Przybliżania wielokątami", "geo3")
+    log_error_graph_gen(10000, geometry3.calc_steps, "Przybliżania wielokątami", "geo3")
     #log_error_graph_gen(10000, montecarlo.calc_steps, "Monte carlo", "monte_carlo")
     #log_error_graph_gen(10000, taylor.calc_steps, "Szereg Taylora", "taylor")
     #log_error_graph_gen(16, gauss_legendre.calc_steps, "Gauss-Legendre'a", "gauss_legendre")
@@ -344,7 +344,7 @@ function main()
     #convergence_experiment(viete.calc_steps,8000, 1, "Viete'a", "viete")
     #convergence_experiment(geometry3.calc_steps,8000, 1, "Przybliżania wielokątami", "geo3")
     #convergence_experiment(ramanujan.calc_steps, 610, 1, "Srinivasa Ramanujana", "ramanujan")
-    convergence_experiment(gauss_legendre.calc_steps, 20, 2, "Gauss-Legendre'a", "gauss_legendre")
+    #convergence_experiment(gauss_legendre.calc_steps, 20, 2, "Gauss-Legendre'a", "gauss_legendre")
 
 end
 
