@@ -313,6 +313,7 @@ function log_error_graph_gen(iterations::Int, method, name::String, file_name::S
 
     p = plot(x, relog, title = "Wykres zbieżności metody:\n" * name, xlabel = "liczba iteracji", label = "log |błąd wzgledny|")
     savefig(p, file_name  * "_log_error.png")
+    display(p)
 end
 
 function convergence_experiment(func, iterations::Int, p::Int, name::String, file_name::String)
@@ -326,26 +327,29 @@ function convergence_experiment(func, iterations::Int, p::Int, name::String, fil
     x = 1:length(ratios)
     p = plot(x, ratios, title="Iloraz kolejnych błędów bezwzglednych metodą:\n" * name, label="iloraz", xlabel = "iteracja")
     savefig(p, file_name  * "_error_ratio.png")
+    display(p)
 end
 
 
 # fajne pi https://julialang.org/blog/2017/03/piday/ 
 function main()
-    log_error_graph_gen(10000, geometry3.calc_steps, "Przybliżania wielokątami", "geo3")
+    #log_error_graph_gen(10000, geometry3.calc_steps, "Przybliżania wielokątami", "geo3")
     #log_error_graph_gen(10000, montecarlo.calc_steps, "Monte carlo", "monte_carlo")
     #log_error_graph_gen(10000, taylor.calc_steps, "Szereg Taylora", "taylor")
     #log_error_graph_gen(16, gauss_legendre.calc_steps, "Gauss-Legendre'a", "gauss_legendre")
-    #log_error_graph_gen(450, chudnowsky.calc_steps, "Algorytm Chudnovsky'ego", "chudnowsky")
+    log_error_graph_gen(450, chudnowsky.calc_steps, "Algorytm Chudnovsky'ich", "chudnowsky")
     #log_error_graph_gen(10000, viete.calc_steps, "Algorytm Viete'a", "viete")
     #log_error_graph_gen(740, ramanujan.calc_steps, "Wzór Srinivasa Ramanujana", "ramanujan")
 
     #convergence_experiment(taylor.calc_steps,10000, 1, "Taylor'a", "taylor")
-    #convergence_experiment(chudnowsky.calc_steps,500, 1, "Chudnovsky'ego", "chudnowsky")
+    convergence_experiment(chudnowsky.calc_steps,500, 1, "Chudnovsky'ich", "chudnowsky")
     #convergence_experiment(viete.calc_steps,8000, 1, "Viete'a", "viete")
     #convergence_experiment(geometry3.calc_steps,8000, 1, "Przybliżania wielokątami", "geo3")
     #convergence_experiment(ramanujan.calc_steps, 610, 1, "Srinivasa Ramanujana", "ramanujan")
+
     #convergence_experiment(gauss_legendre.calc_steps, 20, 2, "Gauss-Legendre'a", "gauss_legendre")
+    #convergence_experiment(montecarlo.calc_steps, 1000, 1, "Monte carlo", "monte_carlo")
 
 end
 
-main()
+#main()
