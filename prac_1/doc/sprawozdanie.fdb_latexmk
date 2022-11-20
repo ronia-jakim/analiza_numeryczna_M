@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1668970683 "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1668970685
+["pdflatex"] 1668970837 "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1668970838
   "../../template.sty" 1668963644 4418 495ddc2d12b00c8a56442bc53be0b12f ""
   "../prog/chudnowsky_error_ratio.png" 1668964702 30258 16626b8500f9e17f61291ac77d8a653f ""
   "../prog/chudnowsky_log_error.png" 1668964702 28803 2d214aac80551dfa0c5e274a0b36927f ""
@@ -13,7 +13,7 @@
   "../prog/taylor_log_error.png" 1668964702 25447 b0e8630cf935c1bbe940d81c75f43fa0 ""
   "../prog/viete_error_ratio.png" 1668952398 24927 31f1422d177476aa19b4b2ad7a24b732 ""
   "../prog/viete_log_error.png" 1668964702 27084 25d45ab68755db8bf02a633c52bfb8c2 ""
-  "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" 1668970683 4211 24ba1a14af632882b2c1a18c0c72750b ""
+  "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" 1668970835 4221 fa00278ed2c144a039b017a98fbd531e ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1662412356 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plit.enc" 1662412356 1946 62ba825cda1ff16dbaa60d53ac60525a ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1662412356 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
@@ -286,10 +286,10 @@
   "/opt/texlive/2022/texmf.cnf" 1662412356 585 9e8504408f25e5ac7fa614e58817b8d1 ""
   "pierwsze-proby.tex" 1668969462 9947 bfa6642d3ee656e056438fde3997862e ""
   "ramanujan.tex" 1668969865 2669 eeca53ab0caffc913de5ed351227e46c ""
-  "sprawozdanie.aux" 1668970685 8974 aa3d21bd2df116405223ce65420511af "pdflatex"
-  "sprawozdanie.out" 1668970685 1664 0cce757224bfd2659725f712937ac160 "pdflatex"
-  "sprawozdanie.tex" 1668970683 4211 24ba1a14af632882b2c1a18c0c72750b ""
-  "sprawozdanie.toc" 1668970685 1282 36d8e9037a3d08e226f919515f49e351 "pdflatex"
+  "sprawozdanie.aux" 1668970838 8974 807ce11b65182e38c91ecfe1c7b43fdd "pdflatex"
+  "sprawozdanie.out" 1668970838 1664 0cce757224bfd2659725f712937ac160 "pdflatex"
+  "sprawozdanie.tex" 1668970835 4221 fa00278ed2c144a039b017a98fbd531e ""
+  "sprawozdanie.toc" 1668970838 1282 36d8e9037a3d08e226f919515f49e351 "pdflatex"
   "super-szybki-super-ciezki.tex" 1668970089 5171 9d1125988f32159b0e7b1d444a5a1d61 ""
   "wzor-viete.tex" 1668969845 3265 7c68ecdd6f94b9d21a68c925258ebd98 ""
   (generated)
