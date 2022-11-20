@@ -3,6 +3,11 @@ setprecision(BigFloat, 17000)
 using Plots
 
 
+module geometry
+
+
+end
+
 module chudnowsky
 # https://en.wikipedia.org/wiki/Chudnovsky_algorithm
     function fact(x::Int)
@@ -269,7 +274,18 @@ function log_error_graph_gen(iterations::Int, method, name::String, file_name::S
     savefig(p, file_name  * "_log_error.png")
 end
 
-
+function convergence_experiment(func, iterations::Int, p::Int, name::String, file_name::String)
+    results = func(iterations)
+    ab = calc_abs(results, BigFloat(pi))
+    ratios = Vector{BigFloat}([])
+    for i in 1:(iterations-1)
+        ratio = ab[i+1] / (ab[i] ^ (BigFloat(p)))
+        append!(ratios, ratio)
+    end
+    x = 1:length(ratios)
+    p = plot(x, ratios, title="Iloraz kolejnych błędów bezwzglednych metody: " * name, xlabel = "iteracja")
+    savefig(p, file_name  * "_error_ratio.png")
+end
 
 # fajne pi https://julialang.org/blog/2017/03/piday/ 
 function main()
@@ -277,7 +293,8 @@ function main()
     #log_error_graph_gen(10000, taylor.calc_steps, "Szereg Taylora", "taylor")
     #log_error_graph_gen(16, gauss_legendre.calc_steps, "Gauss-Legendre'a", "gauss_legendre")
     #log_error_graph_gen(450, chudnowsky.calc_steps, "Algorytm Chudnovsky'ego", "chudnowsky")
-    log_error_graph_gen(10000, viete.calc_steps, "Algorytm Viete'a", "viete")
+    #log_error_graph_gen(10000, viete.calc_steps, "Algorytm Viete'a", "viete")
+    #log_error_graph_gen(740, ramanujan.calc_steps, "Wzór Srinivasa Ramanujana", "ramanujan")
 end
 
 main()
