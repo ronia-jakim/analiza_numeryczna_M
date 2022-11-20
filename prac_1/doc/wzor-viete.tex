@@ -22,3 +22,16 @@ Jeśli wstawimy $x=\frac\pi2$ i oznaczymy $b_k=\cos{x\over 2^k}$, $b_1={\sqrt2\o
 gdzie 
 $$a_k=2b_k=2\sqrt{{1+b_{k-1}\over 2}}=\sqrt{2+2b_{k-1}}=\sqrt{2+a_{k-1}}$$
 i $a_1=\sqrt2$.
+
+\subsection{Wyniki}
+
+Na Wykresie~\ref{viete-error}. zaprezentowany jest wykres zbieżności algorytmu Viete'a. Eksperymentalne wyznaczenie rzędu zbieżności, tak jak i gradient prezentowanego wykresu, sugerują liniową zbieżność tej metody wyliczania Viete. Od około 8750 iteracji wartość zwracana przez metodę Viete'a pokrywa się z wartością wyliczaną bibliotecznie.
+
+\begin{figure}[!h]\centering
+    \renewcommand{\figurename}{Wykres}
+    \includegraphics[width=0.7\textwidth]{../prog/viete_log_error.png}
+    \caption{Wykres logarytmu dziesiętnego z błędu względnego dla przybliżenia $\pi$ za pomocą metody Viete'a.}
+    \label{viete-error}
+\end{figure}
+
+Zbieżność liniowa jest dobrym wynikiem, tak samo jak w podejściu geometrycznym opisanym w Sekcji~\ref{geometric-interpretation}

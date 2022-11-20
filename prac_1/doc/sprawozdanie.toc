@@ -5,5 +5,6 @@
 \contentsline {subsection}{\numberline {2.2\relax .\enspace }Algorytm Monte Carlo}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3\relax .\enspace }Szereg Taylora}{4}{subsection.2.3}%
 \contentsline {section}{\numberline {3\relax .\enspace }Wzór Viete'a}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1\relax .\enspace }Wyniki}{6}{subsection.3.1}%
 \contentsline {section}{\numberline {4\relax .\enspace }Wzór Ramanujana}{6}{section.4}%
-\contentsline {section}{\numberline {5\relax .\enspace }Algorytm Gaussa-Legendre'a}{6}{section.5}%
+\contentsline {section}{\numberline {5\relax .\enspace }Algorytm Gaussa-Legendre'a}{7}{section.5}%

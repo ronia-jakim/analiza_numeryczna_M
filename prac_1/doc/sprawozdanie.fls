@@ -1204,6 +1204,11 @@ INPUT ./wzor-viete.tex
 INPUT wzor-viete.tex
 INPUT ./wzor-viete.tex
 INPUT wzor-viete.tex
+INPUT ../prog/viete_log_error.png
+INPUT ../prog/viete_log_error.png
+INPUT ../prog/viete_log_error.png
+INPUT ../prog/viete_log_error.png
+INPUT ../prog/viete_log_error.png
 INPUT ./ramanujan.tex
 INPUT ramanujan.tex
 INPUT ./ramanujan.tex

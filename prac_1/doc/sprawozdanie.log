@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.5)  20 NOV 2022 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.5)  20 NOV 2022 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -807,15 +807,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 57.
+(amsmath)                 on input line 58.
 
 [1
 
 {/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<../prog/geometric_log_error.png, id=72, 738.76pt x 738.76pt>
+<../prog/geometric_log_error.png, id=78, 738.76pt x 738.76pt>
 File: ../prog/geometric_log_error.png Graphic file (type png)
 <use ../prog/geometric_log_error.png>
-Package pdftex.def Info: ../prog/geometric_log_error.png  used on input line 79.
+Package pdftex.def Info: ../prog/geometric_log_error.png  used on input line 80.
 (pdftex.def)             Requested size: 338.09853pt x 338.09775pt.
 
 
@@ -823,17 +823,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2]
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <14.4> on input line 109.
+(Font)              <14.4> on input line 110.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 110.
+(Font)              <12> on input line 111.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../prog/monte_carlo_log_error.png, id=81, 602.25pt x 401.5pt>
+<../prog/monte_carlo_log_error.png, id=87, 602.25pt x 401.5pt>
 File: ../prog/monte_carlo_log_error.png Graphic file (type png)
 <use ../prog/monte_carlo_log_error.png>
-Package pdftex.def Info: ../prog/monte_carlo_log_error.png  used on input line 125.
+Package pdftex.def Info: ../prog/monte_carlo_log_error.png  used on input line 126.
 (pdftex.def)             Requested size: 338.09853pt x 225.40822pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -842,30 +842,36 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 1412) has occurred while \output is active []
 
  [4 <../prog/monte_carlo_log_error.png>]
-<../prog/taylor_log_error.png, id=94, 602.25pt x 401.5pt>
+<../prog/taylor_log_error.png, id=100, 602.25pt x 401.5pt>
 File: ../prog/taylor_log_error.png Graphic file (type png)
 <use ../prog/taylor_log_error.png>
-Package pdftex.def Info: ../prog/taylor_log_error.png  used on input line 157.
+Package pdftex.def Info: ../prog/taylor_log_error.png  used on input line 158.
 (pdftex.def)             Requested size: 338.09853pt x 225.40822pt.
-) (./wzor-viete.tex [5 <../prog/taylor_log_error.png>]) (./ramanujan.tex) (./super-szybki-super-ciezki.tex)
+) (./wzor-viete.tex [5 <../prog/taylor_log_error.png>]
+<../prog/viete_log_error.png, id=109, 602.25pt x 401.5pt>
+File: ../prog/viete_log_error.png Graphic file (type png)
+<use ../prog/viete_log_error.png>
+Package pdftex.def Info: ../prog/viete_log_error.png  used on input line 32.
+(pdftex.def)             Requested size: 338.09853pt x 225.40822pt.
+) (./ramanujan.tex) (./super-szybki-super-ciezki.tex)
 Missing character: There is no ; in font nullfont!
-[6] (./sprawozdanie.aux)
+[6 <../prog/viete_log_error.png>] [7] (./sprawozdanie.aux)
 Package rerunfilecheck Info: File `sprawozdanie.out' has not changed.
-(rerunfilecheck)             Checksum: 36579357D23DB4C011893C6E466D4A6E;1082.
+(rerunfilecheck)             Checksum: AFCC299FEAD290769DD1144AE4F40AF0;1169.
  ) 
 Here is how much of TeX's memory you used:
- 39742 strings out of 475075
- 888239 string characters out of 5755557
- 1383579 words of memory out of 5000000
- 60395 multiletter control sequences out of 15000+600000
- 488508 words of font info for 117 fonts, out of 8000000 for 9000
+ 39761 strings out of 475075
+ 888615 string characters out of 5755557
+ 1383799 words of memory out of 5000000
+ 60406 multiletter control sequences out of 15000+600000
+ 488612 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,16n,105p,7170b,707s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi6.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
-Output written on sprawozdanie.pdf (6 pages, 189446 bytes).
+Output written on sprawozdanie.pdf (7 pages, 213452 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 28764 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 28777 words of extra memory for PDF output out of 29859 (max. 10000000)
 
