@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {2\relax .\enspace }Pierwsze próby}{1}{section.2}%
 \contentsline {subsection}{\numberline {2.1\relax .\enspace }Interpretacja geometryczna}{1}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2\relax .\enspace }Algorytm Monte Carlo}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3\relax .\enspace }Szereg Taylora}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3\relax .\enspace }Szereg Taylora}{4}{subsection.2.3}%
 \contentsline {section}{\numberline {3\relax .\enspace }Wzór Viete'a}{4}{section.3}%
-\contentsline {section}{\numberline {4\relax .\enspace }Wzór Ramanujana}{4}{section.4}%
-\contentsline {section}{\numberline {5\relax .\enspace }Algorytm Gaussa-Legendre'a}{4}{section.5}%
+\contentsline {section}{\numberline {4\relax .\enspace }Wzór Ramanujana}{5}{section.4}%
+\contentsline {section}{\numberline {5\relax .\enspace }Algorytm Gaussa-Legendre'a}{5}{section.5}%
