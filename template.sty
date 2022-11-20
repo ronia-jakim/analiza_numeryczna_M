@@ -19,6 +19,9 @@
 \RequirePackage{ragged2e}            % przydatne przy justowaniu do roznych stron
 \justifying
 
+\RequirePackage{multicol}
+%\RequirePackage{subcaption}
+%\RequirePackage{caption}
 
 \author{
     Łukasz Magnuszewski \and
@@ -67,19 +70,21 @@
 \RequirePackage{xcolor}
 
 \definecolor{czerw}{HTML}{cc5b5b}
-\definecolor{ziel}{HTML}{a0a01c}
+\definecolor{ziel}{HTML}{7d7d0e}
 \definecolor{pom}{HTML}{cb8e17}
 \definecolor{zol}{HTML}{cb8e17}
 \definecolor{fiol}{HTML}{a95f80}
 \definecolor{roz}{HTML}{ce8395}
 \definecolor{turk}{HTML}{ce8395}
+\definecolor{nieb}{HTML}{458588}
 
 \RequirePackage[hidelinks]{hyperref} % niewidoczne linki
 \hypersetup {
     colorlinks=true,
     linktoc=all,
     linkcolor=fiol,
-    urlcolor=nieb
+    urlcolor=fiol,
+    citecolor=pom
 }
 
 \RequirePackage{nameref}
@@ -131,7 +136,7 @@
     numberstyle=\tiny\ttfamily\color{git25gray},
     breaklines=true,
     backgroundcolor=\color{codeback},
-    literate={[}{{{\color{nieb}[}}}1 {]}{{{\color{nieb}]}}}1 {+}{{{\color{nieb}+}}}1 {-}{{{\color{nieb}-}}}1 {*}{{{\color{nieb}*}}}1 {/}{{{\color{nieb}/}}}1 {=}{{{\color{nieb}=}}}1 {>}{{{\color{nieb}>}}}1 {<}{{{\color{nieb}<}}}1 {!}{{{\color{nieb}<}}}1,
+    %literate={[}{{{\color{nieb}[}}}1 {]}{{{\color{nieb}]}}}1 {+}{{{\color{nieb}+}}}1 {-}{{{\color{nieb}-}}}1 {*}{{{\color{nieb}*}}}1 {/}{{{\color{nieb}/}}}1 {=}{{{\color{nieb}=}}}1 {>}{{{\color{nieb}>}}}1 {<}{{{\color{nieb}<}}}1 {!}{{{\color{nieb}<}}}1,
 }
 \lstset{style=IIcolors}
 
