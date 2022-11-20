@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.5)  20 NOV 2022 14:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.5)  20 NOV 2022 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -812,33 +812,49 @@ Package amsmath Warning: Foreign command \over;
 [1
 
 {/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<../prog/geometric_log_error.png, id=72, 738.76pt x 738.76pt>
+File: ../prog/geometric_log_error.png Graphic file (type png)
+<use ../prog/geometric_log_error.png>
+Package pdftex.def Info: ../prog/geometric_log_error.png  used on input line 79.
+(pdftex.def)             Requested size: 338.09853pt x 338.09775pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2]
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <14.4> on input line 93.
+(Font)              <14.4> on input line 105.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 94.
- [2]
-<../prog/monte_carlo_log_error.png, id=79, 1228.59pt x 1236.62pt>
+(Font)              <12> on input line 106.
+ [3 <../prog/geometric_log_error.png>]
+<../prog/monte_carlo_log_error.png, id=87, 1228.59pt x 1236.62pt>
 File: ../prog/monte_carlo_log_error.png Graphic file (type png)
 <use ../prog/monte_carlo_log_error.png>
-Package pdftex.def Info: ../prog/monte_carlo_log_error.png  used on input line 108.
+Package pdftex.def Info: ../prog/monte_carlo_log_error.png  used on input line 121.
 (pdftex.def)             Requested size: 338.09853pt x 340.30742pt.
- [3 <../prog/monte_carlo_log_error.png>]) (./wzor-viete.tex) (./ramanujan.tex) (./super-szybki-super-ciezki.tex [4]) [5] (./sprawozdanie.aux)
+ [4 <../prog/monte_carlo_log_error.png>]
+<../prog/taylor_log_error.png, id=96, 481.8pt x 361.35pt>
+File: ../prog/taylor_log_error.png Graphic file (type png)
+<use ../prog/taylor_log_error.png>
+Package pdftex.def Info: ../prog/taylor_log_error.png  used on input line 153.
+(pdftex.def)             Requested size: 338.09853pt x 253.58287pt.
+) (./wzor-viete.tex [5 <../prog/taylor_log_error.png>]) (./ramanujan.tex) (./super-szybki-super-ciezki.tex) [6] (./sprawozdanie.aux)
 Package rerunfilecheck Info: File `sprawozdanie.out' has not changed.
 (rerunfilecheck)             Checksum: 36579357D23DB4C011893C6E466D4A6E;1082.
  ) 
 Here is how much of TeX's memory you used:
- 39601 strings out of 475075
- 885278 string characters out of 5755557
- 1384077 words of memory out of 5000000
- 60265 multiletter control sequences out of 15000+600000
- 488404 words of font info for 115 fonts, out of 8000000 for 9000
+ 39629 strings out of 475075
+ 885926 string characters out of 5755557
+ 1383579 words of memory out of 5000000
+ 60283 multiletter control sequences out of 15000+600000
+ 488508 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,16n,105p,7170b,707s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi6.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr6.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
-Output written on sprawozdanie.pdf (5 pages, 3645340 bytes).
+Output written on sprawozdanie.pdf (6 pages, 3707315 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 28754 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 28764 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -1177,6 +1177,11 @@ INPUT pierwsze-proby.tex
 INPUT ./pierwsze-proby.tex
 INPUT pierwsze-proby.tex
 INPUT /opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ../prog/geometric_log_error.png
+INPUT ../prog/geometric_log_error.png
+INPUT ../prog/geometric_log_error.png
+INPUT ../prog/geometric_log_error.png
+INPUT ../prog/geometric_log_error.png
 INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plmi12.tfm
 INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/pl/plsy10.tfm
 INPUT /opt/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -1190,6 +1195,11 @@ INPUT ../prog/monte_carlo_log_error.png
 INPUT ../prog/monte_carlo_log_error.png
 INPUT ../prog/monte_carlo_log_error.png
 INPUT ../prog/monte_carlo_log_error.png
+INPUT ../prog/taylor_log_error.png
+INPUT ../prog/taylor_log_error.png
+INPUT ../prog/taylor_log_error.png
+INPUT ../prog/taylor_log_error.png
+INPUT ../prog/taylor_log_error.png
 INPUT ./wzor-viete.tex
 INPUT wzor-viete.tex
 INPUT ./wzor-viete.tex

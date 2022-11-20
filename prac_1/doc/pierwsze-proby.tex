@@ -74,6 +74,18 @@ oraz:
     &=\sqrt{8n^2\tan{\pi\over 2n}\sin{\pi\over n}}=\sqrt{2nBna}=\sqrt{L_{2n}l_n}.
 \end{align*}
 
+\begin{figure}[!h]\centering
+    \renewcommand{\figurename}{Wykres}
+    \includegraphics[width=0.7\textwidth]{../prog/geometric_log_error.png}
+    \caption{Wykres logarytmu dziesiętnego z błędu względnego dla przybliżenia $\pi$ za pomocą metody geometrycznej.}
+    \label{geometric-error}
+\end{figure}
+
+Zauważmy, że $\lim_{k\to\infty}L_k=2\pi$ i $\lim_{k\to\infty}l_k=2\pi$ oraz dla każdego $k$ mamy
+$$l_n\leq 2\pi\leq L_n,$$
+a więc możemy przybliżać $\pi$ jako
+$$\pi\approx{L_n-l_n\over 4},$$
+czyli jako środek przedziału $[l_n,L_n]$.
 
 \subsection{Algorytm Monte Carlo}
 
@@ -102,11 +114,14 @@ Korzystając z algorytmu Monte Carlo możemy wybierać losowo współrzędne $x,
 $$x^2+y^2\leq1.$$
 Otrzymany stosunek będzie coraz bliższy $\frac\pi4$ wraz ze zwiększaniem ilości testowanych punktów.
 
-{\color{cyan}NAKLEPAĆ I TYM LOGIEM PRZYBLIŻYĆ ZBIEŻNOŚĆ CZY INNE CHUJU MUJU}
+Na Wykresie~\ref{monte-carlo-error}. Zaprezentowany jest logarytm dziesiętny z błędu względnego metody Monte Carlo. Szacowanie zbieżności tej metody jest trudne, ale możemy zauważyć, że jest ona gorsza niż zbieżność liniowa.
 
-\begin{center}
+\begin{figure}[!h]\centering
+\renewcommand{\figurename}{Wykres}
 \includegraphics[width=0.7\textwidth]{../prog/monte_carlo_log_error.png}
-\end{center}
+\caption{Wykres logarytmu dziesiętnego z błędu względnego uzyskanego dla metody przybliżenia $\pi$ z pomocą algorytmu Monte Carlo.}
+\label{monte-carlo-error}
+\end{figure}
 
 
 \subsection{Szereg Taylora}
@@ -131,6 +146,13 @@ Problem tego przybliżenia $\pi$ został przeanalizowany już przez Madhawa z Sa
     \frac\pi4\approx \sum\limits_{k=0}^N{(-1)^k\over 2k+1}\pm{N^2+1\over 4N^3+5N}.
 \end{equation}
 
-{\color{cyan}WYPADAŁOBY NAKLEPAĆ I PRZEDSTAWIĆ WYNIKI}
+
+
+\begin{figure}[!h]\centering
+    \renewcommand{\figurename}{Wykres}
+    \includegraphics[width=0.7\textwidth]{../prog/taylor_log_error.png}
+    \caption{Wykres logarytmu dziesiętnego z błędu względnego uzyskanego dla metody przybliżenia $\pi$ za pomocą szeregu Taylora.}
+    \label{taylor-series-error}
+\end{figure}
 
 
