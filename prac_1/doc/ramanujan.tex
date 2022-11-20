@@ -16,11 +16,6 @@ $$
 $$
 Aby wyprowadzić ten wzór, jak i inne podane przez Ramanujana, potrzebna jest znajomość między innymi teorii funkcji eliptycznych\cite{review}. Z tego też względu w tym reporcie nie podejmiemy się uzasadniania poprawności wyżej podanego wzoru. Dla zainteresowanych polecamy lekturę "Collected Papers of Srinivasa Ramanujan"\cite{ramanujan}.
 
-\subsection{Wyniki}
-
-Logarytm z błędu względnego algorytmu Chudnowsky'ch dla pierwszych 400 iteracji został zaprezentowany na Wykresie~\ref{chudnowsky-error}. Już dla 359 iteracji błąd bezwzględny jest równy 0. Każe to sugerować, że to właśnie ta metoda została użyta jako implementacja funkcji \verb+pi()+ w języku \verb+Julia+. Dlatego od 359 iteracji nie ma zaznaczonej wartości $\log_{10}$ od błędu względnego.
-
-
 \begin{figure}[!h]
     \centering
     \renewcommand{\figurename}{Wykres}
@@ -29,10 +24,6 @@ Logarytm z błędu względnego algorytmu Chudnowsky'ch dla pierwszych 400 iterac
     \label{chudnowsky-error}
 \end{figure}
 
-Eksperymentalne wyznaczanie zbieżności metody Chudnowsky'ch sugeruje zbieżność liniowa, tak jak na Wykresie~\ref{chudnowsky-convergence}.. Nietypowe załamanie w okolicach 359 iteracji jest spowodowane zerową wartością błędu bezwzględnego w tym miejscu. Z pozostałej części wykresu możemy wydedukować, że
-$$\lim_{k\to\infty}{{|x_{k+1}-\pi|\over |x_k-\pi|}}\approx 6.5\cdot 10^{-15},$$
-gdzie $x_k$ to oszacowanie $\pi$ uzyskane w $k$-tej iteracji.
-
 \begin{figure}[!h]
     \centering
     \renewcommand{\figurename}{Wykres}
@@ -40,3 +31,11 @@ gdzie $x_k$ to oszacowanie $\pi$ uzyskane w $k$-tej iteracji.
     \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla algorytmu Chudowsky'ch.}
     \label{chudnowsky-convergence}
 \end{figure}
+
+\subsection{Wyniki}
+
+Logarytm z błędu względnego algorytmu Chudnowsky'ch dla pierwszych 400 iteracji został zaprezentowany na Wykresie~\ref{chudnowsky-error}. Już dla 359 iteracji błąd bezwzględny jest równy 0. Każe to sugerować, że to właśnie ta metoda została użyta jako implementacja funkcji \verb+pi()+ w języku \verb+Julia+. Dlatego od 359 iteracji nie ma zaznaczonej wartości $\log_{10}$ od błędu względnego. Powoduje to anomalie widoczne na wykresach.
+
+Eksperymentalne wyznaczanie zbieżności metody Chudnowsky'ch sugeruje zbieżność liniowa, tak jak na Wykresie~\ref{chudnowsky-convergence}.. Nietypowe załamanie w okolicach 359 iteracji jest spowodowane zerową wartością błędu bezwzględnego w tym miejscu. Z pozostałej części wykresu możemy wydedukować, że
+$$\lim_{k\to\infty}{{|x_{k+1}-\pi|\over |x_k-\pi|}}\approx 6.5\cdot 10^{-15},$$
+gdzie $x_k$ to oszacowanie $\pi$ uzyskane w $k$-tej iteracji.

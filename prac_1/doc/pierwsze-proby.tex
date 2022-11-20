@@ -1,6 +1,4 @@
 \section{Pierwsze próby}
-
-
 \subsection{Interpretacja geometryczna}
 \label{geometric-interpretation}
 
@@ -56,6 +54,7 @@ Dla przejżystości zapisów oznaczmy $|\overline{A_1A_2}|=A$, $|\overline{B_1B_
     B&=a-\frac aAB\\
     B&={aA\over A+a}
 \end{align*}
+
 Oznaczmy teraz obwód $n$-kąta wpisanego jako $l_n$, a $n$-kąta opisanego - $L_n$. Według Rysunku~\ref{pierwszy} są one równe:
 \begin{align*}
     l_n&=na\\
@@ -69,15 +68,15 @@ Dalej, oznaczmy długość boku $2n$-kąta wpisanego jako $b$. Zauważmy, że w�
     a&=2\sin{\pi\over n}\\
     b&=2\sin{\pi\over 2n}
 \end{align*}
+
 oraz:
 \begin{align*}
     l_{2n}&=2nb=4n\sin{\pi\over 2n}=\sqrt{16n^2\sin^2{\pi\over 2n}}=\sqrt{8n^2{\sin{\pi\over2n}\over\cos{\pi\over 2n}}2\sin{\pi\over 2n}\cos{\pi\over 2n}}=\\
     &=\sqrt{8n^2\tan{\pi\over 2n}\sin{\pi\over n}}=\sqrt{2nBna}=\sqrt{L_{2n}l_n}.
 \end{align*}
-
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
-    \includegraphics[width=0.7\textwidth]{../prog/geo3_log_error.png}
+    \includegraphics[width=0.6\textwidth]{../prog/geo3_log_error.png}
     \caption{Wykres logarytmu dziesiętnego z błędu względnego dla przybliżenia $\pi$ za pomocą metody geometrycznej.}
     \label{geometric-error}
 \end{figure}
@@ -92,6 +91,19 @@ $$\begin{cases}
     L_3=6\sqrt3
 \end{cases}$$
 
+Metoda w okolicach 8050 iteracji uzyskiwała błąd bezwzględny rzędu $10^{-12000}$. Na Wykresie~\ref{geometric-error} widzimy, że gradient wykresu logarytmu dziesiętnego od błędu względnego jest niemalże liczbą stałą. Przybliżanie liczby $\pi$ przy użyciu geometrii osiąga limit precyzji, co jest bardzo imponujące biorąc pod uwagę jak stara jest to metoda.
+
+\begin{figure}[!h]\centering
+    \renewcommand{\figurename}{Wykres}
+    \includegraphics[width=0.7\textwidth]{../prog/geo3_error_ratio.png}
+    \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla metody geometrycznej.}
+    \label{geometric-convergence}
+\end{figure}
+
+Postawiliśmy hipotezę, że metoda ta jest zbieżna liniowo. Eksperymentalne wyznaczanie rzędu zbieżności potwierdziło to przypuszczenie, co widać na Wykresie~\ref{geometric-convergence}. Widać na nim, że
+$$\lim_{n\to\infty}{|x_{n+1}-\pi|\over |x_n-\pi|}\approx\frac14,$$
+gdzie $x_n$ to przybliżenie w $n$-tej iteracji.
+
 \subsection{Algorytm Monte Carlo}
 
 Tak jak w poprzedniej metodzie, możemy skorzystać z faktu, że dla koła jednostkowego $\pi$ jest równe jego polu. Zauważmy, że jeżeli będziemy wybierać losowo punkty kwadratu o polu 1, to $\frac\pi4$ z nich powinno znaleźć się w ćwiartce koła o środku w jednym z wierzchołków tego kwadratu (~Rysunek \ref{fig:monte-carlo}.).
@@ -99,17 +111,17 @@ Tak jak w poprzedniej metodzie, możemy skorzystać z faktu, że dla koła jedno
 \begin{figure}[!h]\centering
 \begin{tikzpicture}
     \coordinate (A) at (0,0);
-    \coordinate (B) at (4,0);
-    \coordinate (C) at (4,4);
-    \coordinate (D) at (0,4);
+    \coordinate (B) at (2,0);
+    \coordinate (C) at (2,2);
+    \coordinate (D) at (0,2);
 
-    \filldraw[fill=ziel!40!white, draw=ziel] (B) arc[start angle=0, end angle=90, radius=4];
+    \filldraw[fill=ziel!40!white, draw=ziel] (B) arc[start angle=0, end angle=90, radius=2];
     \filldraw[color=ziel!40!white] (A)--(B)--(D)--cycle;
     \draw[thick] (A)--(B)--(C)--(D)--cycle;
 
-    \node at (1.5, 2) {\Large$\frac\pi4$};
-    \node at (2, -0.3) {\large$1$};
-    \node at (-0.3, 2) {\large$1$};
+    \node at (0.75, 1) {\Large$\frac\pi4$};
+    \node at (1, -0.3) {\large$1$};
+    \node at (-0.3, 1) {\large$1$};
 \end{tikzpicture}
 \caption{Stosunek pola ćwiartki koła jednostkowego do kwadratu o boku $1$}
 \label{fig:monte-carlo}
@@ -119,13 +131,20 @@ Korzystając z algorytmu Monte Carlo możemy wybierać losowo współrzędne $x,
 $$x^2+y^2\leq1.$$
 Otrzymany stosunek będzie coraz bliższy $\frac\pi4$ wraz ze zwiększaniem ilości testowanych punktów.
 
-Na Wykresie~\ref{monte-carlo-error}. Zaprezentowany jest logarytm dziesiętny z błędu względnego metody Monte Carlo. Szacowanie zbieżności tej metody jest trudne, ale możemy zauważyć, że jest ona gorsza niż zbieżność liniowa.
+Na Wykresie~\ref{monte-carlo-error}. zaprezentowany jest logarytm dziesiętny z błędu względnego metody Monte Carlo. Szacowanie zbieżności tej metody wykracza poza zakres wiedzy studenta 3 semestru ze względu na losowość tego algorytmu. Wykorzystanie technik z kursu Rachunku Prawdopodobieństwa ułatwiłoby to zadanie. Na Wykresie~\ref{monte-carlo-convergence} widzimy jeden z wykresów ilorazu błędu kolejnych wyrazów jaki uzyskaliśmy przy uruchamianiu algorytmu. Na obu wykresach obserwujemy wachania lokalne zbieżności algorytmu.
 
 \begin{figure}[!h]\centering
 \renewcommand{\figurename}{Wykres}
-\includegraphics[width=0.7\textwidth]{../prog/monte_carlo_log_error.png}
+\includegraphics[width=0.6\textwidth]{../prog/monte_carlo_log_error.png}
 \caption{Wykres logarytmu dziesiętnego z błędu względnego uzyskanego dla metody przybliżenia $\pi$ z pomocą algorytmu Monte Carlo.}
 \label{monte-carlo-error}
+\end{figure}
+
+\begin{figure}[!h]\centering
+    \renewcommand{\figurename}{Wykres}
+    \includegraphics[width=0.6\textwidth]{../prog/monte_carlo_error_ratio.png}
+    \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla metody z wykorzystaniem algorytmu Monte Carlo.}
+    \label{monte-carlo-convergence}
 \end{figure}
 
 
@@ -143,21 +162,22 @@ $$\frac\pi4\approx \sum\limits_{k=0}^N{(-1)^k\over 2k+1}+R_N.$$
 Oznaczmy tę sumę jako $P_N$. Ponieważ dla przybliżeń funkcji szeregiem Taylora coraz wyższego stopnia dostajemy coraz dokładniejszy wynik, to $P_{N+1}$ powinno być dokładniejsze niż $P_N$. Zauważamy też, że
 $$P_{N+1}-P_N={(-1)^{N+1}\over 2N+3}$$
 w takim razie możemy oszacować błąd dla szeregu Taylora $N$-tego stopnia za pomocą
-$$R_N\approx \max{(-1)^{N+1}\over 2N+3},$$
-co daje zbieżność liniową.
+$$R_N\approx \max{(-1)^{N+1}\over 2N+3}.$$
 
-Problem tego przybliżenia $\pi$ został przeanalizowany już przez Madhawa z Sangamagramy w XIV wieku. Zaproponował on następującą korekcję wzoru dla skończonych sum:
-\begin{equation}
-    \frac\pi4\approx \sum\limits_{k=0}^N{(-1)^k\over 2k+1}\pm{N^2+1\over 4N^3+5N}.
-\end{equation}
-
-
+Powyższa metoda jest o wiele wolniejsza od metody Archimedesa, mimo że powstała później. W metodzie geometrycznej osiągaliśmy błąd rzędu $10^{-12000}$, natomiast wzór Taylora daje błąd rzędu $10^{-10}$. Iloraz wyrazu $n+1$ do wyrazu $n$ eksperymentalnie zbiega do 1, co sugeruje zbieżność nadliniową \cite{bog}.
 
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
     \includegraphics[width=0.7\textwidth]{../prog/taylor_log_error.png}
     \caption{Wykres logarytmu dziesiętnego z błędu względnego uzyskanego dla metody przybliżenia $\pi$ za pomocą szeregu Taylora.}
     \label{taylor-series-error}
+\end{figure}
+
+\begin{figure}[!h]\centering
+    \renewcommand{\figurename}{Wykres}
+    \includegraphics[width=0.7\textwidth]{../prog/taylor_error_ratio.png}
+    \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla metody z wykorzystaniem szeregu Taylora.}
+    \label{taylor-series-convergence}
 \end{figure}
 
 

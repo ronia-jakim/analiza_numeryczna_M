@@ -344,12 +344,12 @@ function main()
     #convergence_experiment(taylor.calc_steps,10000, 1, "Taylor'a", "taylor")
     #convergence_experiment(chudnowsky.calc_steps,500, 1, "Chudnovsky'ich", "chudnowsky")
     #convergence_experiment(viete.calc_steps,8000, 1, "Viete'a", "viete")
-    #convergence_experiment(geometry3.calc_steps,8000, 1, "Przybliżania wielokątami", "geo3")
+    convergence_experiment(geometry3.calc_steps,1000, 1, "Przybliżania wielokątami", "geo3")
     #convergence_experiment(ramanujan.calc_steps, 610, 1, "Srinivasa Ramanujana", "ramanujan")
 
-    convergence_experiment(gauss_legendre.calc_steps, 21, 2, "Gauss-Legendre'a", "gauss_legendre")
+    #convergence_experiment(gauss_legendre.calc_steps, 21, 2, "Gauss-Legendre'a", "gauss_legendre")
     #convergence_experiment(montecarlo.calc_steps, 1000, 1, "Monte carlo", "monte_carlo")
 
 end
 
-#main()
+main()

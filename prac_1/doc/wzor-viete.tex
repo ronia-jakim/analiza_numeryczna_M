@@ -34,4 +34,15 @@ Na Wykresie~\ref{viete-error}. zaprezentowany jest wykres zbieżności algorytmu
     \label{viete-error}
 \end{figure}
 
-Metoda Viete'a daje wyniki podobne do podejścia geometrycznego opisanego w Sekcji~\ref{geometric-interpretation}. Obie metody mają błąd bardzo bliski zera dla około 8000 iteracji metody. W obu metodach korzystamy z dwóch zmiennych, więc są podobne pamięciowo. W metodzie zaproponowanej przez Archimedesa musimy zapamiętywać obwód figury opisanej i wpisanej w okrąg, natomiast dla metody Viete'a potrzebujemy zapisywać dotychczasowy iloczyn oraz kolejny wyraz ciągu $a_k$. Różnią się one jedynie ilością operacji jakie wykonujemy w jednej iteracji, więc metoda Viete'a ma marginalnie lepszą złożoność czasową.
+\begin{figure}[!h]\centering
+    \renewcommand{\figurename}{Wykres}
+    \includegraphics[width=0.7\textwidth]{../prog/viete_error_ratio.png}
+    \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla metody z wykorzystaniem metody Viete'a.}
+    \label{viete-convergence}
+\end{figure}
+
+Metoda Viete'a daje wyniki podobne do podejścia geometrycznego opisanego w Sekcji~\ref{geometric-interpretation}. Obie metody mają błąd bardzo bliski zera dla około 8000 iteracji metody. W obu metodach korzystamy z dwóch zmiennych, więc są podobne pamięciowo. W metodzie zaproponowanej przez Archimedesa musimy zapamiętywać obwód figury opisanej i wpisanej w okrąg, natomiast dla metody Viete'a potrzebujemy zapisywać dotychczasowy iloczyn oraz kolejny wyraz ciągu $a_k$. Różnią się one jedynie ilością operacji jakie wykonujemy w jednej iteracji, więc metoda Viete'a ma marginalnie lepszą stałą czasową.
+
+Dodatkowo, jak widać na Wykresie~\ref{viete-convergence}., eksperymentalnie potwierdziliśmy, że metoda ta jest zbieżna liniowo. Tak jak w przypadku metody Archimedesa mamy
+$$\lim_{k\to \infty}{|x_{k+1}-\pi|\over |x_k-\pi|}\approx\frac1{4},$$
+gdzie $x_k$ to wynik $k$-tej iteracji metody.
