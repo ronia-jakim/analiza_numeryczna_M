@@ -2,15 +2,20 @@
 
 % https://en.wikipedia.org/wiki/Vi%C3%A8te%27s_formula
 
-Viete wyprowadził swoją formułę na $\pi$ obserwując stosunek pola $2^n$-kata foremnego do pola $2^{n+1}$-kata foremnego. Poprzez zwiększanie $n$ w nieskończoność, jesteśmy w stanie dostać stosunek $2^2$-kąta foremnego, czyli kwadratu, do pola koła w które został on wpisany. Pole koła o promieniu $1$ wynosi
-$$P_k=\pi$$
-a pole kwadratu w nie wpisanego:
-$$P_2={2\cdot 2\over 2}=2.$$
-W takim razie stosunek pola kwadratu do pola koła wynosi:
-\begin{align*}
-    {P_2\over P_k}&={2\over\pi}=\lim_{k\to\infty}{2\over P_{2^k}}=\lim_{k\to\infty}{2\over P_{2^3}}{P_{2^3}\over 2^k}=\lim_{k\to\infty}\prod\limits_{i=1}^k{a_{n}\over a_{n+1}}=\lim_{k\to\infty}{a_1\over a_k}=\lim_{k\to\infty}{2\over a_k},
-\end{align*}
-gdzie  $a_k$ to pole $2^k$-kąta foremnego, z $a_1=2$.
+Viete wyprowadził swoją formułę na $\pi$ obserwując stosunek pola $2^n$-kata foremnego do pola $2^{n+1}$-kata foremnego. Poprzez zwiększanie $n$ w nieskończoność, jesteśmy w stanie dostać stosunek $2^2$-kąta foremnego, czyli kwadratu, do pola koła w które został on wpisany. Można ją też wyprowadzić za pomocą tożsamości udowodnionej przez Eulera ponad 100 lat po śmierci Viete'a.
+
+Wzór zaproponowany przez Viete'a, uznawany za prekursor analizy matematycznej w matematyce poprzez pierwsze wykorzystanie nieskończonego ilorazu, jest następujący:
+\begin{equation}
+    {2\over\pi}=\prod\limits_{k=1}^n{a_k\over2},
+\end{equation}
+gdzie $a_1=\sqrt2$ oraz
+$$a_k=\sqrt{2+a_{n-1}}.$$
+
+Wiemy, że
+$$\sin{x}=2\sin{\frac x2}\cos{\frac x2}$$
+co dla pewnego $n$ pozwala wyrazić się jako
+$$\sin{x}=2^n\sin{{x\over 2^n}}\prod\limits_{k=1}^n\cos{x\over 2^k}$$
+Weźmy $x={\pi\over 2}$. Wiemy, że $\sin{\frac\pi2}=1$ oraz
 
 
 
