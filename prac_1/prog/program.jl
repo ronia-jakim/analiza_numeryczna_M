@@ -1,5 +1,5 @@
 using Base
-setprecision(BigFloat, 1000000)
+setprecision(BigFloat, 17000)
 using Plots
 
 
@@ -93,11 +93,7 @@ module montecarlo
         x = rand()
         y = rand()
         d = x * x + y * y
-        if d <= 1
-            return true
-        else 
-            return false
-        end
+        return d <= 1
     end
 
     function calc(iterations::Int)
@@ -147,8 +143,8 @@ module taylor
                 res += el
             else 
                 res -= el
-            append!(results, res * BigFloat(4))
             end
+            append!(results, res * BigFloat(4))
         end
         return results
     end
@@ -172,23 +168,23 @@ module viete
 
 
     function calc(iterations::Int)
-        ak = BigFloat(0)
-        pot = BigFloat(2)
+        a = sqrt(BigFloat(2))
+        res = BigFloat(1)
         for i in 1:iterations
-            ak = sqrt(BigFloat(2) + ak)
-            pot = pot * BigFloat(2)
+            res = res * a / BigFloat(2)
+            a = sqrt(BigFloat(2) + a)
         end
-        return pot * sqrt(BigFloat(2) - ak)
+        return BigFloat(2) / res
     end
 
     function calc_steps(iterations::Int)
-        ak = BigFloat(0)
-        pot = BigFloat(2)
+        a = sqrt(BigFloat(2))
+        res = BigFloat(1)
         results = Vector{BigFloat}([])
         for i in 1:iterations
-            ak = sqrt(BigFloat(2) + ak)
-            pot = pot * BigFloat(2)
-            append!(results, pot * sqrt(BigFloat(2) - ak))
+            res = res * a / BigFloat(2)
+            a = sqrt(BigFloat(2) + a)
+            append!(results, BigFloat(2) / res)
         end
         return results
     end
@@ -258,33 +254,30 @@ function calc_rel(lst::Vector{BigFloat}, bib::BigFloat)
     end
     return res
 end
-function print_err_graph(ab::Vector{BigFloat}, re::Vector{BigFloat})
-    x = 1:length(ab)
-    p = plot(x, ab, title = "Błąd przybliżenia w zależności\n od iteracji", xlabel = "liczba iteracji", label = "błąd bezwzgledny")
-    plot!(p, x, re, label="błąd względny")
-    # plot!(p, x, re, label="błąd względny")
-    savefig(p, "err_plot")
-    display(p)
-end
 
 
-function print_rel_err_log_graph(rel::Vector{BigFloat})
+
+
+function log_error_graph_gen(iterations::Int, method, name::String, file_name::String)
+    results = method(iterations)
+    ab = calc_abs(results, BigFloat(pi))
+    rel = calc_rel(ab, BigFloat(pi))
     relog = map(x -> log(abs(x)), rel)
     x = 1:length(relog)
-    p = plot(x, relog, title = "Logarytm z wartości bezwględnej: błędu względnego \n w zależności od liczby iteracji", xlabel = "liczba iteracji", label = "log |błąd wzgledny|")
-    display(p)
-    savefig(p, "rel_log_plot")
+
+    p = plot(x, relog, title = "Wykres zbieżności metody: " * name, xlabel = "liczba iteracji", label = "log |błąd wzgledny|")
+    savefig(p, file_name  * "_log_error.png")
 end
+
+
 
 # fajne pi https://julialang.org/blog/2017/03/piday/ 
 function main()
-    results = gauss_legendre.calc_steps(50)
-    ab = calc_abs(results, BigFloat(pi))
-    rel = calc_rel(ab, BigFloat(pi))
-
-    #println(results)
-    print_rel_err_log_graph(rel)
-    print_err_graph(ab, rel)
+    #log_error_graph_gen(10000, montecarlo.calc_steps, "Monte carlo", "monte_carlo")
+    #log_error_graph_gen(10000, taylor.calc_steps, "Szereg Taylora", "taylor")
+    #log_error_graph_gen(16, gauss_legendre.calc_steps, "Gauss-Legendre'a", "gauss_legendre")
+    #log_error_graph_gen(450, chudnowsky.calc_steps, "Algorytm Chudnovsky'ego", "chudnowsky")
+    log_error_graph_gen(10000, viete.calc_steps, "Algorytm Viete'a", "viete")
 end
 
 main()
