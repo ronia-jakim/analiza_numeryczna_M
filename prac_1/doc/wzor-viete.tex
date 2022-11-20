@@ -12,14 +12,13 @@ gdzie $a_1=\sqrt2$ oraz
 $$a_k=\sqrt{2+a_{n-1}}.$$
 
 Wiemy, że
-$$\sin{x}=2\sin{\frac x2}\cos{\frac x2}$$
-co dla pewnego $n$ pozwala wyrazić się jako
-$$\sin{x}=2^n\sin{{x\over 2^n}}\prod\limits_{k=1}^n\cos{x\over 2^k}$$
-Weźmy $x={\pi\over 2}$. Wiemy, że $\sin{\frac\pi2}=1$ oraz
-
-
-
-
-$$\pi=\lim\limits_{k\to\infty}2^k\sqrt{2-a_k}$$
-$$a_1=0$$
-$$a_k=\sqrt{2+a_{k+1}}$$
+$${\sin x\over x}=\cos\frac x2\cos\frac x4...=\lim_{n\to\infty}\prod\limits_{k=1}^n\cos{x\over 2^n}$$
+oraz
+$$\cos\frac x2=\sqrt{{1+\cos x\over 2}}.$$
+Jeśli wstawimy $x=\frac\pi2$ i oznaczymy $b_k=\cos{x\over 2^k}$, $b_1={\sqrt2\over2}$,  dostaniemy
+\begin{align*}
+    {\sin\frac\pi2\over\frac\pi2}&=\frac2\pi=\lim_{n\to\infty}\prod\limits_{k=1}^n\cos{x\over 2^2}=\lim_{n\to\infty}\prod\limits_{k=1}^nb_k=\lim_{n\to\infty}\prod\limits_{k=1}^n{a_k\over 2},
+\end{align*}
+gdzie 
+$$a_k=2b_k=2\sqrt{{1+b_{k-1}\over 2}}=\sqrt{2+2b_{k-1}}=\sqrt{2+a_{k-1}}$$
+i $a_1=\sqrt2$.

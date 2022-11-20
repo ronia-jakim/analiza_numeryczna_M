@@ -1215,14 +1215,15 @@ INPUT super-szybki-super-ciezki.tex
 INPUT sprawozdanie.aux
 INPUT ./sprawozdanie.out
 INPUT ./sprawozdanie.out
-INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc
+INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb
+INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi6.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1668953888 "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1668953889
+["pdflatex"] 1668955034 "/home/maruda/uni-stuff/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1668955035
   "../../template.sty" 1666629784 4284 8a71eb5c11272c9e5abd0bdae3fbebc7 ""
   "../prog/geometric_log_error.png" 1668952630 45230 058915809f5e5b940bcad4d584e72015 ""
   "../prog/monte_carlo_log_error.png" 1668951841 25269 d0be5d1ae7854652559d855f858eaac7 ""
@@ -44,6 +44,7 @@
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb" 1662412356 26733 3fa55bab1df289b642fa8cd9e61fb25f ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb" 1662412356 22371 094f80a5a689f2eefc72bff87ecbc407 ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb" 1662412356 29517 25a85f8c34479bb523ce1a802f64ac2b ""
+  "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi6.pfb" 1662412356 30338 4bdf6a32e66b53760b57428a52eeec91 ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb" 1662412356 29648 f588152f66151a0a6061bdcc4f5c0f53 ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb" 1662412356 27396 59c827d3c8566d0d9cbf81ac7c0d162a ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb" 1662412356 27754 6f5ae55af1b64df2aab0bbeada447136 ""
@@ -255,14 +256,14 @@
   "/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1662412356 4595804 11fe22e8d6c953cbd46eceb3b756c4b3 ""
   "/opt/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1662412356 3059192 2d03a8e03a55885dc60fae34798f2c14 ""
   "/opt/texlive/2022/texmf.cnf" 1662412356 585 9e8504408f25e5ac7fa614e58817b8d1 ""
-  "pierwsze-proby.tex" 1668953755 8023 a637e1871cf4c554ec007cf2d1bf63d6 ""
+  "pierwsze-proby.tex" 1668954405 7983 1c73c7ddb710482d39522e58995669db ""
   "ramanujan.tex" 1668271678 154 73b962886226c20e44c3a2a1a8ac4e2e ""
-  "sprawozdanie.aux" 1668953889 3899 1da9f364e054409473447f9b61d961aa "pdflatex"
-  "sprawozdanie.out" 1668953889 1082 36579357d23db4c011893c6e466d4a6e "pdflatex"
+  "sprawozdanie.aux" 1668955035 3899 1da9f364e054409473447f9b61d961aa "pdflatex"
+  "sprawozdanie.out" 1668955035 1082 36579357d23db4c011893c6e466d4a6e "pdflatex"
   "sprawozdanie.tex" 1668952564 481 8a5c8a29f761cb4eefeb04b834f232e9 ""
-  "sprawozdanie.toc" 1668953889 779 02011425f3ec77442195c0690021e095 "pdflatex"
+  "sprawozdanie.toc" 1668955035 779 02011425f3ec77442195c0690021e095 "pdflatex"
   "super-szybki-super-ciezki.tex" 1668273487 36 b386468de5a4df5c71fe97a676632f92 ""
-  "wzor-viete.tex" 1668953888 1102 ec6add05f8939f3a69628647918f9617 ""
+  "wzor-viete.tex" 1668955034 1363 42b100e3929ea960394b5a528c66ff3a ""
   (generated)
   "sprawozdanie.aux"
   "sprawozdanie.log"
