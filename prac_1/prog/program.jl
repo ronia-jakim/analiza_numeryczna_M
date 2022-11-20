@@ -1,5 +1,5 @@
 using Base
-setprecision(BigFloat, 5024)
+setprecision(BigFloat, 1000000)
 using Plots
 
 
@@ -32,17 +32,21 @@ module chudnowsky
     end
 
     function calc_steps(iterations::Int)
-        res = BigFloat(0)
-        results = Vector{BigFloat}([])
+        
+        c = BigFloat(426880) * sqrt(BigFloat(10005))
+        l = BigFloat(13591409)
+        x = BigFloat(1)
+        m = BigFloat(1)
+        k = BigFloat(-6)
+        res = l * m / x
+        results = Vector{BigFloat}([res])
         for q in 0:iterations
-            sign = 1 
-            if q % 2 == 1 
-                sign = -1
-            end
-            a = fact(6 * q) / (fact(3 * q) * fact(q))
-            b = (BigFloat(545140134) * q + BigFloat(13591409)) / ((BigFloat(640320))^(BigFloat(3) * q + BigFloat(3)/BigFloat(2)))
-            res += sign * a * b
-            append!(results, BigFloat(1.0)/(res * BigFloat(12.0)))
+            l = l + BigFloat(545140134)
+            x = x * BigFloat(-262537412640768000)
+            k = k + BigFloat(12)
+            m = m * ((k)^(BigFloat(3))  - BigFloat(16) * k) / (BigFloat(q+1) ^ (BigFloat(3)))
+            res += l * m / x
+            append!(results, c/res)
         end
         return results
     end
@@ -67,6 +71,19 @@ module ramanujan
             res += a / b
         end
         return BigFloat(1.0) / ((BigFloat(2) * sqrt(BigFloat(2)) * res) / BigFloat(9801))
+    end
+
+    function calc_steps(iterations::Int)
+        res = BigFloat(0)
+        results = Vector{BigFloat}([])
+        cons = BigFloat(2) * sqrt(BigFloat(2)) / BigFloat(9801)
+        for q in 0:iterations
+            a = fact(4 * q) * (BigFloat(1103) + BigFloat(26390) * q)
+            b = fact(q) ^ BigFloat(4) * BigFloat(396) ^ (BigFloat(4) * q)
+            res += a / b
+            append!(results, BigFloat(1.0) / (res * cons))
+        end
+        return results
     end
 
 end
@@ -94,6 +111,19 @@ module montecarlo
         return BigFloat(4) * inside / BigFloat(iterations)
     end
 
+    function calc_steps(iterations::Int)
+        inside = BigFloat(0)
+        one = BigFloat(1)
+        results = Vector{BigFloat}([])
+        for i in 1:iterations
+            if experiment()
+                inside += one
+            end
+            append!(results, BigFloat(4) * inside / BigFloat(iterations))
+        end
+        return results
+    end
+
 end 
 
 module taylor 
@@ -106,6 +136,21 @@ module taylor
         else 
             BigFloat(-1) / (BigFloat(2) * BigFloat(iterations) + BigFloat(3))
         end
+    end
+
+    function calc_steps(iterations::Int)
+        results = Vector{BigFloat}([])
+        res = BigFloat(0) 
+        for i in 0:iterations
+            el = BigFloat(1) / (BigFloat(2 * i) + BigFloat(1))
+            if i % 2 == 0
+                res += el
+            else 
+                res -= el
+            append!(results, res * BigFloat(4))
+            end
+        end
+        return results
     end
 
     function calc(iterations::Int)
@@ -136,6 +181,18 @@ module viete
         return pot * sqrt(BigFloat(2) - ak)
     end
 
+    function calc_steps(iterations::Int)
+        ak = BigFloat(0)
+        pot = BigFloat(2)
+        results = Vector{BigFloat}([])
+        for i in 1:iterations
+            ak = sqrt(BigFloat(2) + ak)
+            pot = pot * BigFloat(2)
+            append!(results, pot * sqrt(BigFloat(2) - ak))
+        end
+        return results
+    end
+
 end
 
 
@@ -146,7 +203,6 @@ module gauss_legendre
         b = BigFloat(1) / sqrt(BigFloat(2))
         t = BigFloat(1) / BigFloat(4)
         p = BigFloat(1)
-
         for i in 1:iterations
             an = (a + b) / BigFloat(2)
             b = sqrt(a * b)
@@ -156,6 +212,24 @@ module gauss_legendre
             
         end
         return (a + b) * (a + b) / (BigFloat(4) * t)
+    end
+
+    function  calc_steps(iterations::Int)
+        a = BigFloat(1)
+        b = BigFloat(1) / sqrt(BigFloat(2))
+        t = BigFloat(1) / BigFloat(4)
+        p = BigFloat(1)
+        results = Vector{BigFloat}([])
+        for i in 1:iterations
+            an = (a + b) / BigFloat(2)
+            b = sqrt(a * b)
+            t = t - p * (a - an) * (a - an)
+            p = BigFloat(2) * p
+            a = an
+            append!(results, (a + b) * (a + b) / (BigFloat(4) * t))
+            
+        end
+        return results
     end
 
 end
@@ -169,15 +243,48 @@ function rel_error(abse::BigFloat, correct::BigFloat)
 end
 
 
+function calc_abs(lst::Vector{BigFloat}, bib::BigFloat)
+    res = Vector{BigFloat}([])
+    for x in lst
+        append!(res, [abs_error(x, bib)])
+    end
+    return res
+end
+
+function calc_rel(lst::Vector{BigFloat}, bib::BigFloat)
+    res = Vector{BigFloat}([])
+    for x in lst
+        append!(res, [rel_error(x, bib)])
+    end
+    return res
+end
+function print_err_graph(ab::Vector{BigFloat}, re::Vector{BigFloat})
+    x = 1:length(ab)
+    p = plot(x, ab, title = "Błąd przybliżenia w zależności\n od iteracji", xlabel = "liczba iteracji", label = "błąd bezwzgledny")
+    plot!(p, x, re, label="błąd względny")
+    # plot!(p, x, re, label="błąd względny")
+    savefig(p, "err_plot")
+    display(p)
+end
 
 
+function print_rel_err_log_graph(rel::Vector{BigFloat})
+    relog = map(x -> log(abs(x)), rel)
+    x = 1:length(relog)
+    p = plot(x, relog, title = "Logarytm z wartości bezwględnej: błędu względnego \n w zależności od liczby iteracji", xlabel = "liczba iteracji", label = "log |błąd wzgledny|")
+    display(p)
+    savefig(p, "rel_log_plot")
+end
 
-# fajne pi https://julialang.org/blog/2017/03/piday/ można mieć wyjebane
+# fajne pi https://julialang.org/blog/2017/03/piday/ 
 function main()
-    results = chudnowsky.calc(1200)
+    results = gauss_legendre.calc_steps(50)
+    ab = calc_abs(results, BigFloat(pi))
+    rel = calc_rel(ab, BigFloat(pi))
+
     #println(results)
-    println(abs_error(results, BigFloat(pi)))
-    #print_err_graph(ab, rel)
+    print_rel_err_log_graph(rel)
+    print_err_graph(ab, rel)
 end
 
 main()
