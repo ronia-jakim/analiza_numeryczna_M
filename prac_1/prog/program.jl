@@ -355,26 +355,52 @@ function convergence_experiment(func, iterations::Int, p::Int, name::String, fil
     display(p)
 end
 
+function calc_p(c::BigFloat, p::BigFloat, pp::BigFloat)
+    pii = BigFloat(pi)
+    return log(abs(pp - pii) / abs(p - pii)) / log(abs(p - pii) / abs(c - pii))
+end
+
+function display_calculated_p(func, iterations::Int, name::String, file_name::String)
+    results = func(iterations)
+    ps = Vector{BigFloat}([])
+    for i in 1:(iterations-2)
+        p = calc_p(results[i], results[i+1], results[i+2])
+        append!(ps, p)
+    end
+    x = 1:length(ps)
+    p = plot(x, ps, title="Wartośc p dla metody:\n" * name, label="p", xlabel = "iteracja")
+    savefig(p, file_name  * "_p_value.png")
+    display(p)
+end
+
 
 
 function main()
-    z = estimate_precision(10000, viete.calc_steps)
-    log_error_graph_gen(10000, geometry3.calc_steps, "Przybliżania wielokątami", "geo3", z)
-    log_error_graph_gen_no_l(10000, montecarlo.calc_steps, "Monte carlo", "monte_carlo")
-    log_error_graph_gen_no_l(10000, taylor.calc_steps, "Wielomian Taylora", "taylor")
-    log_error_graph_gen(21, gauss_legendre.calc_steps, "Gauss-Legendre'a", "gauss_legendre", z)
-    log_error_graph_gen(450, chudnowsky.calc_steps, "Algorytm Chudnovskych", "chudnowsky", z)
-    log_error_graph_gen(10000, viete.calc_steps, "Algorytm Viete'a", "viete", z)
-    log_error_graph_gen(740, ramanujan.calc_steps, "Wzór Srinivasa Ramanujana", "ramanujan", z)
+    #z = estimate_precision(10000, viete.calc_steps)
+    #log_error_graph_gen(10000, geometry3.calc_steps, "Przybliżania wielokątami", "geo3", z)
+    #log_error_graph_gen_no_l(10000, montecarlo.calc_steps, "Monte carlo", "monte_carlo")
+    #log_error_graph_gen_no_l(10000, taylor.calc_steps, "Wielomian Taylora", "taylor")
+    #log_error_graph_gen(21, gauss_legendre.calc_steps, "Gauss-Legendre'a", "gauss_legendre", z)
+    #log_error_graph_gen(450, chudnowsky.calc_steps, "Algorytm Chudnovskych", "chudnowsky", z)
+    #log_error_graph_gen(10000, viete.calc_steps, "Algorytm Viete'a", "viete", z)
+    #log_error_graph_gen(740, ramanujan.calc_steps, "Wzór Srinivasa Ramanujana", "ramanujan", z)
 
-    convergence_experiment(taylor.calc_steps,10000, 1, "Taylor'a", "taylor")
-    convergence_experiment(chudnowsky.calc_steps,450, 1, "Chudnovskych", "chudnowsky")
-    convergence_experiment(viete.calc_steps,8000, 1, "Viete'a", "viete")
-    convergence_experiment(geometry3.calc_steps,1000, 1, "Przybliżania wielokątami", "geo3")
-    convergence_experiment(ramanujan.calc_steps, 450, 1, "Srinivasa Ramanujana", "ramanujan")
+    #convergence_experiment(taylor.calc_steps,10000, 1, "Taylor'a", "taylor")
+    #convergence_experiment(chudnowsky.calc_steps,450, 1, "Chudnovskych", "chudnowsky")
+    #convergence_experiment(viete.calc_steps,8000, 1, "Viete'a", "viete")
+    #convergence_experiment(geometry3.calc_steps,1000, 1, "Przybliżania wielokątami", "geo3")
+    #convergence_experiment(ramanujan.calc_steps, 450, 1, "Srinivasa Ramanujana", "ramanujan")
+    #convergence_experiment(gauss_legendre.calc_steps, 21, 2, "Gauss-Legendre'a", "gauss_legendre")
+    #convergence_experiment(montecarlo.calc_steps, 1000, 1, "Monte carlo", "monte_carlo")
 
-    convergence_experiment(gauss_legendre.calc_steps, 21, 2, "Gauss-Legendre'a", "gauss_legendre")
-    convergence_experiment(montecarlo.calc_steps, 1000, 1, "Monte carlo", "monte_carlo")
+
+    display_calculated_p(taylor.calc_steps,10000,  "Taylor'a", "taylor")
+    display_calculated_p(chudnowsky.calc_steps,450, "Chudnovskych", "chudnowsky")
+    display_calculated_p(viete.calc_steps,8000,  "Viete'a", "viete")
+    display_calculated_p(geometry3.calc_steps,1000,  "Przybliżania wielokątami", "geo3")
+    display_calculated_p(ramanujan.calc_steps, 450,  "Srinivasa Ramanujana", "ramanujan")
+    display_calculated_p(gauss_legendre.calc_steps, 21,  "Gauss-Legendre'a", "gauss_legendre")
+    display_calculated_p(montecarlo.calc_steps, 1000,  "Monte carlo", "monte_carlo")
 
 end
 
