@@ -34,7 +34,7 @@ Aby wyprowadzić ten wzór, jak i inne podane przez Ramanujana, potrzebna jest z
 
 \subsection{Wyniki}
 
-Logarytm z błędu względnego algorytmu Chudnowskych dla pierwszych 400 iteracji został zaprezentowany na Wykresie~\ref{chudnowsky-error}. Już dla 359 iteracji błąd bezwzględny jest równy 0. Każe to sugerować, że to właśnie ta metoda została użyta jako implementacja funkcji \verb+pi()+ w języku \verb+Julia+. Dlatego od 359 iteracji nie ma zaznaczonej wartości $\log_{10}$ od błędu względnego. Powoduje to anomalie widoczne na wykresach.
+Liczba dokładnie wyznaczonych cyfr, w zależności od liczby iteracji została zaprezentowana na Wykresie~\ref{chudnowsky-error}. Już dla 359 iteracji błąd bezwzględny jest równy 0. Każe to sugerować, że to właśnie ta metoda została użyta jako implementacja funkcji \verb+pi()+ w języku \verb+Julia+. Dlatego od 359 iteracji nie ma zaznaczonej wartości $\log_{10}$ od błędu względnego. Powoduje to anomalie widoczne na wykresach.
 
 Eksperymentalne wyznaczanie zbieżności metody Chudnowskych sugeruje zbieżność liniowa, tak jak na Wykresie~\ref{chudnowsky-convergence}.. Nietypowe załamanie w okolicach 359 iteracji jest spowodowane zerową wartością błędu bezwzględnego w tym miejscu. Z pozostałej części wykresu możemy wydedukować, że
 $$\lim_{k\to\infty}{{|x_{k+1}-\pi|\over |x_k-\pi|}}\approx 6.5\cdot 10^{-15},$$
