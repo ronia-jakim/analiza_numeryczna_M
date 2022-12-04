@@ -100,9 +100,7 @@ Metoda w okolicach 8050 iteracji uzyskiwała błąd bezwzględny rzędu $10^{-12
     \label{geometric-convergence}
 \end{figure}
 
-Postawiliśmy hipotezę, że metoda ta jest zbieżna liniowo. Eksperymentalne wyznaczanie rzędu zbieżności potwierdziło to przypuszczenie, co widać na Wykresie~\ref{geometric-convergence}. Widać na nim, że
-$$\lim_{n\to\infty}{|x_{n+1}-\pi|\over |x_n-\pi|}\approx\frac14,$$
-gdzie $x_n$ to przybliżenie w $n$-tej iteracji.
+Postawiliśmy hipotezę, że metoda ta jest zbieżna liniowo. Eksperymentalne wyznaczanie rzędu zbieżności potwierdziło to przypuszczenie, co widać na Wykresie~\ref{geometric-convergence}. Widać na nim, że wychodzi $p = 1$.
 
 \subsection{Algorytm Monte Carlo}
 
@@ -164,7 +162,7 @@ $$P_{N+1}-P_N={(-1)^{N+1}\over 2N+3}$$
 w takim razie możemy oszacować błąd dla wielomianu Taylora $N$-tego stopnia za pomocą
 $$R_N\approx \max{(-1)^{N+1}\over 2N+3}.$$
 
-Powyższa metoda jest o wiele wolniejsza od metody Archimedesa, mimo że powstała później. W metodzie geometrycznej osiągaliśmy błąd rzędu $10^{-12000}$, natomiast wzór Taylora daje błąd rzędu $10^{-10}$. Iloraz wyrazu $n+1$ do wyrazu $n$ eksperymentalnie zbiega do 1, co sugeruje zbieżność nad liniową \cite{bog}.
+Powyższa metoda jest o wiele wolniejsza od metody Archimedesa, mimo że powstała później. W metodzie geometrycznej osiągaliśmy błąd rzędu $10^{-12000}$, natomiast wzór Taylora daje błąd rzędu $10^{-10}$. Obliczony wykładnik zbieżności tej metody wychodzi $p = 1$.
 
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}

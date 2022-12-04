@@ -1,6 +1,6 @@
 \section{Algorytm Gaussa-Legendre'a}
 
-Algorytm Gaussa-Legendre'a jest aktualnie jednym z najszybciej zbiegających algorytmów używanych do wyliczania liczb $\pi$. Został wyprowadzony na podstawie prac Carla Friedricha Gaussa oraz Adrien-Marie Legendre na podstawie współczesnych algorytmów do mnożenia i pierwiastkowania.Jest on, niestety, bardzo wymagający pamięciowo. Poniżej prezentujemy implementację tego algorytmu\cite{gausse2}:
+Algorytm Gaussa-Legendre'a jest aktualnie jednym z najszybciej zbiegających algorytmów używanych do wyliczania liczb $\pi$. Został wyprowadzony na podstawie prac Carla Friedricha Gaussa oraz Adrien-Marie Legendre na podstawie współczesnych algorytmów do mnożenia i pierwiastkowania. Poniżej prezentujemy implementację tego algorytmu\cite{gausse2}:
 
 \newpage
 
@@ -41,9 +41,9 @@ Metoda Gaussa-Legrendre'a okazała się zbiegać do implementacji bibliotecznej 
     \label{gauss-convergence}
 \end{figure}
 
-Eksperymentalne obliczenia rzędu zbieżności tej metody jedynie potwierdzają wyższą zbieżność tego algorytmu niż w przypadku innych opisanych metod (Wykres~\ref{gauss-convergence}). Dla precyzji wynoszącej 16 069 bitów obliczenia na podstawie dzielenia błędu $(n+1)$-ego wyrazu przez kwadrat błędu $n$-tego wyrazu nie dają konkretnych wyników przez zbyt szybkie dążenie tej metody do $\pi$. W literaturze metoda ta jest określana jako zbieżna kwadratowo \cite{gausse-smth}.
+Eksperymentalne obliczenia rzędu zbieżności tej metody jedynie potwierdzają wyższą zbieżność tego algorytmu niż w przypadku innych opisanych metod (Wykres~\ref{gauss-convergence}). Dla precyzji wynoszącej 16 069 bitów dla pierwszych wyrazów wychodzi wykładnik zbieżności $p = 2$, jednak już po kilku krokach, osiągana jest granica precyzji, co powoduje anomalie na wykresie. W literaturze metoda ta jest określana jako zbieżna kwadratowo \cite{gausse-smth}.
 
-Pomimo tak dobrej zbieżności, metoda ta nie jest powszechnie wykorzystywana, gdyż zużywa więcej pamięci niż metoda Chudnowskych.
+
 
 \newpage
 

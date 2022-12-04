@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670166348 "/home/sileanth/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1670166349
+["pdflatex"] 1670166898 "/home/sileanth/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1670166899
   "../../template.sty" 1670150544 4418 495ddc2d12b00c8a56442bc53be0b12f ""
   "../prog/chudnowsky_error_ratio.png" 1670166015 18821 0cfdff91f3fa6fd039f73de14670e1fa ""
   "../prog/chudnowsky_log_error.png" 1670165472 29289 361e67f9d6bbaa55edc9e57d563d0bed ""
@@ -13,7 +13,7 @@
   "../prog/taylor_log_error.png" 1670165472 24815 f9e23d5d5d3329380cd04bd66384b6c0 ""
   "../prog/viete_error_ratio.png" 1670166026 16783 1797fa1c0774eb161e2a3768a45299b0 ""
   "../prog/viete_log_error.png" 1670165480 28504 a974eadaba8a83791a2ec50d9e8cc5cd ""
-  "/home/sileanth/anal_num_prac/prac_1/doc/sprawozdanie.tex" 1670164416 5392 27b4764d52c88f95189be31414725e64 ""
+  "/home/sileanth/anal_num_prac/prac_1/doc/sprawozdanie.tex" 1670166897 5249 485d60945fbd8d73bf5075d948f6a18b ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1668252018 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plit.enc" 1668252018 1946 62ba825cda1ff16dbaa60d53ac60525a ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1668252018 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
@@ -285,14 +285,14 @@
   "/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1668252018 4606413 746423c1ba5fda3073a2cc1d3c6fd444 ""
   "/opt/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1668252018 3063416 ff9c928df535f65ff62c627fa56a594f ""
   "/opt/texlive/2022/texmf.cnf" 1668252018 585 9e8504408f25e5ac7fa614e58817b8d1 ""
-  "pierwsze-proby.tex" 1670166253 9806 bbe93a7ce4967ab276860f4fb7b105e3 ""
+  "pierwsze-proby.tex" 1670166582 9657 bb6288acc3eaf161df802f530ab75098 ""
   "ramanujan.tex" 1670166324 2535 e9647dd090a93712913420bd93ff5d42 ""
-  "sprawozdanie.aux" 1670166349 8703 e8b8ac8560e9dd0054a7ae0c204c369f "pdflatex"
-  "sprawozdanie.out" 1670166349 1950 97054eb84498f1202a86121ea777b7dd "pdflatex"
-  "sprawozdanie.tex" 1670164416 5392 27b4764d52c88f95189be31414725e64 ""
-  "sprawozdanie.toc" 1670166349 1410 b4e5e857fa180b17251e6e4cf9d39477 "pdflatex"
-  "super-szybki-super-ciezki.tex" 1670166340 5097 788bc88f524f53a6b0b51a2af27e538f ""
-  "wzor-viete.tex" 1670166347 3253 69f42150ec2cd29a995085986fb6f02e ""
+  "sprawozdanie.aux" 1670166899 8688 437d4ba2890e7310f8390f6aa179b135 "pdflatex"
+  "sprawozdanie.out" 1670166899 1950 97054eb84498f1202a86121ea777b7dd "pdflatex"
+  "sprawozdanie.tex" 1670166897 5249 485d60945fbd8d73bf5075d948f6a18b ""
+  "sprawozdanie.toc" 1670166899 1410 6501ff2c477f7e136cdfa6b4fab92e31 "pdflatex"
+  "super-szybki-super-ciezki.tex" 1670166856 4895 731c855ee3c3991d09214e0acfb41792 ""
+  "wzor-viete.tex" 1670166689 3133 586c7763675fc1f1b3fe04de7467ea90 ""
   (generated)
   "sprawozdanie.aux"
   "sprawozdanie.log"
