@@ -369,7 +369,7 @@ function display_calculated_p(func, iterations::Int, name::String, file_name::St
     end
     x = 1:length(ps)
     p = plot(x, ps, title="Wartośc p dla metody:\n" * name, label="p", xlabel = "iteracja")
-    savefig(p, file_name  * "_p_value.png")
+    savefig(p, file_name  * "_error_ratio.png")
     display(p)
 end
 
