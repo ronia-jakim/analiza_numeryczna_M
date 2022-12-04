@@ -324,7 +324,7 @@ function log_error_graph_gen_no_l(iterations::Int, method, name::String, file_na
     rel = calc_rel(ab, BigFloat(pi))
     relog = map(x -> -1 * log(abs(x)), rel)
     x = 1:length(relog)
-    p = plot(x, [relog], title = "Wykres zbieżności metody:\n" * name, xlabel = "liczba iteracji", label = "ilość cyfr znaczących" , legend=:outerbottom, c=:pink)
+    p = plot(x, [relog], title = "Wykres zbieżności metody:\n" * name, xlabel = "liczba iteracji", label = "ilość cyfr znaczących" , legend=:outerbottom, c=:maroon1)
     savefig(p, file_name  * "_log_error.png")
     display(p)
 end
@@ -368,7 +368,7 @@ function display_calculated_p(func, iterations::Int, name::String, file_name::St
         append!(ps, p)
     end
     x = 1:length(ps)
-    p = plot(x, ps, title="Wartośc p dla metody:\n" * name, label="p", xlabel = "iteracja", c=:pink)
+    p = plot(x, ps, title="Wartośc p dla metody:\n" * name, label="p", xlabel = "iteracja", c=:maroon1)
     savefig(p, file_name  * "_error_ratio.png")
     display(p)
 end

@@ -1,0 +1,26 @@
+3c3
+< Algorytm Gaussa-Legendre'a jest aktualnie jednym z najszybciej zbiegających algorytmów używanych do wyliczania liczb $\pi$. Został wyprowadzony na podstawie prac Carla Friedricha Gaussa oraz Adrien-Marie Legendre na podstawie współczesnych algorytmów do mnożenia i pierwiastkowania. Poniżej prezentujemy implementację tego algorytmu\cite{gausse2}:
+---
+> Algorytm Gaussa-Legendre'a jest aktualnie jednym z najszybciej zbiegających algorytmów używanych do wyliczania liczb $\pi$. Został wyprowadzony na podstawie prac Carla Friedricha Gaussa oraz Adrien-Marie Legendre na podstawie współczesnych algorytmów do mnożenia i pierwiastkowania.Jest on, niestety, bardzo wymagający pamięciowo. Poniżej prezentujemy implementację tego algorytmu\cite{gausse2}:
+31,32c31,32
+<     \includegraphics[width=0.6\textwidth]{../prog/gauss_legendre_log_error.png}
+<     \caption{Wykres ilości cyfr znaczących uzyskanych dla przybliżenia  $\pi$ za pomocą algorytmu Gaussa-Legendre'a.}
+---
+>     \includegraphics[width=0.7\textwidth]{../prog/gauss_legendre_log_error.png}
+>     \caption{Wykres logarytmu dziesiętnego z błędu względnego dla przybliżenia $\pi$ za pomocą algorytmu Gaussa-Legendre'a.}
+39,40c39,40
+<     \includegraphics[width=0.6\textwidth]{../prog/gauss_legendre_error_ratio.png}
+<     \caption{Wykres estymowanej wartości p dla algorytmu Gaussa-Legrendre'a.}
+---
+>     \includegraphics[width=0.7\textwidth]{../prog/gauss_legendre_error_ratio.png}
+>     \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla algorytmu Gassa-Legrendre'a.}
+44c44
+< Eksperymentalne obliczenia rzędu zbieżności tej metody jedynie potwierdzają wyższą zbieżność tego algorytmu niż w przypadku innych opisanych metod (Wykres~\ref{gauss-convergence}). Dla precyzji wynoszącej 16 069 bitów dla pierwszych wyrazów wychodzi wykładnik zbieżności $p = 2$, jednak już po kilku krokach, osiągana jest granica precyzji, co powoduje anomalie na wykresie. W literaturze metoda ta jest określana jako zbieżna kwadratowo \cite{gausse-smth}.
+---
+> Eksperymentalne obliczenia rzędu zbieżności tej metody jedynie potwierdzają wyższą zbieżność tego algorytmu niż w przypadku innych opisanych metod (Wykres~\ref{gauss-convergence}). Dla precyzji wynoszącej 16 069 bitów obliczenia na podstawie dzielenia błędu $(n+1)$-ego wyrazu przez kwadrat błędu $n$-tego wyrazu nie dają konkretnych wyników przez zbyt szybkie dążenie tej metody do $\pi$. W literaturze metoda ta jest określana jako zbieżna kwadratowo \cite{gausse-smth}.
+45a46
+> Pomimo tak dobrej zbieżności, metoda ta nie jest powszechnie wykorzystywana, gdyż zużywa więcej pamięci niż metoda Chudnowsky'ch.
+74c75
+< 566913686722874894056010150330861792868092087476091782493858900971490967598526136554978189312978482168299894872...
+---
+> 5669136867228748940560101503308617928680920874760917824938589009714909675985261365549781893129784821682998948722658804857564014270477555132379641451523746

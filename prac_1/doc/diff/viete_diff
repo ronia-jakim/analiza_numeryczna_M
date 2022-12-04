@@ -1,0 +1,22 @@
+28c28
+< Na Wykresie~\ref{viete-error}. zaprezentowany jest wykres zbieżności algorytmu Viete'a. Eksperymentalne wyznaczenie rzędu zbieżności, tak jak i gradient prezentowanego wykresu, sugerują liniową zbieżność tej metody wyliczania Viete. Od około 8750 iteracji wartość zwracana przez metodę Viete'a pokrywa się z wartością wyliczaną bibliotecznie.
+---
+> Na Wykresie~\ref{viete-error}. zaprezentowany jest wykres zbieżności algorytmu Viete'a. Eksperymentalne wyznaczenie rzędu zbieżności, tak jak i gradient prezentowanego wykresu, sugerują liniową zbieżność tej metody. Od około 8750 iteracji wartość zwracana przez metodę Viete'a pokrywa się z wartością biblioteczną z dokładnością do precyzji arytmetyki.
+32c32
+<     \includegraphics[width=0.7\textwidth]{../prog/viete_log_error.png}
+---
+>     \includegraphics[width=0.6\textwidth]{../prog/viete_log_error.png}
+39,40c39,40
+<     \includegraphics[width=0.7\textwidth]{../prog/viete_error_ratio.png}
+<     \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla metody z wykorzystaniem metody Viete'a.}
+---
+>     \includegraphics[width=0.6\textwidth]{../prog/viete_error_ratio.png}
+>     \caption{Wykres estymowanej wartości p dla metody z wykorzystaniem metody Viete'a.}
+46,48c46
+< Dodatkowo, jak widać na Wykresie~\ref{viete-convergence}., eksperymentalnie potwierdziliśmy, że metoda ta jest zbieżna liniowo. Tak jak w przypadku metody Archimedesa mamy
+< $$\lim_{k\to \infty}{|x_{k+1}-\pi|\over |x_k-\pi|}\approx\frac1{4},$$
+< gdzie $x_k$ to wynik $k$-tej iteracji metody.
+\ No newline at end of file
+---
+> Dodatkowo, jak widać na Wykresie~\ref{viete-convergence}., eksperymentalnie potwierdziliśmy, że metoda ta jest zbieżna liniowo. Tak jak w przypadku metody Archimedesa.
+\ No newline at end of file

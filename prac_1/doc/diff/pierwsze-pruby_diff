@@ -1,0 +1,104 @@
+7c7
+< Takie podejście stosował już w starożytności Archimedes. Wyprowadził on wzór rekurencyjny na obwód $2n$-kąta foremnego wpisanego oraz opisanego na okręgu na podstawie obwodu $n$-kąta.
+---
+> Takie podejście stosował już w starożytności Archimedes. Wyprowadził on wzór rekursyjny na obwód $2n$-kąta foremnego wpisanego oraz opisanego na okręgu na podstawie obwodu $n$-kąta.
+46c46
+< Wpiszmy $n$-kąt foremny w okrąg o promieniu $1$. Teraz na tym samym okręgu opiszmy $n$-kąt tak, żeby wierzchołki wielokąta wpisanego były środkami boków wielokąta opisywanego. Dostajemy w ten sposób $n$-kąt foremny opisany na okręgu o promieniu $1$. Nietrudno zauważyć, że teraz jeśli połączymy sąsiednie boki $n$-kąta opisanego odcinkami stycznymi do okręgu o końcach w równej odległości od najbliższego wierzchołka, to dostaniemy $2n$-kąt foremny. Sytuacja dla $n=4$ została  przedstawiona na Rysunku~\ref{pierwszy}.
+---
+> Wpiszmy $n$-kąt foremny w okrąg o promieniu $1$. Teraz na tym samym okręgu opiszmy $n$-kąt tak, żeby wierzchołki wielokąta wpisanego były srodkami boków wielokąta opisywaneg. Dostajemy w ten sposob $n$-kąt foremny opisany na okręgu o promieniu $1$. Nietrudno zauważyć, że teraz jeśli połączymy sąsiednie boki $n$-kąta opisanego odcinkami styczymi do okręgu o końcach w równej odległości od najbliższego wierzchołka, to dostaniemy $2n$-kąt foremny. Sytuacja dla $n=4$ została  przedstawiona na Rysunku~\ref{pierwszy}.
+48c48
+< Rozważmy teraz trójkąt $\Delta A_1'A_1A_2$. Zauważmy, że odcinek $\overline{B_1B_2}$ dzieli go na dwa trójkąty podobne:
+---
+> Rozważmy teraz trójkąt $\Delta A_1'A_1A_2$. Zawuażmy, że odcinek $\overline{B_1B_2}$ dzieli go na dwa trójkąty podobne:
+50c50
+< Dla przejrzystości zapisów oznaczmy $|\overline{A_1A_2}|=A$, $|\overline{B_1B_2}|=B$ oraz $|\overline{A_1'A_2'}|=a$. Z proporcji w trójkątach podobnych mamy:
+---
+> Dla przejżystości zapisów oznaczmy $|\overline{A_1A_2}|=A$, $|\overline{B_1B_2}|=B$ oraz $|\overline{A_1'A_2'}|=a$. Z proporcji w trójkątach podobnych mamy:
+80c80
+<     \caption{Wykres ilości cyfr znaczących dla przybliżenia $\pi$ za pomocą metody geometrycznej.}
+---
+>     \caption{Wykres logarytmu dziesiętnego z błędu względnego dla przybliżenia $\pi$ za pomocą metody geometrycznej.}
+94c94
+< Metoda w okolicach 8050 iteracji uzyskiwała błąd bezwzględny rzędu $10^{-12000}$. Na Wykresie~\ref{geometric-error} widzimy, że od tej iteracji, liczba dokładnie wyznaczonych cyfr osiąga granice precyzji. Jest to bardzo imponujące biorąc pod uwagę jak stara jest to metoda.
+---
+> Metoda w okolicach 8050 iteracji uzyskiwała błąd bezwzględny rzędu $10^{-12000}$. Na Wykresie~\ref{geometric-error} widzimy, że gradient wykresu logarytmu dziesiętnego od błędu względnego jest niemalże liczbą stałą. Przybliżanie liczby $\pi$ przy użyciu geometrii osiąga limit precyzji, co jest bardzo imponujące biorąc pod uwagę jak stara jest to metoda.
+98,99c98,99
+<     \includegraphics[width=0.6\textwidth]{../prog/geo3_error_ratio.png}
+<     \caption{Wykres estymowanej wartości p dla metody geometrycznej.}
+---
+>     \includegraphics[width=0.7\textwidth]{../prog/geo3_error_ratio.png}
+>     \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla metody geometrycznej.}
+103c103,105
+< Postawiliśmy hipotezę, że metoda ta jest zbieżna liniowo. Eksperymentalne wyznaczanie rzędu zbieżności potwierdziło to przypuszczenie, co widać na Wykresie~\ref{geometric-convergence}. Widać na nim, że wychodzi $p = 1$.
+---
+> Postawiliśmy hipotezę, że metoda ta jest zbieżna liniowo. Eksperymentalne wyznaczanie rzędu zbieżności potwierdziło to przypuszczenie, co widać na Wykresie~\ref{geometric-convergence}. Widać na nim, że
+> $$\lim_{n\to\infty}{|x_{n+1}-\pi|\over |x_n-\pi|}\approx\frac14,$$
+> gdzie $x_n$ to przybliżenie w $n$-tej iteracji.
+127a130,135
+> Korzystając z algorytmu Monte Carlo możemy wybierać losowo współrzędne $x,y\in[0,1]$ kolejnych punktów, a następnie sprawdzać ile z nich spełnia warunek
+> $$x^2+y^2\leq1.$$
+> Otrzymany stosunek będzie coraz bliższy $\frac\pi4$ wraz ze zwiększaniem ilości testowanych punktów.
+> 
+> Na Wykresie~\ref{monte-carlo-error}. zaprezentowany jest logarytm dziesiętny z błędu względnego metody Monte Carlo. Szacowanie zbieżności tej metody wykracza poza zakres wiedzy studenta 3 semestru ze względu na losowość tego algorytmu. Wykorzystanie technik z kursu Rachunku Prawdopodobieństwa ułatwiłoby to zadanie. Na Wykresie~\ref{monte-carlo-convergence} widzimy jeden z wykresów ilorazu błędu kolejnych wyrazów jaki uzyskaliśmy przy uruchamianiu algorytmu. Jako, że jest to algorytm losowy, to lokalnie wraz z większeniem liczby iteracji, przybliżenie może się pogorszyć. Co jest pewną wadą tej metody.
+> 
+129,132c137,140
+<     \renewcommand{\figurename}{Wykres}
+<     \includegraphics[width=0.6\textwidth]{../prog/monte_carlo_log_error.png}
+<     \caption{Wykres ilości cyfr znaczących uzyskanych dla metody przybliżenia $\pi$ z pomocą algorytmu Monte Carlo.}
+<     \label{monte-carlo-error}
+---
+> \renewcommand{\figurename}{Wykres}
+> \includegraphics[width=0.6\textwidth]{../prog/monte_carlo_log_error.png}
+> \caption{Wykres logarytmu dziesiętnego z błędu względnego uzyskanego dla metody przybliżenia $\pi$ z pomocą algorytmu Monte Carlo.}
+> \label{monte-carlo-error}
+134c142
+<     
+---
+> 
+138c146
+<     \caption{Wykres estymowanej wartości p dla metody z wykorzystaniem algorytmu Monte Carlo.}
+---
+>     \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla metody z wykorzystaniem algorytmu Monte Carlo.}
+142,144d149
+< Korzystając z algorytmu Monte Carlo możemy wybierać losowo współrzędne $x,y\in[0,1]$ kolejnych punktów, a następnie sprawdzać ile z nich spełnia warunek
+< $$x^2+y^2\leq1.$$
+< Otrzymany stosunek będzie coraz bliższy $\frac\pi4$ wraz ze zwiększaniem ilości testowanych punktów.
+146,149c151,152
+< Na Wykresie~\ref{monte-carlo-error}. zaprezentowana jest liczba cyfr liczby pi wyznaczonych dokładnie. Szacowanie zbieżności tej metody wykracza poza zakres wiedzy studenta 3 semestru ze względu na losowość tego algorytmu. Wykorzystanie technik z kursu Rachunku Prawdopodobieństwa ułatwiłoby to zadanie. Na Wykresie~\ref{monte-carlo-convergence} widzimy jeden z wykresów ilorazu błędu kolejnych wyrazów jaki uzyskaliśmy przy uruchamianiu algorytmu. Jako, że jest to algorytm losowy, to lokalnie wraz zwiększeniem liczby iteracji, przybliżenie może się pogorszyć. Co jest pewną wadą tej metody.
+< 
+< \subsection{Wielomian Taylora}
+< W matematyce bardzo często w celu przybliżania pożądanych wartości używa się szeregów Taylora. Tak dla przykładu, korzystając z rozszerzenia funkcji $\arctan x$ w punkcie $0$ możemy oszacować $\frac\pi4$:
+---
+> \subsection{Szereg Taylora}
+> W matematyce bardzo często w celu przybliżania porządanych wartości używa się szeregów Taylora. Tak dla przykładu, korzystając z rozszerzenia funkcji $\arctan x$ w punkcie $0$ możemy oszacować wartość $\frac\pi4$:
+157c160
+< W obliczeniach praktycznych nie możliwe jest dodawanie kolejnych elementów sumy w nieskończoność. Konieczne jest więc zatrzymanie się na pewnym $N$, co daje pewien błąd, $R_N$:
+---
+> W obliczeniach praktycznych nie możliwe jest dodawanie kolejnych elementów sumy w nieszkończoność. Konieczne jest więc zatrzymanie się na pewnym $N$, co daje pewien błąd, $R_N$:
+159c162
+< Oznaczmy tę sumę jako $P_N$. Ponieważ dla przybliżeń funkcji wielomianem Taylora coraz wyższego stopnia dostajemy coraz dokładniejszy wynik, to $P_{N+1}$ powinno być dokładniejsze niż $P_N$. Zauważamy też, że
+---
+> Oznaczmy tę sumę jako $P_N$. Ponieważ dla przybliżeń funkcji szeregiem Taylora coraz wyższego stopnia dostajemy coraz dokładniejszy wynik, to $P_{N+1}$ powinno być dokładniejsze niż $P_N$. Zauważamy też, że
+161c164
+< w takim razie możemy oszacować błąd dla wielomianu Taylora $N$-tego stopnia za pomocą
+---
+> w takim razie możemy oszacować błąd dla szeregu Taylora $N$-tego stopnia za pomocą
+164c167
+< Powyższa metoda jest o wiele wolniejsza od metody Archimedesa, mimo że powstała później. W metodzie geometrycznej osiągaliśmy błąd rzędu $10^{-12000}$, natomiast wzór Taylora daje błąd rzędu $10^{-10}$. Obliczony wykładnik zbieżności tej metody wychodzi $p = 1$.
+---
+> Powyższa metoda jest o wiele wolniejsza od metody Archimedesa, mimo że powstała później. W metodzie geometrycznej osiągaliśmy błąd rzędu $10^{-12000}$, natomiast wzór Taylora daje błąd rzędu $10^{-10}$. Iloraz wyrazu $n+1$ do wyrazu $n$ eksperymentalnie zbiega do 1, co sugeruje zbieżność nadliniową \cite{bog}.
+168,169c171,172
+<     \includegraphics[width=0.6\textwidth]{../prog/taylor_log_error.png}
+<     \caption{Wykres ilości cyfr znaczących uzyskanych dla metody przybliżenia  $\pi$ za pomocą wielomianu Taylora.}
+---
+>     \includegraphics[width=0.7\textwidth]{../prog/taylor_log_error.png}
+>     \caption{Wykres logarytmu dziesiętnego z błędu względnego uzyskanego dla metody przybliżenia $\pi$ za pomocą szeregu Taylora.}
+175,176c178,179
+<     \includegraphics[width=0.6\textwidth]{../prog/taylor_error_ratio.png}
+<     \caption{Wykres estymowanej wartości p dla metody z wykorzystaniem wielomianu Taylora.}
+---
+>     \includegraphics[width=0.7\textwidth]{../prog/taylor_error_ratio.png}
+>     \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla metody z wykorzystaniem szeregu Taylora.}
+179,180d181
+< 
+< 

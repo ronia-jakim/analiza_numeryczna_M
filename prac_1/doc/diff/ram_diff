@@ -1,0 +1,24 @@
+3c3
+< Algorytm zaproponowany przez braci Chudnowsky opiera się na 17 wzorach na $\frac1\pi$ opracowanych przez Srinivasa Ramanujan\cite{review}:
+---
+> Algorytm zaproponowany przez braci Chudnowskych opiera się na 17 wzorach na $\frac1\pi$ opracowanych przez Srinivasa Ramanujan\cite{review}:
+22,23c22,23
+<     \includegraphics[width=0.7\textwidth]{../prog/chudnowsky_log_error.png}
+<     \caption{Wykres logarytmu dziesiętnego z błędu względnego dla przybliżenia $\pi$ za pomocą algorytmu braci Chudnowsky'ch.}
+---
+>     \includegraphics[width=0.6\textwidth]{../prog/chudnowsky_log_error.png}
+>     \caption{Wykres ilości cyfr znaczących uzyskanych dla  przybliżenia  $\pi$ za pomocą algorytmu braci Chudnowskych.}
+30,31c30,31
+<     \includegraphics[width=0.7\textwidth]{../prog/chudnowsky_error_ratio.png}
+<     \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla algorytmu Chudowsky'ch.}
+---
+>     \includegraphics[width=0.6\textwidth]{../prog/chudnowsky_error_ratio.png}
+>     \caption{Wykres estymowanej wartości p dla algorytmu Chudowskych.}
+37c37
+< Logarytm z błędu względnego algorytmu Chudnowsky'ch dla pierwszych 400 iteracji został zaprezentowany na Wykresie~\ref{chudnowsky-error}. Już dla 359 iteracji błąd bezwzględny jest równy 0. Każe to sugerować, że to właśnie ta metoda została użyta jako implementacja funkcji \verb+pi()+ w języku \verb+Julia+. Dlatego od 359 iteracji nie ma zaznaczonej wartości $\log_{10}$ od błędu względnego. Powoduje to anomalie widoczne na wykresach.
+---
+> Liczba dokładnie wyznaczonych cyfr, w zależności od liczby iteracji została zaprezentowana na Wykresie~\ref{chudnowsky-error}. Już dla 359 iteracji błąd bezwzględny jest równy 0. Każe to sugerować, że to właśnie ta metoda została użyta jako implementacja funkcji \verb+pi()+ w języku \verb+Julia+. Powoduje to anomalie widoczne na wykresach.
+39c39
+< Eksperymentalne wyznaczanie zbieżności metody Chudnowsky'ch sugeruje zbieżność liniowa, tak jak na Wykresie~\ref{chudnowsky-convergence}.. Nietypowe załamanie w okolicach 359 iteracji jest spowodowane zerową wartością błędu bezwzględnego w tym miejscu. Z pozostałej części wykresu możemy wydedukować, że
+---
+> Eksperymentalne wyznaczanie zbieżności metody Chudnowskych sugeruje zbieżność liniowa, tak jak na Wykresie~\ref{chudnowsky-convergence}.. Nietypowe załamanie w okolicach 359 iteracji jest spowodowane zerową wartością błędu bezwzględnego w tym miejscu. Z pozostałej części wykresu możemy wydedukować, że
