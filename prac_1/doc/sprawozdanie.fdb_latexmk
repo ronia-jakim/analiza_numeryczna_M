@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670163944 "/home/sileanth/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1670163945
+["pdflatex"] 1670164103 "/home/sileanth/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1670164104
   "../../template.sty" 1670150544 4418 495ddc2d12b00c8a56442bc53be0b12f ""
   "../prog/chudnowsky_error_ratio.png" 1670152400 29576 68f98e805d4c1d390a94bd621f06d519 ""
   "../prog/chudnowsky_log_error.png" 1670152391 29289 361e67f9d6bbaa55edc9e57d563d0bed ""
@@ -286,12 +286,12 @@
   "/opt/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1668252018 3063416 ff9c928df535f65ff62c627fa56a594f ""
   "/opt/texlive/2022/texmf.cnf" 1668252018 585 9e8504408f25e5ac7fa614e58817b8d1 ""
   "pierwsze-proby.tex" 1670163629 9881 048b4d5b537b5323ebe510e49b300bf6 ""
-  "ramanujan.tex" 1670163708 2649 212d1a682f1182222660944b756730ef ""
-  "sprawozdanie.aux" 1670163945 9004 a4ba2b9b7e602d4fe180e7952a1f846d "pdflatex"
-  "sprawozdanie.out" 1670163945 1950 97054eb84498f1202a86121ea777b7dd "pdflatex"
+  "ramanujan.tex" 1670164102 2560 d2d072e1e10140c1d757bae6ce03ae9d ""
+  "sprawozdanie.aux" 1670164104 9004 a4ba2b9b7e602d4fe180e7952a1f846d "pdflatex"
+  "sprawozdanie.out" 1670164104 1950 97054eb84498f1202a86121ea777b7dd "pdflatex"
   "sprawozdanie.tex" 1670163811 5326 aa87ee5281a88b38ec02da2dd2e62a22 ""
-  "sprawozdanie.toc" 1670163945 1411 a132beff0dddc7f5dd219b65c3384df8 "pdflatex"
-  "super-szybki-super-ciezki.tex" 1670153188 5122 2dffa13751573947a656520f51412c97 ""
+  "sprawozdanie.toc" 1670164104 1411 a132beff0dddc7f5dd219b65c3384df8 "pdflatex"
+  "super-szybki-super-ciezki.tex" 1670164030 5122 2dffa13751573947a656520f51412c97 ""
   "wzor-viete.tex" 1670163943 3278 a6510f44ed07b77a0c7663e4ae2aeedb ""
   (generated)
   "sprawozdanie.aux"
