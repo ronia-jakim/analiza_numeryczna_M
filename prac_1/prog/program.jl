@@ -318,6 +318,17 @@ function log_error_graph_gen(iterations::Int, method, name::String, file_name::S
     display(p)
 end
 
+function log_error_graph_gen_no_l(iterations::Int, method, name::String, file_name::String)
+    results = method(iterations)
+    ab = calc_abs(results, BigFloat(pi))
+    rel = calc_rel(ab, BigFloat(pi))
+    relog = map(x -> -1 * log(abs(x)), rel)
+    x = 1:length(relog)
+    p = plot(x, [relog], title = "Wykres zbieżności metody:\n" * name, xlabel = "liczba iteracji", label = ["ilość cyfr znaczących" ], legend=:outerbottom)
+    savefig(p, file_name  * "_log_error.png")
+    display(p)
+end
+
 function estimate_precision(iterations::Int, method)
     results = method(iterations)
     ab = calc_abs(results, BigFloat(pi))
@@ -349,8 +360,8 @@ end
 function main()
     z = estimate_precision(10000, viete.calc_steps)
     log_error_graph_gen(10000, geometry3.calc_steps, "Przybliżania wielokątami", "geo3", z)
-    log_error_graph_gen(10000, montecarlo.calc_steps, "Monte carlo", "monte_carlo", z)
-    log_error_graph_gen(10000, taylor.calc_steps, "Wielomian Taylora", "taylor", z)
+    log_error_graph_gen_no_l(10000, montecarlo.calc_steps, "Monte carlo", "monte_carlo")
+    log_error_graph_gen_no_l(10000, taylor.calc_steps, "Wielomian Taylora", "taylor")
     log_error_graph_gen(21, gauss_legendre.calc_steps, "Gauss-Legendre'a", "gauss_legendre", z)
     log_error_graph_gen(450, chudnowsky.calc_steps, "Algorytm Chudnovskych", "chudnowsky", z)
     log_error_graph_gen(10000, viete.calc_steps, "Algorytm Viete'a", "viete", z)
