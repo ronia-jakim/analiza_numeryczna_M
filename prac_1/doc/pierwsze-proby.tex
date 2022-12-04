@@ -4,7 +4,7 @@
 
 Bardzo często $\pi$ jest definiowane jako stosunek obwodu okręgu do jego średnicy. W historii pojawiało się wiele prób wyznaczenia $\pi$ korzystając z obwodu wielokątów foremnych wpisanych w oraz opisanych na okręgu jednostkowym. Wraz ze wzrostem liczby boków zwiększa się dokładność oszacowań obwodu okręgu, co daje coraz to bliższe prawdy granice na wartość ludolfiny. 
 
-Takie podejście stosował już w starożytności Archimedes. Wyprowadził on wzór rekursyjny na obwód $2n$-kąta foremnego wpisanego oraz opisanego na okręgu na podstawie obwodu $n$-kąta.
+Takie podejście stosował już w starożytności Archimedes. Wyprowadził on wzór rekurencyjny na obwód $2n$-kąta foremnego wpisanego oraz opisanego na okręgu na podstawie obwodu $n$-kąta.
 
 \begin{figure}[h]\centering
 \begin{tikzpicture}
@@ -43,11 +43,11 @@ Takie podejście stosował już w starożytności Archimedes. Wyprowadził on wz
 \label{pierwszy}
 \end{figure}
 
-Wpiszmy $n$-kąt foremny w okrąg o promieniu $1$. Teraz na tym samym okręgu opiszmy $n$-kąt tak, żeby wierzchołki wielokąta wpisanego były srodkami boków wielokąta opisywaneg. Dostajemy w ten sposob $n$-kąt foremny opisany na okręgu o promieniu $1$. Nietrudno zauważyć, że teraz jeśli połączymy sąsiednie boki $n$-kąta opisanego odcinkami styczymi do okręgu o końcach w równej odległości od najbliższego wierzchołka, to dostaniemy $2n$-kąt foremny. Sytuacja dla $n=4$ została  przedstawiona na Rysunku~\ref{pierwszy}.
+Wpiszmy $n$-kąt foremny w okrąg o promieniu $1$. Teraz na tym samym okręgu opiszmy $n$-kąt tak, żeby wierzchołki wielokąta wpisanego były środkami boków wielokąta opisywanego. Dostajemy w ten sposób $n$-kąt foremny opisany na okręgu o promieniu $1$. Nietrudno zauważyć, że teraz jeśli połączymy sąsiednie boki $n$-kąta opisanego odcinkami stycznymi do okręgu o końcach w równej odległości od najbliższego wierzchołka, to dostaniemy $2n$-kąt foremny. Sytuacja dla $n=4$ została  przedstawiona na Rysunku~\ref{pierwszy}.
 
-Rozważmy teraz trójkąt $\Delta A_1'A_1A_2$. Zawuażmy, że odcinek $\overline{B_1B_2}$ dzieli go na dwa trójkąty podobne:
+Rozważmy teraz trójkąt $\Delta A_1'A_1A_2$. Zauważmy, że odcinek $\overline{B_1B_2}$ dzieli go na dwa trójkąty podobne:
 $$\Delta B_1A_1B_2\sim\Delta A_1'A_1A_2'.$$
-Dla przejżystości zapisów oznaczmy $|\overline{A_1A_2}|=A$, $|\overline{B_1B_2}|=B$ oraz $|\overline{A_1'A_2'}|=a$. Z proporcji w trójkątach podobnych mamy:
+Dla przejrzystości zapisów oznaczmy $|\overline{A_1A_2}|=A$, $|\overline{B_1B_2}|=B$ oraz $|\overline{A_1'A_2'}|=a$. Z proporcji w trójkątach podobnych mamy:
 \begin{align*}
     {B\over \frac12A-\frac12B}&={a\over \frac 12A}\\
     B&=\frac aA(A-B)\\
@@ -131,7 +131,7 @@ Korzystając z algorytmu Monte Carlo możemy wybierać losowo współrzędne $x,
 $$x^2+y^2\leq1.$$
 Otrzymany stosunek będzie coraz bliższy $\frac\pi4$ wraz ze zwiększaniem ilości testowanych punktów.
 
-Na Wykresie~\ref{monte-carlo-error}. zaprezentowany jest logarytm dziesiętny z błędu względnego metody Monte Carlo. Szacowanie zbieżności tej metody wykracza poza zakres wiedzy studenta 3 semestru ze względu na losowość tego algorytmu. Wykorzystanie technik z kursu Rachunku Prawdopodobieństwa ułatwiłoby to zadanie. Na Wykresie~\ref{monte-carlo-convergence} widzimy jeden z wykresów ilorazu błędu kolejnych wyrazów jaki uzyskaliśmy przy uruchamianiu algorytmu. Jako, że jest to algorytm losowy, to lokalnie wraz z większeniem liczby iteracji, przybliżenie może się pogorszyć. Co jest pewną wadą tej metody.
+Na Wykresie~\ref{monte-carlo-error}. zaprezentowany jest logarytm dziesiętny z błędu względnego metody Monte Carlo. Szacowanie zbieżności tej metody wykracza poza zakres wiedzy studenta 3 semestru ze względu na losowość tego algorytmu. Wykorzystanie technik z kursu Rachunku Prawdopodobieństwa ułatwiłoby to zadanie. Na Wykresie~\ref{monte-carlo-convergence} widzimy jeden z wykresów ilorazu błędu kolejnych wyrazów jaki uzyskaliśmy przy uruchamianiu algorytmu. Jako, że jest to algorytm losowy, to lokalnie wraz zwiększeniem liczby iteracji, przybliżenie może się pogorszyć. Co jest pewną wadą tej metody.
 
 \begin{figure}[!h]\centering
 \renewcommand{\figurename}{Wykres}
@@ -148,8 +148,8 @@ Na Wykresie~\ref{monte-carlo-error}. zaprezentowany jest logarytm dziesiętny z 
 \end{figure}
 
 
-\subsection{Szereg Taylora}
-W matematyce bardzo często w celu przybliżania porządanych wartości używa się szeregów Taylora. Tak dla przykładu, korzystając z rozszerzenia funkcji $\arctan x$ w punkcie $0$ możemy oszacować wartość $\frac\pi4$:
+\subsection{Wielomian Taylora}
+W matematyce bardzo często w celu przybliżania pożądanych wartości używa się szeregów Taylora. Tak dla przykładu, korzystając z rozszerzenia funkcji $\arctan x$ w punkcie $0$ możemy oszacować wartość $\frac\pi4$:
 \begin{equation}
 \begin{split}
     \frac\pi4&=\arctan1=\sum\limits_{k=0}^\infty{\arctan^{(k)}0\over k!}(1-0)^k=\\
@@ -157,26 +157,26 @@ W matematyce bardzo często w celu przybliżania porządanych wartości używa s
 \end{split}
 \end{equation}
 
-W obliczeniach praktycznych nie możliwe jest dodawanie kolejnych elementów sumy w nieszkończoność. Konieczne jest więc zatrzymanie się na pewnym $N$, co daje pewien błąd, $R_N$:
+W obliczeniach praktycznych nie możliwe jest dodawanie kolejnych elementów sumy w nieskończoność. Konieczne jest więc zatrzymanie się na pewnym $N$, co daje pewien błąd, $R_N$:
 $$\frac\pi4\approx \sum\limits_{k=0}^N{(-1)^k\over 2k+1}+R_N.$$
-Oznaczmy tę sumę jako $P_N$. Ponieważ dla przybliżeń funkcji szeregiem Taylora coraz wyższego stopnia dostajemy coraz dokładniejszy wynik, to $P_{N+1}$ powinno być dokładniejsze niż $P_N$. Zauważamy też, że
+Oznaczmy tę sumę jako $P_N$. Ponieważ dla przybliżeń funkcji wielomianem Taylora coraz wyższego stopnia dostajemy coraz dokładniejszy wynik, to $P_{N+1}$ powinno być dokładniejsze niż $P_N$. Zauważamy też, że
 $$P_{N+1}-P_N={(-1)^{N+1}\over 2N+3}$$
-w takim razie możemy oszacować błąd dla szeregu Taylora $N$-tego stopnia za pomocą
+w takim razie możemy oszacować błąd dla wielomianu Taylora $N$-tego stopnia za pomocą
 $$R_N\approx \max{(-1)^{N+1}\over 2N+3}.$$
 
-Powyższa metoda jest o wiele wolniejsza od metody Archimedesa, mimo że powstała później. W metodzie geometrycznej osiągaliśmy błąd rzędu $10^{-12000}$, natomiast wzór Taylora daje błąd rzędu $10^{-10}$. Iloraz wyrazu $n+1$ do wyrazu $n$ eksperymentalnie zbiega do 1, co sugeruje zbieżność nadliniową \cite{bog}.
+Powyższa metoda jest o wiele wolniejsza od metody Archimedesa, mimo że powstała później. W metodzie geometrycznej osiągaliśmy błąd rzędu $10^{-12000}$, natomiast wzór Taylora daje błąd rzędu $10^{-10}$. Iloraz wyrazu $n+1$ do wyrazu $n$ eksperymentalnie zbiega do 1, co sugeruje zbieżność nad liniową \cite{bog}.
 
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
     \includegraphics[width=0.7\textwidth]{../prog/taylor_log_error.png}
-    \caption{Wykres logarytmu dziesiętnego z błędu względnego uzyskanego dla metody przybliżenia $\pi$ za pomocą szeregu Taylora.}
+    \caption{Wykres logarytmu dziesiętnego z błędu względnego uzyskanego dla metody przybliżenia $\pi$ za pomocą wielomianu Taylora.}
     \label{taylor-series-error}
 \end{figure}
 
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
     \includegraphics[width=0.7\textwidth]{../prog/taylor_error_ratio.png}
-    \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla metody z wykorzystaniem szeregu Taylora.}
+    \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla metody z wykorzystaniem wielomianu Taylora.}
     \label{taylor-series-convergence}
 \end{figure}
 

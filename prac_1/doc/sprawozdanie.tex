@@ -13,15 +13,15 @@
 
 W 1897 roku Amerykański fizyk Edward J. Goodwin oznajmił światu, że udało mu się poprawnie skonstruować kwadrat o polu równym polu koła. W tym samym roku jego wynik został przedłożony Zebraniu Stanu Indiana i w życie wszedł Artykuł o Liczbie Pi, na mocy którego $\pi=3.2$. Ponad 2000 lata wcześniej, w III wieku p.n.e., Archimedes napisał
 $$3.1408\approx{223\over71}<\pi<{22\over7}\approx 3.1428,$$
-co daje ograniczenia bliższe tym dzisiaj uważanym za najdokładniejsze niż artykuł z XIX wieku. W 2009 roku za pomocą algorytmu braci Chudowsky'ch, wyprowadzonego ze wzorów S. Ramanujana, zostało osiągniete przybliżenie $\pi$ przez 10 trilionów cyfr znaczących. Dzisiaj istnieją jeszcze szybsze algorytmu na przybliżanie $\pi$ niż ten z 2009 roku i badanie metod przybliżania wartości matematycznych jest nadal żywą dziedziną nauki.
+co daje ograniczenia bliższe tym dzisiaj uważanym za najdokładniejsze niż artykuł z XIX wieku. W 2009 roku za pomocą algorytmu braci Chudowskych, wyprowadzonego ze wzorów S. Ramanujana, zostało osiągnięte przybliżenie $\pi$ przez 10 trylionów cyfr znaczących. Dzisiaj istnieją jeszcze szybsze algorytmu na przybliżanie $\pi$ niż ten z 2009 roku i badanie metod przybliżania wartości matematycznych jest nadal żywą dziedziną nauki.
 
-W tej pracy przyjżymy się 5 metodom przybliżania liczby $\pi$. W Rozdziale 2. zaprezentujemy naiwne algorytmy, z których jedna okazała się nie odstawać od bardziej zaawansowanych sposobów zaprezentowanych w dalszych rozdziałach. W Rozdziałach 3 i 4 przyjżymy się dwóm metodom liniowo zbieżnym do $\pi$. W Rozdziale 5. zaprezentowany jest algorytm zbieżny kwadratowo do liczby $\pi$.
+W tej pracy przyjrzymy się 5 metodom przybliżania liczby $\pi$. W Rozdziale 2. zaprezentujemy naiwne algorytmy, z których jedna okazała się nie odstawać od bardziej zaawansowanych sposobów zaprezentowanych w dalszych rozdziałach. W Rozdziałach 3 i 4 przyjrzymy się dwóm metodom liniowo zbieżnym do $\pi$. W Rozdziale 5. zaprezentowany jest algorytm zbieżny kwadratowo do liczby $\pi$.
 
 \subsection{Metoda}
 
 Do obliczeń używaliśmy precyzji 16 069 i zmiennych typu \verb+BigFloat+ w języku \verb+Julia+. Za wartość dokładną $\pi$ użyliśmy wartości bibliotecznej typu \verb+Irrational+. Dzięki temu jest ona wyliczana dla każdej precyzji \cite{julia}.
 
-Dla każdej metody eksperymentalnie szacowaliśmy rząd zbieżności i przedstawiliśmy wyniki na odpowiednich wykresach. Przy pierwszych 4 metodach wykonaliśmy 10 000 iteracji. W metodzie Chudnowsky'ch zaś wystarczyło tylko 450 iteracji, by osiągnąć granice precyzji. Zaś w motedzie Gaussa-Legendre'a wystarczyło tylko 21 iteracji. 
+Dla każdej metody eksperymentalnie szacowaliśmy rząd zbieżności i przedstawiliśmy wyniki na odpowiednich wykresach. Przy pierwszych 4 metodach wykonaliśmy 10 000 iteracji. W metodzie Chudnowskych zaś wystarczyło tylko 450 iteracji, by osiągnąć granice precyzji. Zaś w metodzie Gaussa-Legendre'a wystarczyło tylko 21 iteracji. 
 
 \input{pierwsze-proby.tex}
 
@@ -35,7 +35,7 @@ Dla każdej metody eksperymentalnie szacowaliśmy rząd zbieżności i przedstaw
 
 \section{Podsumowanie}
 
-Po piewrsze, metoda zaproponowana w treści zadania jest nieoptymalna. Zbiega do $\pi$ w sposób nadliniowy, podczas gdy pozostałe metody, z pominięciem algorytmu Monte Carlo, zbiegają co najmniej liniowo. Metoda Gaussa-Legendre'a zbiega najszybciej, jednak to metoda Chudnowsky'ch stanowi najlepszy kompromis między szybkością osiągania kolejnych liczb znaczących a zużywaną pamięcią. Co jednak najważniejsze, ludolfina została określona ze złożonością obliczeniową $O(1)$: 
+Po pierwsze, metoda zaproponowana w treści zadania jest nieoptymalna. Zbiega do $\pi$ w sposób nad liniowy, podczas gdy pozostałe metody, z pominięciem algorytmu Monte Carlo, zbiegają co najmniej liniowo. Metoda Gaussa-Legendre'a zbiega najszybciej, jednak to metoda Chudnowskych stanowi najlepszy kompromis między szybkością osiągania kolejnych liczb znaczących a zużywaną pamięcią. Co jednak najważniejsze, ludolfina została określona ze złożonością obliczeniową $O(1)$: 
 
 \begin{center}
     \emph{Następnie sporządził odlew "morza" o średnicy dziesięciu łokci, okrągłego, o wysokości pięciu łokci i o obwodzie trzydziestu łokci} \cite{biblia}. 
@@ -57,7 +57,7 @@ Ponieważ $\pi={L\over 2r}={30\over 10}=3$. W takim razie wszystkie nasze oblicz
         \url{https://julialang.org/blog/2017/03/piday/}
     \bibitem{biblia}
         P. Bóg,
-        \textit{Biblia Tyśiąclecia}, 1 Krl 7, 23,
+        \textit{Biblia Tysiąclecia}, 1 Krl 7, 23,
         Wydawnictwo Palottinum,
         Poznań, 2003
     \bibitem{gausse-smth}

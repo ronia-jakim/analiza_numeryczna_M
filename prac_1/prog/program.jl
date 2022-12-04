@@ -303,16 +303,31 @@ function calc_rel(lst::Vector{BigFloat}, bib::BigFloat)
 end
 
 
-function log_error_graph_gen(iterations::Int, method, name::String, file_name::String)
+function log_error_graph_gen(iterations::Int, method, name::String, file_name::String, prec::BigFloat)
     results = method(iterations)
     ab = calc_abs(results, BigFloat(pi))
     rel = calc_rel(ab, BigFloat(pi))
-    relog = map(x -> log(abs(x)), rel)
+    relog = map(x -> -1 * log(abs(x)), rel)
     x = 1:length(relog)
-
-    p = plot(x, relog, title = "Wykres zbieżności metody:\n" * name, xlabel = "liczba iteracji", label = "log |błąd wzgledny|")
+    prec_lim = Vector{BigFloat}([])
+    for x in 1:length(relog)
+        append!(prec_lim, [prec])
+    end
+    p = plot(x, [relog prec_lim], title = "Wykres zbieżności metody:\n" * name, xlabel = "liczba iteracji", label = ["ilość cyfr znaczących" "granica precyzji"], legend=:outerbottom)
     savefig(p, file_name  * "_log_error.png")
     display(p)
+end
+
+function estimate_precision(iterations::Int, method)
+    results = method(iterations)
+    ab = calc_abs(results, BigFloat(pi))
+    rel = calc_rel(ab, BigFloat(pi))
+    relog = map(x -> -1 * log(abs(x)), rel)
+    maks = BigFloat(0)
+    for i in 1:length(relog)
+        maks = max(maks, relog[i])
+    end
+    return maks
 end
 
 function convergence_experiment(func, iterations::Int, p::Int, name::String, file_name::String)
@@ -332,16 +347,17 @@ end
 
 
 function main()
-    log_error_graph_gen(10000, geometry3.calc_steps, "Przybliżania wielokątami", "geo3")
-    log_error_graph_gen(10000, montecarlo.calc_steps, "Monte carlo", "monte_carlo")
-    log_error_graph_gen(10000, taylor.calc_steps, "Szereg Taylora", "taylor")
-    log_error_graph_gen(21, gauss_legendre.calc_steps, "Gauss-Legendre'a", "gauss_legendre")
-    log_error_graph_gen(450, chudnowsky.calc_steps, "Algorytm Chudnovsky'ich", "chudnowsky")
-    log_error_graph_gen(10000, viete.calc_steps, "Algorytm Viete'a", "viete")
-    log_error_graph_gen(740, ramanujan.calc_steps, "Wzór Srinivasa Ramanujana", "ramanujan")
+    z = estimate_precision(10000, viete.calc_steps)
+    log_error_graph_gen(10000, geometry3.calc_steps, "Przybliżania wielokątami", "geo3", z)
+    log_error_graph_gen(10000, montecarlo.calc_steps, "Monte carlo", "monte_carlo", z)
+    log_error_graph_gen(10000, taylor.calc_steps, "Wielomian Taylora", "taylor", z)
+    log_error_graph_gen(21, gauss_legendre.calc_steps, "Gauss-Legendre'a", "gauss_legendre", z)
+    log_error_graph_gen(450, chudnowsky.calc_steps, "Algorytm Chudnovskych", "chudnowsky", z)
+    log_error_graph_gen(10000, viete.calc_steps, "Algorytm Viete'a", "viete", z)
+    log_error_graph_gen(740, ramanujan.calc_steps, "Wzór Srinivasa Ramanujana", "ramanujan", z)
 
     convergence_experiment(taylor.calc_steps,10000, 1, "Taylor'a", "taylor")
-    convergence_experiment(chudnowsky.calc_steps,450, 1, "Chudnovsky'ich", "chudnowsky")
+    convergence_experiment(chudnowsky.calc_steps,450, 1, "Chudnovskych", "chudnowsky")
     convergence_experiment(viete.calc_steps,8000, 1, "Viete'a", "viete")
     convergence_experiment(geometry3.calc_steps,1000, 1, "Przybliżania wielokątami", "geo3")
     convergence_experiment(ramanujan.calc_steps, 450, 1, "Srinivasa Ramanujana", "ramanujan")

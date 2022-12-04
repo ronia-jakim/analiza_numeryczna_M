@@ -37,13 +37,13 @@ Metoda Gaussa-Legrendre'a okazała się zbiegać do implementacji bibliotecznej 
     \centering
     \renewcommand{\figurename}{Wykres}
     \includegraphics[width=0.7\textwidth]{../prog/gauss_legendre_error_ratio.png}
-    \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla algorytmu Gassa-Legrendre'a.}
+    \caption{Wykres ilorazu błędów względnych wyrazu $n+1$ i $n$ dla algorytmu Gaussa-Legrendre'a.}
     \label{gauss-convergence}
 \end{figure}
 
 Eksperymentalne obliczenia rzędu zbieżności tej metody jedynie potwierdzają wyższą zbieżność tego algorytmu niż w przypadku innych opisanych metod (Wykres~\ref{gauss-convergence}). Dla precyzji wynoszącej 16 069 bitów obliczenia na podstawie dzielenia błędu $(n+1)$-ego wyrazu przez kwadrat błędu $n$-tego wyrazu nie dają konkretnych wyników przez zbyt szybkie dążenie tej metody do $\pi$. W literaturze metoda ta jest określana jako zbieżna kwadratowo \cite{gausse-smth}.
 
-Pomimo tak dobrej zbieżności, metoda ta nie jest powszechnie wykorzystywana, gdyż zużywa więcej pamięci niż metoda Chudnowsky'ch.
+Pomimo tak dobrej zbieżności, metoda ta nie jest powszechnie wykorzystywana, gdyż zużywa więcej pamięci niż metoda Chudnowskych.
 
 \newpage
 
@@ -72,5 +72,5 @@ Wartość $\pi$ obliczona dla 10 iteracji naszego programu daje:
 84681382686838689427741559918559252459539594310499725246808459872736446958486538367362226260991246080512438843904512\\
 44136549762780797715691435997700129616089441694868555848406353422072225828488648158456028506016842739452267467678895\\
 25213852254995466672782398645659611635488623057745649803559363456817432411251507606947945109659609402522887971089314\\
-5669136867228748940560101503308617928680920874760917824938589009714909675985261365549781893129784821682998948722658804857564014270477555132379641451523746
+566913686722874894056010150330861792868092087476091782493858900971490967598526136554978189312978482168299894872...
 }
