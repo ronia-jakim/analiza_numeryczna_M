@@ -95,7 +95,7 @@ Metoda w okolicach 8050 iteracji uzyskiwała błąd bezwzględny rzędu $10^{-12
 
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
-    \includegraphics[width=0.7\textwidth]{../prog/geo3_error_ratio.png}
+    \includegraphics[width=0.6\textwidth]{../prog/geo3_error_ratio.png}
     \caption{Wykres estymowanej wartości p dla metody geometrycznej.}
     \label{geometric-convergence}
 \end{figure}
@@ -125,19 +125,13 @@ Tak jak w poprzedniej metodzie, możemy skorzystać z faktu, że dla koła jedno
 \label{fig:monte-carlo}
 \end{figure}
 
-Korzystając z algorytmu Monte Carlo możemy wybierać losowo współrzędne $x,y\in[0,1]$ kolejnych punktów, a następnie sprawdzać ile z nich spełnia warunek
-$$x^2+y^2\leq1.$$
-Otrzymany stosunek będzie coraz bliższy $\frac\pi4$ wraz ze zwiększaniem ilości testowanych punktów.
-
-Na Wykresie~\ref{monte-carlo-error}. zaprezentowana jest liczba cyfr liczby pi wyznaczonych dokładnie. Szacowanie zbieżności tej metody wykracza poza zakres wiedzy studenta 3 semestru ze względu na losowość tego algorytmu. Wykorzystanie technik z kursu Rachunku Prawdopodobieństwa ułatwiłoby to zadanie. Na Wykresie~\ref{monte-carlo-convergence} widzimy jeden z wykresów ilorazu błędu kolejnych wyrazów jaki uzyskaliśmy przy uruchamianiu algorytmu. Jako, że jest to algorytm losowy, to lokalnie wraz zwiększeniem liczby iteracji, przybliżenie może się pogorszyć. Co jest pewną wadą tej metody.
-
 \begin{figure}[!h]\centering
-\renewcommand{\figurename}{Wykres}
-\includegraphics[width=0.6\textwidth]{../prog/monte_carlo_log_error.png}
-\caption{Wykres ilości cyfr znaczących uzyskanych dla metody przybliżenia $\pi$ z pomocą algorytmu Monte Carlo.}
-\label{monte-carlo-error}
+    \renewcommand{\figurename}{Wykres}
+    \includegraphics[width=0.6\textwidth]{../prog/monte_carlo_log_error.png}
+    \caption{Wykres ilości cyfr znaczących uzyskanych dla metody przybliżenia $\pi$ z pomocą algorytmu Monte Carlo.}
+    \label{monte-carlo-error}
 \end{figure}
-
+    
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
     \includegraphics[width=0.6\textwidth]{../prog/monte_carlo_error_ratio.png}
@@ -145,9 +139,14 @@ Na Wykresie~\ref{monte-carlo-error}. zaprezentowana jest liczba cyfr liczby pi w
     \label{monte-carlo-convergence}
 \end{figure}
 
+Korzystając z algorytmu Monte Carlo możemy wybierać losowo współrzędne $x,y\in[0,1]$ kolejnych punktów, a następnie sprawdzać ile z nich spełnia warunek
+$$x^2+y^2\leq1.$$
+Otrzymany stosunek będzie coraz bliższy $\frac\pi4$ wraz ze zwiększaniem ilości testowanych punktów.
+
+Na Wykresie~\ref{monte-carlo-error}. zaprezentowana jest liczba cyfr liczby pi wyznaczonych dokładnie. Szacowanie zbieżności tej metody wykracza poza zakres wiedzy studenta 3 semestru ze względu na losowość tego algorytmu. Wykorzystanie technik z kursu Rachunku Prawdopodobieństwa ułatwiłoby to zadanie. Na Wykresie~\ref{monte-carlo-convergence} widzimy jeden z wykresów ilorazu błędu kolejnych wyrazów jaki uzyskaliśmy przy uruchamianiu algorytmu. Jako, że jest to algorytm losowy, to lokalnie wraz zwiększeniem liczby iteracji, przybliżenie może się pogorszyć. Co jest pewną wadą tej metody.
 
 \subsection{Wielomian Taylora}
-W matematyce bardzo często w celu przybliżania pożądanych wartości używa się szeregów Taylora. Tak dla przykładu, korzystając z rozszerzenia funkcji $\arctan x$ w punkcie $0$ możemy oszacować wartość $\frac\pi4$:
+W matematyce bardzo często w celu przybliżania pożądanych wartości używa się szeregów Taylora. Tak dla przykładu, korzystając z rozszerzenia funkcji $\arctan x$ w punkcie $0$ możemy oszacować $\frac\pi4$:
 \begin{equation}
 \begin{split}
     \frac\pi4&=\arctan1=\sum\limits_{k=0}^\infty{\arctan^{(k)}0\over k!}(1-0)^k=\\
@@ -166,14 +165,14 @@ Powyższa metoda jest o wiele wolniejsza od metody Archimedesa, mimo że powsta�
 
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
-    \includegraphics[width=0.7\textwidth]{../prog/taylor_log_error.png}
+    \includegraphics[width=0.6\textwidth]{../prog/taylor_log_error.png}
     \caption{Wykres ilości cyfr znaczących uzyskanych dla metody przybliżenia  $\pi$ za pomocą wielomianu Taylora.}
     \label{taylor-series-error}
 \end{figure}
 
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
-    \includegraphics[width=0.7\textwidth]{../prog/taylor_error_ratio.png}
+    \includegraphics[width=0.6\textwidth]{../prog/taylor_error_ratio.png}
     \caption{Wykres estymowanej wartości p dla metody z wykorzystaniem wielomianu Taylora.}
     \label{taylor-series-convergence}
 \end{figure}
