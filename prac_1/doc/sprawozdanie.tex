@@ -23,6 +23,21 @@ Do obliczeń używaliśmy precyzji 16 069 i zmiennych typu \verb+BigFloat+ w ję
 
 Dla każdej metody eksperymentalnie szacowaliśmy rząd zbieżności i przedstawiliśmy wyniki na odpowiednich wykresach. Przy pierwszych 4 metodach wykonaliśmy 10 000 iteracji. W metodzie Chudnowskych zaś wystarczyło tylko 450 iteracji, by osiągnąć granice precyzji. Zaś w metodzie Gaussa-Legendre'a wystarczyło tylko 21 iteracji. 
 
+\subsection{Wyznaczanie wykładnika zbieżności metod}
+
+Jako wykładnik zbieżności metody uznajemy $p$ spełniające następujący wzór \cite{bog}
+
+\[\lim_{n \to \infty} \frac{|a_n - \alpha|}{|a_{n-1} - \alpha|^p} = c  \]
+
+Gdzie $a_n$ to wynik danej metody dla i-tej iteracji, $\alpha$ to wartość do której zbiega metoda czyli $\pi$, w tej pracy przyjmiemy że to wartość biblioteczna. Zaś $c$ to stała. Ten wzór jest równoważny innej granicy:
+\[ \lim_{n \to \infty} \frac{|a_n - \pi|}{|a_{n-1} - \pi|^p} = c = \lim_{n \to \infty} \frac{|a_{n-1} - \pi|}{|a_{n-2} - \pi|^p} \]
+W takim razie 
+\[ \frac{|a_n - \pi|}{|a_{n-1} - \pi|^p} \approx \frac{|a_{n-1} - \pi|}{|a_{n-2} - \pi|^p} \]
+
+\[ (\frac{|a_{n-2} - \pi|}{|a_{n-1} - \pi|})^p \approx \frac{|a_{n-1} - \pi|}{|a_{n} - \pi|} \]
+\[ p \approx \frac{\log(|\frac{a_{n-2} - \pi}{a_{n-1} - \pi}|)}{\log(|\frac{a_{n-1} - \pi}{a_{n} - \pi}|)}
+\]
+
 \input{pierwsze-proby.tex}
 
 \input{wzor-viete.tex}

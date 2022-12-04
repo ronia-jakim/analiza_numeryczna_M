@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670153208 "/home/sileanth/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1670153209
+["pdflatex"] 1670155036 "/home/sileanth/anal_num_prac/prac_1/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1670155037
   "../../template.sty" 1670150544 4418 495ddc2d12b00c8a56442bc53be0b12f ""
   "../prog/chudnowsky_error_ratio.png" 1670152400 29576 68f98e805d4c1d390a94bd621f06d519 ""
   "../prog/chudnowsky_log_error.png" 1670152391 29289 361e67f9d6bbaa55edc9e57d563d0bed ""
@@ -13,7 +13,7 @@
   "../prog/taylor_log_error.png" 1670152390 24619 dca0b4eb2bfbf008c4fc60fa5a14ca94 ""
   "../prog/viete_error_ratio.png" 1670152401 24927 31f1422d177476aa19b4b2ad7a24b732 ""
   "../prog/viete_log_error.png" 1670152397 28504 a974eadaba8a83791a2ec50d9e8cc5cd ""
-  "/home/sileanth/anal_num_prac/prac_1/doc/sprawozdanie.tex" 1670151048 4439 ab959c119f0381f73d9976fb6646ba9d ""
+  "/home/sileanth/anal_num_prac/prac_1/doc/sprawozdanie.tex" 1670155035 5346 9aac0f269b6170164bb93bfd17c591ea ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1668252018 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plit.enc" 1668252018 1946 62ba825cda1ff16dbaa60d53ac60525a ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1668252018 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
@@ -72,6 +72,7 @@
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr7.pfb" 1668252018 27523 c9185de4b4f361086bdc0d056fdd2b09 ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb" 1668252018 27613 078d72cee58a40f102986ecdd23ed1c6 ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb" 1668252018 26714 6fe260cd3a16c4a700b121f4edac67f2 ""
+  "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy6.pfb" 1668252018 26854 f9b7ec133aa37387f7ed31f7d48a0016 ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb" 1668252018 26387 98cf0141874ba26c215635f2b6f404e5 ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plti10.pfb" 1668252018 32502 73b348676aac6ae1f3a22f93f5f2370b ""
   "/opt/texlive/2022/texmf-dist/fonts/type1/public/pl/pltt10.pfb" 1668252018 25868 d6f9e57a513249dc500d9a7ab15dbc95 ""
@@ -286,10 +287,10 @@
   "/opt/texlive/2022/texmf.cnf" 1668252018 585 9e8504408f25e5ac7fa614e58817b8d1 ""
   "pierwsze-proby.tex" 1670153125 9885 c2548852b2ed88a8c0156f4fc3f3586e ""
   "ramanujan.tex" 1670153207 2659 be6e4b53b6fccc97da06467abcfecdae ""
-  "sprawozdanie.aux" 1670153209 8821 74f2da706617aa96ddcced6d64e5b075 "pdflatex"
-  "sprawozdanie.out" 1670153209 1679 08cf1e91c0214e171cfc2f115df44a7a "pdflatex"
-  "sprawozdanie.tex" 1670151048 4439 ab959c119f0381f73d9976fb6646ba9d ""
-  "sprawozdanie.toc" 1670153209 1285 1cb2379acb357b857b809b68ff0c093c "pdflatex"
+  "sprawozdanie.aux" 1670155037 9004 a4ba2b9b7e602d4fe180e7952a1f846d "pdflatex"
+  "sprawozdanie.out" 1670155037 1950 97054eb84498f1202a86121ea777b7dd "pdflatex"
+  "sprawozdanie.tex" 1670155035 5346 9aac0f269b6170164bb93bfd17c591ea ""
+  "sprawozdanie.toc" 1670155037 1411 a132beff0dddc7f5dd219b65c3384df8 "pdflatex"
   "super-szybki-super-ciezki.tex" 1670153188 5122 2dffa13751573947a656520f51412c97 ""
   "wzor-viete.tex" 1670151051 3254 5a49e3c2471fdbc3db5b89a9da1dd884 ""
   (generated)
