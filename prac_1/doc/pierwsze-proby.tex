@@ -77,7 +77,7 @@ oraz:
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
     \includegraphics[width=0.6\textwidth]{../prog/geo3_log_error.png}
-    \caption{Wykres logarytmu dziesiętnego z błędu względnego dla przybliżenia $\pi$ za pomocą metody geometrycznej.}
+    \caption{Wykres ilości cyfr znaczących dla przybliżenia $\pi$ za pomocą metody geometrycznej.}
     \label{geometric-error}
 \end{figure}
 
@@ -91,7 +91,7 @@ $$\begin{cases}
     L_3=6\sqrt3
 \end{cases}$$
 
-Metoda w okolicach 8050 iteracji uzyskiwała błąd bezwzględny rzędu $10^{-12000}$. Na Wykresie~\ref{geometric-error} widzimy, że gradient wykresu logarytmu dziesiętnego od błędu względnego jest niemalże liczbą stałą. Przybliżanie liczby $\pi$ przy użyciu geometrii osiąga limit precyzji, co jest bardzo imponujące biorąc pod uwagę jak stara jest to metoda.
+Metoda w okolicach 8050 iteracji uzyskiwała błąd bezwzględny rzędu $10^{-12000}$. Na Wykresie~\ref{geometric-error} widzimy, że od tej iteracji, liczba cyfr znaczących osiąga granice precyzji. Jest to bardzo imponujące biorąc pod uwagę jak stara jest to metoda.
 
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
@@ -136,7 +136,7 @@ Na Wykresie~\ref{monte-carlo-error}. zaprezentowany jest logarytm dziesiętny z 
 \begin{figure}[!h]\centering
 \renewcommand{\figurename}{Wykres}
 \includegraphics[width=0.6\textwidth]{../prog/monte_carlo_log_error.png}
-\caption{Wykres logarytmu dziesiętnego z błędu względnego uzyskanego dla metody przybliżenia $\pi$ z pomocą algorytmu Monte Carlo.}
+\caption{Wykres ilości cyfr znaczących uzyskanych dla metody przybliżenia $\pi$ z pomocą algorytmu Monte Carlo.}
 \label{monte-carlo-error}
 \end{figure}
 
@@ -169,7 +169,7 @@ Powyższa metoda jest o wiele wolniejsza od metody Archimedesa, mimo że powsta�
 \begin{figure}[!h]\centering
     \renewcommand{\figurename}{Wykres}
     \includegraphics[width=0.7\textwidth]{../prog/taylor_log_error.png}
-    \caption{Wykres logarytmu dziesiętnego z błędu względnego uzyskanego dla metody przybliżenia $\pi$ za pomocą wielomianu Taylora.}
+    \caption{Wykres ilości cyfr znaczących uzyskanych dla metody przybliżenia  $\pi$ za pomocą wielomianu Taylora.}
     \label{taylor-series-error}
 \end{figure}
 

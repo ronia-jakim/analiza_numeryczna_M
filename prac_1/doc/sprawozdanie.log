@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  4 DEC 2022 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  4 DEC 2022 12:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -904,11 +904,7 @@ LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <14.4> on input line 122.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <12> on input line 123.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 <../prog/geo3_error_ratio.png>]
+ [4 <../prog/geo3_error_ratio.png>]
 <../prog/monte_carlo_log_error.png, id=135, 602.25pt x 401.5pt>
 File: ../prog/monte_carlo_log_error.png Graphic file (type png)
 <use ../prog/monte_carlo_log_error.png>
@@ -920,28 +916,24 @@ File: ../prog/monte_carlo_error_ratio.png Graphic file (type png)
 Package pdftex.def Info: ../prog/monte_carlo_error_ratio.png  used on input line 145.
 (pdftex.def)             Requested size: 289.80295pt x 193.20792pt.
 
+Underfull \vbox (badness 1910) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5 <../prog/monte_carlo_log_error.png>]
-<../prog/taylor_log_error.png, id=145, 602.25pt x 401.5pt>
+ [5 <../prog/monte_carlo_log_error.png> <../prog/monte_carlo_error_ratio.png>]
+<../prog/taylor_log_error.png, id=144, 602.25pt x 401.5pt>
 File: ../prog/taylor_log_error.png Graphic file (type png)
 <use ../prog/taylor_log_error.png>
 Package pdftex.def Info: ../prog/taylor_log_error.png  used on input line 171.
 (pdftex.def)             Requested size: 338.09853pt x 225.40822pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../prog/taylor_error_ratio.png, id=146, 602.25pt x 401.5pt>
+<../prog/taylor_error_ratio.png, id=145, 602.25pt x 401.5pt>
 File: ../prog/taylor_error_ratio.png Graphic file (type png)
 <use ../prog/taylor_error_ratio.png>
 Package pdftex.def Info: ../prog/taylor_error_ratio.png  used on input line 178.
 (pdftex.def)             Requested size: 338.09853pt x 225.40822pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./wzor-viete.tex [6 <../prog/monte_carlo_error_ratio.png>] [7 <../prog/taylor_log_error.png> <../prog/taylor_error_ratio.png>]
+) (./wzor-viete.tex [6 <../prog/taylor_log_error.png>] [7 <../prog/taylor_error_ratio.png>]
 <../prog/viete_log_error.png, id=163, 602.25pt x 401.5pt>
 File: ../prog/viete_log_error.png Graphic file (type png)
 <use ../prog/viete_log_error.png>
@@ -1065,13 +1057,13 @@ Package rerunfilecheck Info: File `sprawozdanie.out' has not changed.
 Here is how much of TeX's memory you used:
  40474 strings out of 474971
  898368 string characters out of 5751677
- 1478884 words of memory out of 5000000
+ 1478799 words of memory out of 5000000
  61106 multiletter control sequences out of 15000+600000
  493074 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,16n,105p,7162b,1368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi6.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi7.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr6.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr7.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plti10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/pltt10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/pltt8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on sprawozdanie.pdf (13 pages, 452293 bytes).
+Output written on sprawozdanie.pdf (13 pages, 451895 bytes).
 PDF statistics:
  349 PDF objects out of 1000 (max. 8388607)
  281 compressed objects within 3 object streams
