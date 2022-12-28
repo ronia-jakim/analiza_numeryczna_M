@@ -1,0 +1,81 @@
+\section{Rozwiązywanie równań liniowych}
+
+Mając dany układ równań liniowych:
+$$
+\begin{cases}
+    a_{11}x_1+a_{12}x_2+...+a_{1n}x_n=b_1\\
+    a_{21}x_1+a_{22}x_2+...+a_{2n}x_n=b_2\\
+    ...\\
+    a_{n1}x_1+a_{n2}x_2+...+a_{nn}x_n=b_n
+\end{cases}
+$$
+możemy go opisać w postaci macierzy. Macierz główna tego układu równań to macierz zawierająca wszystkie współczynniki przy zmiennych [$X$]:
+$$A=\begin{bmatrix}
+    a_{11}&a_{12}&...&a_{1n}\\
+    a_{21}&a_{22}&...&a_{2n}\\
+    ...&...&...&...\\
+    a_{n1}&a_{n2}&...&a_{nn}
+\end{bmatrix}.$$
+Jeśli do macierzy głównej dołączymy wektor zawierający wszystkie wyrazy wolne [$B$], to dostaniemy macierz rozszerzoną tego układu:
+$$
+A|B=\begin{bmatrix}\begin{array}{cccc|c}
+    a_{11}&a_{12}&...&a_{1n}&b_1\\
+    a_{21}&a_{22}&...&a_{2n}&b_2\\
+    ...&...&...&...&...\\
+    a_{n1}&a_{n2}&...&a_{nn}&b_n
+\end{array}\end{bmatrix}.
+$$
+
+Zapisanie układu równań w postaci macierzowej ma wiele zalet. Jesteśmy w stanie w szybki sposób sprawdzić, czy równanie ma jednoznaczne rozwiązanie przez sprawdzenie czy wyznacznik macierzy głównej nie jest zerowy, gdyż jeśli $AX=B$, to $A^{-1}AX=X=A^{-1}B$. Musi więc istnieć macierz odwrotna. Sprawia to również, że zapis układu jest bardziej czytelny oraz pozwala ułatwić operowanie na takim układzie równań za pomocą komputera.
+
+\subsection{Eliminacja Gaussa}
+
+Metoda eliminacji Gaussa jest algorytmem stosowanym do rozwiązywania układu równań. Polega ona na doprowadzeniu macierzy do postaci schodkowej, tzn. zawierającej niezerowe wartości tylko na głównej przekątnej. W algorytmie dozwolone są tylko operacje na wierszach i kolumnach, czyli dodawanie lub odejmowanie od wiersza (kolumny) wielokrotności innego wiersza (kolumny) oraz zamienianie kolejności dwóch wierszy (kolumn).
+
+!! można to robić wprost, albo szukać macierzy odwrotnej !!
+
+\subsection{Rozkład $QR$}
+
+Każdą macierz $A$ $m\times n$ o wyrazach rzeczywistych taka, że $rank(A)=n$, można zapisać jako $A=QR$, gdzie $R$ jest macierzą górnotrójkątną, a $Q$ ma kolumny ortogonalne. Ponieważ my będziemy rozważać macierze $A$ będące reprezentacją jednoznacznych układów równań, to interesują nas tylko $A\in GL_n(\R)$.
+
+Zauważmy, że jeśli $A$ ma niezerowy wyznacznik, to $A$ nie może mieć liniowo zależnych kolumn. W takim razie, wektory $a_1,...,a_n$ odpowiadające kolumnom $A$ są bazą przestrzeni $\R^n$ jako maksymalny możliwy układ wektorów liniowo niezależnych. Możemy na ich podstawie stworzyć bazę ortonormalną $u_1,...,u_n$ przez proces Grama-Schmidta. Wtedy dla $k=1,..,n$
+$$u_k=a_k-\sum\limits_{i=1}^{k-1}{\langle u_i,a_k\rangle\over \langle u_i,u_i\rangle}u_i.$$
+Co więcej, dla dowolnego $a_k$ z oryginalnej bazy możemy go zapisać za pomocą kombinacji liniowej wektorów z bazy ortonormalnej:
+\begin{align*}
+    a_k&=\sum\limits_{i=1}^n c_iu_i=\sum\limits_{i=1}^nc_i\sum\limits_{j=1}^{i-1} [a_k-\sum\limits_{i=1}^{k-1}{\langle u_i,a_k\rangle\over \langle u_i,u_i\rangle}u_i]
+\end{align*}
+a ponieważ $a_1,..,a_n$ były wektorami lnz, to dla $i> k$ $c_i=0$. Niech $r_k$ to będzie wektor zawierający współczynniki $c_i$ dla wektora $a_k$:
+$$r_k=\begin{bmatrix}
+    c_1\\
+    c_2\\
+    ...\\
+    c_k\\
+    0\\
+    ...\\
+    0
+\end{bmatrix}$$
+Czyli mamy, że
+$$a_k=\begin{bmatrix}
+    u_1&u_2&...&u_n
+\end{bmatrix}r_k
+$$
+i dalej
+$$
+A=\begin{bmatrix}
+    u_1&u_2&...&u_n
+\end{bmatrix}\begin{bmatrix}
+    r_1&r_2&...&r_n
+\end{bmatrix}.
+$$
+Zauważamy, że $R=\begin{bmatrix}
+    r_1&r_2&...&r_n
+\end{bmatrix}$ to macierz górnotrójkątna, a $Q$ to macierz ortogonalna.
+
+Niech teraz $A$ to macierz główna rozważanego układu równań, $Q,R$ to macierze z jej rozkładu, $X$ niech będzie wektorem wartości szukanych, a $B$ niech będzie wektorem wyrazów wolnych. Wtedy
+\begin{align*}
+    AX&=B\\
+    (QR)X&=B
+\end{align*}
+i ponieważ dla macierzy ortonormalnych mamy $Q^{-1}=Q^T$, to w prosty sposób możemy zamienić powyższy układ na
+$$RX=Q^TB.$$
+Równanie w tej postaci można już rozwiązać tak samo jak przy ostatnim kroku algorytmu eliminacji Gaussa.
