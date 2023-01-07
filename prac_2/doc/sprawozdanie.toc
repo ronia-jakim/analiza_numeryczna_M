@@ -5,6 +5,7 @@
 \contentsline {subsection}{\numberline {2.1\relax .\enspace }Eliminacja Gaussa}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2\relax .\enspace }Rozkład $QR$}{2}{subsection.2.2}%
 \contentsline {section}{\numberline {3\relax .\enspace }Algorytm eliminacji Gaussa}{3}{section.3}%
-\contentsline {section}{\numberline {4\relax .\enspace }Algorytm rozkładu $QR$}{3}{section.4}%
-\contentsline {subsection}{\numberline {4.1\relax .\enspace }Transformacja Householdera}{3}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2\relax .\enspace }Metoda reortogonalizacji}{3}{subsection.4.2}%
+\contentsline {subsection}{\numberline {3.1\relax .\enspace }Wyniki}{3}{subsection.3.1}%
+\contentsline {section}{\numberline {4\relax .\enspace }Transformacja Householdera}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1\relax .\enspace }Podstawy teoretyczne}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2\relax .\enspace }Wyniki}{4}{subsection.4.2}%

@@ -1,5 +1,55 @@
-\section{Algorytm rozkładu $QR$}
+\section{Transformacja Householdera}
 
-\subsection{Transformacja Householdera}
+\subsection{Podstawy teoretyczne}
 
-\subsection{Metoda reortogonalizacji}
+Transformacja Householdera [ \worldflag[length=12px, width=7px]{GB}: Householder transformation ] to liniowe przekształcenie poprzez odbicie punktu wokół płaszczyzny, lub hiperpłaszczyzny, która zawiera początek układu współrzędnych. Płaszczyzna wokół której obracamy jest zdefiniowana przez jednostkowy wektor $u$ do niej normalny, a więc odbicie względem niej to $x$ pomniejszony o dwa rzuty na $u$:
+$$x'=x-2u\langle x,u\rangle=x-2u(u^*x)$$
+co dla przestrzeni rzeczywistej wynosi
+$$x'=x-2u(u^Tx).$$
+Macierz tego odbicia to
+$$P=I-2uu^*$$
+i jest ona Hermitowska:
+$$P^*=(I-2uu^*)^*=I^*-(2uu^*)^*=I-2(uu^*)^*=I-2(u^*)^*u^*=I-2uu^*=P$$
+oraz unitarna (czyli $P^*P=PP=I$):
+\begin{align*}
+    P^*P&=P^2=(I-2uu^*)^2=I-4uu^*+4(uu^*)^2=\\
+    &=I-4uu^*+4u(u^*u)u^*=I-4uu^*+4u\langle u,u\rangle u^*=\\
+    &=I-4uu^*+4uu^*=I
+\end{align*}
+a więc w przypadku rzeczywistym dostajemy macierz symetryczną i ortogonalną, czyli taką jakiej szukamy.
+
+Niech teraz $A$ będzie macierzą $m\times m$, której formę $QR$ chcemy znaleźć, a $a_1,...,a_m$ będą wektorami odpowiadającymi jej kolumnom. Dalej, niech $e_1,...,e_m$ będą wektorami ze standardowej bazy przestrzeni $\R^m$ i ustalmy
+$$v=a_1-\|a_1\|e_1$$
+$$u={v\over\|v\|}.$$
+Wektor $u$ jest jednostkowym wektorem pewnej płaszczyzny przechodzącej przez początek układu współrzędnych, możemy więc dla niego znaleźć macierz Householdera
+$$P'_1=I-2uu^*.$$
+Zauważmy, że
+$$P'_1a_1=\begin{pmatrix}\|a_1\|\\0\\0\\...\\0\end{pmatrix}$$
+czyli zaczynamy tworzyć macierz górnotrójkątną. Proces transformacji Householdera możemy powtórzyć dla macierzy $P_1A$ bez pierwszej kolumny i wiersza, co da nam macierz $P'_2$ która dla $P'_2a_2$ daje wektor niezerowy tylko na pierwszej współrzędnej. Jednak $P'_2$ jest $(m-1)\times(m-1)$, więc musimy ją rozciągnąć, chociażby dodając identyczność w lewym górnym rogu. Rozciągając tę procedurę na przypadek ogólny, mamy
+$$P_k=\begin{pmatrix}
+    I_{k-1}&*\\
+    0&P'_k
+\end{pmatrix}$$
+gdzie $I_{k-1}$ to identyczność ale na $\R^{k-1}$. 
+
+Szukana przez nas macierz górnotrójkątna ma zatem postać
+$$R=P_m...P_1A$$
+natomiast szukana macierz ortogonalna to
+$$Q=(P_m...P_1)^{-1}=P_1^{-1}...P_m^{-1}=P_1...P_m$$
+z faktu, że każda z macierzy $P_k$ jest unitarna i hermitowska.
+
+Zakładamy, że macierz jest podawana w liście wektorów zawierających kolejne jej kolumny:
+\begin{lstlisting}{language=ps}
+    function decomposition (A)
+        R = A
+        for i in 1:m
+            normA = norm(A[i])
+            s = -sign(A[i][i])
+            v = A[i] - s * normA
+            u = v / norm(v)
+
+            nie wiem, sam pisz to R=P_iR
+
+\end{lstlisting}
+
+\subsection{Wyniki}
