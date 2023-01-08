@@ -2,4 +2,37 @@
 
 \subsection{Wyniki}
 
+\begin{figure}[!h]\centering
+\begin{tabularx}{100mm}{| >{\hsize=.20\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.25\hsize}X |}
+    \hline
+
+    \raggedleft Precyzja & $20\times20$ & $100\times100$ & $400\times400$\\
+
+    \hline
+
+    \raggedleft68 & 41.78 & 35.1 & 31.15\\
+
+    \hline
+
+    \raggedleft419 & 286.01 & 280.42 & 276.44\\
+
+    \hline
+
+    \raggedleft2005 & 1474.83 & 1471.28 & 1466.6\\
+    \hline
+
+\end{tabularx}
+\renewcommand{\figurename}{Tabelka}
+\caption{Liczba cyfr znaczących normy wektora $(Ax'-b)$, gdzie $x'$ to wektor uzyskany z metody eliminacji Gaussa.}
+\label{gauss:error}
+\end{figure}
+
+W ~Tabeli~\ref{gauss:error} umieszczone zostały ilości cyfr znaczących wartości $\|x'-x\|$. Bez względu na precyzję obliczeń większe macierze dawały nieco mniej precyzyjne wyniki. Co ciekawe, różnica ta, w okolicach $4$ cyfr znaczących, ulegała jedynie niezauważalnym zmianom między różnymi precyzjami obliczeń.
+
 \subsection{Złożoność obliczeniowa}
+
+W zaimplementowanym przez nas algorytmie przy każdym kroku dokonujemy jednego dzielenia skalaru oraz jednego mnożenia przez skalar i odejmowania wektora o długości $n$, gdzie $n$ to szerokość naszej macierzy. Czyli za każdym razem wykonujemy
+$$a=1+2n$$
+operacji. Co więcej, w algorytmie zewnętrzna pętla wykonuje się $(n-1)$ razy, natomiast wewnętrzna - $n+1-(i+1)$ razy, gdzie $i$ to jest aktualna pozycja zewnętrznej pętli. Czyli wykonujemy
+$$\sum\limits_{i=1}^{n-1}(n-i)a={a(n-2)^2\over 2}={(1+2n)(n-2)^2\over 2}=O(n^3)$$
+operacji w trakcie całego algorytmu.

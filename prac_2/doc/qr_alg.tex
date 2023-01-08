@@ -42,4 +42,108 @@ Dla polepszenia wyników algorytmu definicja wektora $v$ musi brać pod uwagę z
 
 \subsection{Wyniki}
 
+W ~Tabeli~\ref{house:error} umieszczona została ilość cyfr znaczących dla wektora $\|x'-x\|$ w zależności od wielkości macierzy $A$ oraz precyzji arytmetyki. Różnica między precyzja obliczeń dla różnych wielkości macierzy jest w okolicach $3$ cyfr znaczących i zachowuje się miedzy różnymi precyzjami, co jest wynikiem napawającym nadzieją. Z ~Tabeli~\ref{house:2matrix} widzimy też, że otrzymana przez nas macierz $Q$ jest bardzo bliska bycia macierzą ortogonalną, przynajmniej pod względem normy, to znaczy $\|Q\|=\sup\limits_{\|x\|\leq1}{\|Qx\|\over\|x\|}$ jest niewiele większe od zera. Wyniki pokazane w ~Tabli~\ref{house:1matrix} oraz ~Tabeli~\ref{house:3matrix} pokazują, że macierz $QR$ jest bardzo blisko macierzy $A$. 
+
+Co ciekawe, liczba cyfr znaczących różnicy między otrzymanym przez nas rozwiązaniem równania a norma macierzy wyznaczonych z $A=QR$ jest na tym samym poziomie, co sugeruje że oba wyniki są skutkiem błędu w trakcie operacji mnożenia i dodawanie macierzy.
+
+\begin{figure}[!h]\centering
+\begin{tabularx}{100mm}{| >{\hsize=.20\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.25\hsize}X |}
+    \hline
+
+    \raggedleft Precyzja & $20\times20$ & $100\times100$ & $400\times400$\\
+
+    \hline
+
+    \raggedleft68 & 42.66 & 39.46 & 36.86\\
+
+    \hline
+
+    \raggedleft419 & 286.19 & 282.58 & 280.144\\
+
+    \hline
+
+    \raggedleft2005 & 1476.08 & 1473.03 & 1470.28\\
+    \hline
+
+\end{tabularx}
+\renewcommand{\figurename}{Tablusia}
+\caption{Liczba cyfr znaczących normy wektora $(Ax'-b)$, gdzie $x'$ to wektor uzyskany z metody transformacji Householdera.}
+\label{house:error}
+\end{figure}
+
+\begin{figure}[!h]\centering
+\begin{tabularx}{100mm}{| >{\hsize=.20\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.25\hsize}X |}
+    \hline
+
+    \raggedleft Precyzja & $20\times20$ & $100\times100$ & $400\times400$\\
+
+    \hline
+
+    \raggedleft68 & 41.96 & 40.68 & 38.67\\
+
+    \hline
+
+    \raggedleft419 & 286.50 & 284.19 & 282.22\\
+
+    \hline
+
+    \raggedleft2005 & 1476.00 & 1471.28 & 1470.08\\
+    \hline
+
+\end{tabularx}
+\renewcommand{\figurename}{Tabelka}
+\caption{Rząd wielkości normy macierzy $A-QR$ (obliczany z $-\log\|A-QR\|$).}
+\label{house:1matrix}
+\end{figure}
+
+\begin{figure}[!h]\centering
+\begin{tabularx}{100mm}{| >{\hsize=.20\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.25\hsize}X |}
+    \hline
+
+    \raggedleft Precyzja & $20\times20$ & $100\times100$ & $400\times400$\\
+
+    \hline
+
+    \raggedleft68 & 43.48 & 42.18 & 40.85\\
+
+    \hline
+
+    \raggedleft419 & 286.91 & 285.47 & 284.14\\
+
+    \hline
+
+    \raggedleft2005 & 1477.15 & 1475.61 & 1474.25\\
+    \hline
+
+\end{tabularx}
+\renewcommand{\figurename}{Tabelka}
+\caption{Rząd wielkości normy macierzy $Q^TQ-I$ (obliczany z $-\log\|Q^TQ-I\|$).}
+\label{house:2matrix}
+\end{figure}
+
+\begin{figure}[!h]\centering
+\begin{tabularx}{100mm}{| >{\hsize=.20\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.25\hsize}X |}
+    \hline
+
+    \raggedleft Precyzja & $20\times20$ & $100\times100$ & $400\times400$\\
+
+    \hline
+
+    \raggedleft68 & 43.20 & 40.97 & 38.91\\
+
+    \hline
+
+    \raggedleft419 & 286.59 & 284.3 & 282.25\\
+
+    \hline
+
+    \raggedleft2005 & 1476.83 & 1474.34 & 1472.37\\
+    \hline
+
+\end{tabularx}
+\renewcommand{\figurename}{Tabelka}
+\caption{Rząd wielkości normy macierzy $Q^TA-R$ (obliczany z $-\log\|Q^TA-R\|$).}
+\label{house:3matrix}
+\end{figure}
+
 \subsection{Złożoność obliczeniowa}
