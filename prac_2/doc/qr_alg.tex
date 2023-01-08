@@ -150,4 +150,16 @@ Co ciekawe, liczba cyfr znaczących różnicy między otrzymanym przez nas rozwi
 
 \subsection{Złożoność obliczeniowa}
 
-ŁUUUKAAAASZ NAAAPIIIISZZZZZ ŁAAADNIEEEE
+
+W naszej implementacji najpierw wykonujemy n iteracji zewnętrznej pętli. Wewnątrz której mamy pętle po kolumnach oraz wierszach.
+
+W każdym kroku obu tych pętli wykonujemy stałą liczbę następujących operacji: mnożenie wektora przez skalar, dodawania/odejmowanie wektorów, mnożenie wektora przez wektor o takim rozmiarze ale, który został transponowany.
+Wszystkie te operacje mają złożoność $O(n)$. I jako że jest ich stała liczba, to każda iteracja tych pętli ma złożoność $O(n)$
+
+Żeby użyć tego algorytmu do rozwiązania układu równań, trzeba potem też użyć algorytmu Backward substitution, ma on złożoność $O(n^2)$.
+
+Czyli złożoność całego algorytmu to
+\[
+\sum_{i=1}^{n}(\sum^n_{j=i} O(N) + \sum^n_{j=i} O(N) ) + O(n^2) = O(n^3)   
+\] 
+

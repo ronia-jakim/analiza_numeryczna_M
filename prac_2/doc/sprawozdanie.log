@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.19)  8 JAN 2023 18:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  8 JAN 2023 19:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/maruda/uni-stuff/anal_num_prac/prac_2/doc/sprawozdanie.tex
-(/home/maruda/uni-stuff/anal_num_prac/prac_2/doc/sprawozdanie.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2022-12-17> (/opt/texlive/2022/texmf-dist/tex/latex/mwcls/mwart.cls
+**/home/sileanth/numerki_eupo/anal_num_prac/prac_2/doc/sprawozdanie.tex
+(/home/sileanth/numerki_eupo/anal_num_prac/prac_2/doc/sprawozdanie.tex
+LaTeX2e <2022-11-01>
+L3 programming layer <2022-11-02> (/opt/texlive/2022/texmf-dist/tex/latex/mwcls/mwart.cls
 Document Class: mwart 2017/05/13 v0.75 A LaTeX document class (MW)
 *** Beta version. Formatting may change
 *** in future versions of this class.
@@ -24,8 +24,8 @@ File: mw11.clo 2017/05/13 v0.75 A document class size option (MW)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
 \bibindent=\dimen141
 ) (../../template.sty
 
@@ -79,7 +79,7 @@ LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 326.
 ) (/opt/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/11/30 3.83 The Babel package
+Package: babel 2022/10/23 3.82 The Babel package
 \babel@savecnt=\count193
 \U@D=\dimen142
 \l@unhyphenated=\language87
@@ -115,27 +115,27 @@ LaTeX Info: Redefining \textmicrotypecontext on input line 1858.
 File: microtype-pdftex.def 2022/06/23 v3.0f Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 900.
 LaTeX Info: Redefining \lslig on input line 900.
-\MT@outer@space=\skip50
+\MT@outer@space=\skip49
 )
 Package microtype Info: Loading configuration file microtype.cfg.
  (/opt/texlive/2022/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2022/06/23 v3.0f microtype main configuration file (RS)
 )) (/opt/texlive/2022/texmf-dist/tex/latex/ragged2e/ragged2e.sty
-Package: ragged2e 2022/11/13 v3.2 ragged2e Package
-\CenteringLeftskip=\skip51
-\RaggedLeftLeftskip=\skip52
-\RaggedRightLeftskip=\skip53
-\CenteringRightskip=\skip54
-\RaggedLeftRightskip=\skip55
-\RaggedRightRightskip=\skip56
-\CenteringParfillskip=\skip57
-\RaggedLeftParfillskip=\skip58
-\RaggedRightParfillskip=\skip59
-\JustifyingParfillskip=\skip60
-\CenteringParindent=\skip61
-\RaggedLeftParindent=\skip62
-\RaggedRightParindent=\skip63
-\JustifyingParindent=\skip64
+Package: ragged2e 2021/12/15 v3.1 ragged2e Package
+\CenteringLeftskip=\skip50
+\RaggedLeftLeftskip=\skip51
+\RaggedRightLeftskip=\skip52
+\CenteringRightskip=\skip53
+\RaggedLeftRightskip=\skip54
+\RaggedRightRightskip=\skip55
+\CenteringParfillskip=\skip56
+\RaggedLeftParfillskip=\skip57
+\RaggedRightParfillskip=\skip58
+\JustifyingParfillskip=\skip59
+\CenteringParindent=\skip60
+\RaggedLeftParindent=\skip61
+\RaggedRightParindent=\skip62
+\JustifyingParindent=\skip63
 ) (/opt/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \c@tracingmulticols=\count198
@@ -150,8 +150,8 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \page@free=\dimen146
 \premulticols=\dimen147
 \postmulticols=\dimen148
-\multicolsep=\skip65
-\multicolbaselineskip=\skip66
+\multicolsep=\skip64
+\multicolbaselineskip=\skip65
 \partial@page=\box53
 \last@line=\box54
 \maxbalancingoverflow=\dimen149
@@ -206,7 +206,7 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \mc@col@check@num=\count273
 ) (/opt/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip67
+\@mathmargin=\skip66
 
 For additional information on amsmath, use the `?' option.
 (/opt/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -263,8 +263,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen160
 \lineht@=\dimen161
 \@envbody=\toks23
-\multlinegap=\skip68
-\multlinetaggap=\skip69
+\multlinegap=\skip67
+\multlinetaggap=\skip68
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -285,18 +285,18 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count287
 \calc@Adimen=\dimen162
 \calc@Bdimen=\dimen163
-\calc@Askip=\skip70
-\calc@Bskip=\skip71
+\calc@Askip=\skip69
+\calc@Bskip=\skip70
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count288
-\calc@Cskip=\skip72
+\calc@Cskip=\skip71
 ) (/opt/texlive/2022/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count289
 \l_MT_multwidth_dim=\dimen164
-\origjot=\skip73
+\origjot=\skip72
 \l_MT_shortvdotswithinadjustabove_dim=\dimen165
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen166
 \l_MT_above_intertext_sep=\dimen167
@@ -339,7 +339,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (/opt/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
+Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
  (/opt/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ) (/opt/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
@@ -379,7 +379,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 \Hy@linkcounter=\count291
 \Hy@pagecounter=\count292
  (/opt/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (/opt/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -389,7 +389,7 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count293
  (/opt/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -432,7 +432,7 @@ package with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/opt/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2022-11-13 v7.00u Hyperref driver for pdfTeX
+File: hpdftex.def 2022-09-22 v7.00t Hyperref driver for pdfTeX
  (/opt/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
@@ -446,7 +446,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip74
+\Hy@SectionHShift=\skip73
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 88.
  (/opt/texlive/2022/texmf-dist/tex/latex/tools/varioref.sty
@@ -700,8 +700,8 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \ar@mcellbox=\box112
 \extrarowheight=\dimen299
 \NC@list=\toks41
-\extratabsurround=\skip75
-\backup@length=\skip76
+\extratabsurround=\skip74
+\backup@length=\skip75
 \ar@cellbox=\box113
 )
 \TX@col@width=\dimen300
@@ -741,7 +741,7 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
  (/opt/texlive/2022/texmf-dist/tex/generic/tikzducks/tikzducks.sty
 Package: tikzducks 2020/06/30 version v1.5 Draw rubber ducks in TikZ
  (/opt/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-12-17 L3 programming layer (loader) 
+Package: expl3 2022-11-02 L3 programming layer (loader) 
  (/opt/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count340
@@ -1012,20 +1012,20 @@ Underfull \hbox (badness 10000) in alignment at lines 145--145
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./podsumowanie.tex [6]) [7] (./sprawozdanie.aux)
+[6]) (./podsumowanie.tex) [7] (./sprawozdanie.aux)
 Package rerunfilecheck Info: File `sprawozdanie.out' has not changed.
 (rerunfilecheck)             Checksum: 3A457D836230CB1FED87F3EFA4645592;1809.
  ) 
 Here is how much of TeX's memory you used:
- 42391 strings out of 476093
- 959571 string characters out of 5768137
- 1868793 words of memory out of 5000000
- 61914 multiletter control sequences out of 15000+600000
- 530266 words of font info for 125 fonts, out of 8000000 for 9000
+ 42393 strings out of 474971
+ 959571 string characters out of 5751677
+ 1489133 words of memory out of 5000000
+ 63034 multiletter control sequences out of 15000+600000
+ 487342 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,12n,105p,7193b,922s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,12n,105p,7198b,922s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi7.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy7.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie.pdf (7 pages, 123279 bytes).
+Output written on sprawozdanie.pdf (7 pages, 124361 bytes).
 PDF statistics:
  243 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams

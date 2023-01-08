@@ -1,8 +1,8 @@
-PWD /home/maruda/uni-stuff/anal_num_prac/prac_2/doc
+PWD /home/sileanth/numerki_eupo/anal_num_prac/prac_2/doc
 INPUT /opt/texlive/2022/texmf.cnf
 INPUT /opt/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /opt/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/maruda/uni-stuff/anal_num_prac/prac_2/doc/sprawozdanie.tex
+INPUT /home/sileanth/numerki_eupo/anal_num_prac/prac_2/doc/sprawozdanie.tex
 OUTPUT sprawozdanie.log
 INPUT /opt/texlive/2022/texmf-dist/tex/latex/mwcls/mwart.cls
 INPUT /opt/texlive/2022/texmf-dist/tex/latex/mwcls/mwart.cls
