@@ -51,7 +51,7 @@ module householder
         z = R[k:m,k]
         w = [ -sign(z[1])*norm(z) - z[1]; -z[2:end] ]
         nrmw = norm(w)
-        if nrmw < eps() continue; end    # nie chcemi dzielić przez 0
+        if nrmw < eps() continue; end    # nie chcemi dzielić przez 0, ale czemu?
         v = w / nrmw;
         
         # aplikowanie refleksi do wierszy
