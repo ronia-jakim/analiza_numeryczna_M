@@ -12,4 +12,10 @@ W poniższej pracy zostaną porównane dwa sposoby doprowadzania macierzy kwadra
 $$Ax=b$$
 dla odwracalnej macierzy $A$ oraz dowolnego wektora $b$. Błąd dla każdej z metod będzie obliczany jako
 $$e=-\log(\|Ax-b\|).$$
+Dla metody Householdera, która produkuje nam macierz ortogonalną $Q$ oraz górnotrójkątną $R$, porównane również zostaną macierze
+$$A-QR$$
+$$Q^TA-R$$
+$$Q^TQ-I$$
+poprzez wyznaczenie normy wektora $Bx$, gdzie $B$ to jedna z powyższych macierzy, z $x$ jest wektorem składającym się wyłącznie z $1$. Macierze będące wynikami powyższych przekształceń powinny być macierzami zerowymi, co wynika z przekształcenia $A=QR$ oraz ortogonalności macierzy $Q$ (wtedy $Q^{-1}=Q^T$).
+
 Dodatkowo, sprawdzona zostanie złożoność obliczeniowa każdego z algorytmów.

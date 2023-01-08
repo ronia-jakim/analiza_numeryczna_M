@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1673178755 "/home/maruda/uni-stuff/anal_num_prac/prac_2/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1673178757 0
+["pdflatex"] 1673179383 "/home/maruda/uni-stuff/anal_num_prac/prac_2/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1673179385 0
   "../../template.sty" 1669013018 4418 495ddc2d12b00c8a56442bc53be0b12f ""
   "/home/maruda/uni-stuff/anal_num_prac/prac_2/doc/sprawozdanie.tex" 1673121308 290 19d142c88fbece0e48a73c6f70b66413 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1671443973 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
@@ -281,11 +281,11 @@
   "/opt/texlive/2022/texmf.cnf" 1671443973 585 9e8504408f25e5ac7fa614e58817b8d1 ""
   "gauss_alg.tex" 1673178752 98 85a7a6d2dca7ca1a5eae2e9be2eed61a ""
   "qr_alg.tex" 1673178736 2716 e5401cd787a0fd5fffaa34f0858aa1ed ""
-  "sprawozdanie.aux" 1673178757 2329 047f1f2fe1e71d9c687038a122a60919 "pdflatex"
-  "sprawozdanie.out" 1673178757 1705 f6f29221b9345facd63c01454af4a576 "pdflatex"
+  "sprawozdanie.aux" 1673179385 2329 047f1f2fe1e71d9c687038a122a60919 "pdflatex"
+  "sprawozdanie.out" 1673179385 1705 f6f29221b9345facd63c01454af4a576 "pdflatex"
   "sprawozdanie.tex" 1673121308 290 19d142c88fbece0e48a73c6f70b66413 ""
-  "sprawozdanie.toc" 1673178757 1201 a9f922b061b903bf130e8ac69809ff7e "pdflatex"
-  "wstep.tex" 1673178664 749 4dc3d3547733a44d3853877fd007c5fb ""
+  "sprawozdanie.toc" 1673179385 1201 a9f922b061b903bf130e8ac69809ff7e "pdflatex"
+  "wstep.tex" 1673179383 1242 14b3249c049bd1163c04210c7cee1b06 ""
   "zaplecze_matematyczne.tex" 1673175571 4429 6e3ba76290a808673c146546cc9bbb55 ""
   (generated)
   "sprawozdanie.aux"
