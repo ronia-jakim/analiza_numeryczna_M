@@ -42,9 +42,11 @@ Dla polepszenia wyników algorytmu definicja wektora $v$ musi brać pod uwagę z
 
 \subsection{Wyniki}
 
-W ~Tabeli~\ref{house:error} umieszczona została ilość cyfr znaczących dla wektora $\|x'-x\|$ w zależności od wielkości macierzy $A$ oraz precyzji arytmetyki. Różnica między precyzja obliczeń dla różnych wielkości macierzy jest w okolicach $3$ cyfr znaczących i zachowuje się miedzy różnymi precyzjami, co jest wynikiem napawającym nadzieją. Z ~Tabeli~\ref{house:2matrix} widzimy też, że otrzymana przez nas macierz $Q$ jest bardzo bliska bycia macierzą ortogonalną, przynajmniej pod względem normy, to znaczy $\|Q\|=\sup\limits_{\|x\|\leq1}{\|Qx\|\over\|x\|}$ jest niewiele większe od zera. Wyniki pokazane w ~Tabli~\ref{house:1matrix} oraz ~Tabeli~\ref{house:3matrix} pokazują, że macierz $QR$ jest bardzo blisko macierzy $A$. 
+W ~Tabeli~\ref{house:error} umieszczona została ilość cyfr znaczących dla wektora $\|x'-x\|$ w zależności od wielkości macierzy $A$ oraz precyzji arytmetyki. Różnica między precyzja obliczeń dla różnych wielkości macierzy jest w okolicach $3$ cyfr znaczących i zachowuje się miedzy różnymi precyzjami, co jest wynikiem napawającym nadzieją. Z ~Tabeli~\ref{house:2matrix} widzimy też, że otrzymana przez nas macierz $Q$ jest bardzo bliska bycia macierzą ortogonalną, przynajmniej pod względem normy, to znaczy 
+$$\|Q\|=\sup\limits_{\|x\|\leq1}{\|Qx\|\over\|x\|}$$ 
+jest niewiele większe od zera. 
 
-Co ciekawe, liczba cyfr znaczących różnicy między otrzymanym przez nas rozwiązaniem równania a norma macierzy wyznaczonych z $A=QR$ jest na tym samym poziomie, co sugeruje że oba wyniki są skutkiem błędu w trakcie operacji mnożenia i dodawanie macierzy.
+Co ciekawe, liczba cyfr znaczących różnicy między otrzymanym przez nas rozwiązaniem równania a rozwiązaniem poprawnym (Tabela~\ref{house:error}) oraz norma macierzy będących przekształceniem $A=QR$ (Tabele~\ref{house:1matrix},\ref{house:2matrix},\ref{house:3matrix})  jest na tym samym poziomie precyzji.
 
 \begin{figure}[!h]\centering
 \begin{tabularx}{100mm}{| >{\hsize=.20\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.3\hsize}X | >{\hsize=.25\hsize}X |}
@@ -147,3 +149,5 @@ Co ciekawe, liczba cyfr znaczących różnicy między otrzymanym przez nas rozwi
 \end{figure}
 
 \subsection{Złożoność obliczeniowa}
+
+ŁUUUKAAAASZ NAAAPIIIISZZZZZ ŁAAADNIEEEE

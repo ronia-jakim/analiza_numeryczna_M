@@ -10,12 +10,15 @@ Fajne podpierdalanko:
 
 W poniższej pracy zostaną porównane dwa sposoby doprowadzania macierzy kwadratowej $A$ do postaci górnotrójkątnej: metoda eliminacji Gaussa oraz rozkład $QR$ z transformacją Householdera. Oba te algorytmy zostaną wykorzystane do rozwiązywania układu równań 
 $$Ax=b$$
-dla odwracalnej macierzy $A$ oraz dowolnego wektora $b$. Błąd dla każdej z metod będzie obliczany jako
-$$e=-\log(\|Ax-b\|).$$
-Dla metody Householdera, która produkuje nam macierz ortogonalną $Q$ oraz górnotrójkątną $R$, porównane również zostaną macierze
+dla odwracalnej macierzy $A$ oraz dowolnego wektora $x$.
+
+W ramach testowania praktycznego zastosowania naszych algorytmów, macierz $A$ będzie losowo wygenerowaną macierzą $A\in GL_n(\R)$ dla $n\in\{20,100,400\}$. Dalej losowany będzie wektor $x$ i na tej podstawie wyliczymy wektor $b$. Stosowane przez nas algorytmy dostaną jedynie macierz $A$ oraz wektor $b$, a zwrócą wektor $x'$ mający być rozwiązaniem jak wyżej. Co więcej, dla algorytmu rozkładu $QR$ jesteśmy w stanie sprawdzić poprawność obliczonej formy macierzy $A$.Błąd dla każdej z metod będzie obliczany jako
+$$e=-\log(\|x'-x\|).$$
+
+Dla metody Householdera, która produkuje macierz ortogonalną $Q$ oraz górnotrójkątną $R$, takie, że $A=QR$, porównane również zostaną macierze
 $$A-QR$$
 $$Q^TA-R$$
 $$Q^TQ-I$$
-poprzez wyznaczenie normy wektora $Bx$, gdzie $B$ to jedna z powyższych macierzy, z $x$ jest wektorem składającym się wyłącznie z $1$. Macierze będące wynikami powyższych przekształceń powinny być macierzami zerowymi, co wynika z przekształcenia $A=QR$ oraz ortogonalności macierzy $Q$ (wtedy $Q^{-1}=Q^T$).
+poprzez wyznaczenie normy macierzy $B$, gdzie $B$ to jedna z powyższych macierzy. Macierze będące wynikami powyższych przekształceń powinny być macierzami zerowymi, co wynika z przekształcenia $A=QR$ oraz ortogonalności macierzy $Q$ (wtedy $Q^{-1}=Q^T$). Do obliczania normy macierzy $B$ wykorzystana będzie biblioteczna funkcja \verb+norm(A, p)+ mająca zwracać $p$-normę macierzy $A$. Ponieważ jesteśmy w przestrzeni Euklidesowej, interesować nas będzie $p=2$. 
 
-Wszystkie obliczenia zostaną wykonane na \verb+BigFloatach+ w trzech precyzjach: $68$, $419$ oraz $2136$
+Wszystkie obliczenia zostaną wykonane na \verb+BigFloatach+ w trzech precyzjach: $68$, $419$ oraz $2136$.

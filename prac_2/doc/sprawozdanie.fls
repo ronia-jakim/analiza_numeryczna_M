@@ -1297,6 +1297,10 @@ INPUT /opt/texlive/2022/texmf-dist/tex/latex/worldflags/worldflag_GB.tex
 INPUT /opt/texlive/2022/texmf-dist/tex/latex/worldflags/worldflag_GB.tex
 INPUT /opt/texlive/2022/texmf-dist/tex/latex/worldflags/worldflag_GB.tex
 INPUT /opt/texlive/2022/texmf-dist/tex/latex/worldflags/worldflag_GB.tex
+INPUT ./podsumowanie.tex
+INPUT podsumowanie.tex
+INPUT ./podsumowanie.tex
+INPUT podsumowanie.tex
 INPUT sprawozdanie.aux
 INPUT ./sprawozdanie.out
 INPUT ./sprawozdanie.out

@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1673199473 "/home/maruda/uni-stuff/anal_num_prac/prac_2/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1673199476 0
+["pdflatex"] 1673200695 "/home/maruda/uni-stuff/anal_num_prac/prac_2/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1673200697 0
   "../../template.sty" 1669013018 4418 495ddc2d12b00c8a56442bc53be0b12f ""
-  "/home/maruda/uni-stuff/anal_num_prac/prac_2/doc/sprawozdanie.tex" 1673194473 325 c19cf5b1fc19a6303429782367dd5462 ""
+  "/home/maruda/uni-stuff/anal_num_prac/prac_2/doc/sprawozdanie.tex" 1673199827 351 9b7b52ebc1902b404e7504b404b12eed ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1671443973 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1671443973 2005 f094775651a1386335c158fb632529f1 ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc" 1671443973 2468 3f9e2f3088bcf5b581dfc367d71e7d95 ""
@@ -285,13 +285,14 @@
   "/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1671443973 4623317 0a7368a3357c877d3c2fc4bd6d58ad75 ""
   "/opt/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1671443973 7875548 e041bc31111947c8264d98bdcb60215f ""
   "/opt/texlive/2022/texmf.cnf" 1671443973 585 9e8504408f25e5ac7fa614e58817b8d1 ""
-  "gauss_alg.tex" 1673198730 1636 5a11bd27e42222be57fdf90885c51fc1 ""
-  "qr_alg.tex" 1673199470 6177 cdcf62ac6a5f2deb7f23a41786b20861 ""
-  "sprawozdanie.aux" 1673199475 4284 d6419519455d0b36d66a61ba266e9e77 "pdflatex"
-  "sprawozdanie.out" 1673199475 1705 f6f29221b9345facd63c01454af4a576 "pdflatex"
-  "sprawozdanie.tex" 1673194473 325 c19cf5b1fc19a6303429782367dd5462 ""
-  "sprawozdanie.toc" 1673199475 1201 06a5c1926c26cf5dfc43cf3644be0316 "pdflatex"
-  "wstep.tex" 1673193756 1266 92a5c274337280d1e3cb5b65877ff0f3 ""
+  "gauss_alg.tex" 1673199537 1636 5a11bd27e42222be57fdf90885c51fc1 ""
+  "podsumowanie.tex" 1673200694 998 2404a609835519b312c8b77dd87b6008 ""
+  "qr_alg.tex" 1673199791 6135 25eedca4181006adf480b0883c3cabc9 ""
+  "sprawozdanie.aux" 1673200697 4411 2d38d0c0be8ceb4a5f7a191250f45766 "pdflatex"
+  "sprawozdanie.out" 1673200697 1809 3a457d836230cb1fed87f3efa4645592 "pdflatex"
+  "sprawozdanie.tex" 1673199827 351 9b7b52ebc1902b404e7504b404b12eed ""
+  "sprawozdanie.toc" 1673200697 1286 89328331894931adca863425c86e52b8 "pdflatex"
+  "wstep.tex" 1673200246 1929 9fe88c20fff1a06bbc2cc94e5950783e ""
   "zaplecze_matematyczne.tex" 1673175571 4429 6e3ba76290a808673c146546cc9bbb55 ""
   (generated)
   "sprawozdanie.aux"
