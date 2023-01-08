@@ -38,18 +38,8 @@ natomiast szukana macierz ortogonalna to
 $$Q=(P_m...P_1)^{-1}=P_1^{-1}...P_m^{-1}=P_1...P_m$$
 z faktu, że każda z macierzy $P_k$ jest unitarna i hermitowska.
 
-Zakładamy, że macierz jest podawana w liście wektorów zawierających kolejne jej kolumny:
-\begin{lstlisting}{language=ps}
-    function decomposition (A)
-        R = A
-        for i in 1:m
-            normA = norm(A[i])
-            s = -sign(A[i][i])
-            v = A[i] - s * normA
-            u = v / norm(v)
-
-            nie wiem, sam pisz to R=P_iR
-
-\end{lstlisting}
+Dla polepszenia wyników algorytmu definicja wektora $v$ musi brać pod uwagę znak lewego górnego rogu macierzy (minora) którą będziemy poddawać transformacji Householdera. Chcemy zawsze mnożyć normę $a_1$ przez znak przeciwny do wspomnianego elementu macierzy.
 
 \subsection{Wyniki}
+
+\subsection{Złożoność obliczeniowa}

@@ -1,11 +1,13 @@
 \babel@toc {polish}{}\relax 
 \contentsline {section}{\numberline {1\relax .\enspace }Wstęp}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1\relax .\enspace }Metoda}{1}{subsection.1.1}%
-\contentsline {section}{\numberline {2\relax .\enspace }Rozwiązywanie równań liniowych}{1}{section.2}%
+\contentsline {subsection}{\numberline {1.1\relax .\enspace }Metodologia}{1}{subsection.1.1}%
+\contentsline {section}{\numberline {2\relax .\enspace }Rozwiązywanie równań liniowych}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1\relax .\enspace }Eliminacja Gaussa}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2\relax .\enspace }Rozkład $QR$}{2}{subsection.2.2}%
 \contentsline {section}{\numberline {3\relax .\enspace }Algorytm eliminacji Gaussa}{3}{section.3}%
 \contentsline {subsection}{\numberline {3.1\relax .\enspace }Wyniki}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2\relax .\enspace }Złożoność obliczeniowa}{3}{subsection.3.2}%
 \contentsline {section}{\numberline {4\relax .\enspace }Transformacja Householdera}{3}{section.4}%
 \contentsline {subsection}{\numberline {4.1\relax .\enspace }Podstawy teoretyczne}{3}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2\relax .\enspace }Wyniki}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2\relax .\enspace }Wyniki}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3\relax .\enspace }Złożoność obliczeniowa}{5}{subsection.4.3}%

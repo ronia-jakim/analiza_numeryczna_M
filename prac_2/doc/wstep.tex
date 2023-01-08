@@ -6,4 +6,10 @@ Fajne podpierdalanko:
 
 \href{https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_lineqs_solving.html}{jak użyć do rozwiązywania równań}
 
-\subsection{Metoda}
+\subsection{Metodologia}
+
+W poniższej pracy zostaną porównane dwa sposoby doprowadzania macierzy kwadratowej $A$ do postaci górnotrójkątnej: metoda eliminacji Gaussa oraz rozkład $QR$ z transformacją Householdera. Oba te algorytmy zostaną wykorzystane do rozwiązywania układu równań 
+$$Ax=b$$
+dla odwracalnej macierzy $A$ oraz dowolnego wektora $b$. Błąd dla każdej z metod będzie obliczany jako
+$$e=-\log(\|Ax-b\|).$$
+Dodatkowo, sprawdzona zostanie złożoność obliczeniowa każdego z algorytmów.
