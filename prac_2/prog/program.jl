@@ -154,16 +154,6 @@ function calc_house_err4(A)
   T = A * inv(R) - Q
   return matrix_norm(T)
 end
-setprecision(2136)
-A = rand(BigFloat, 400, 400)
-println("err1: ")
-print(calc_house_err1(A))
-println("\n err2: ")
-print(calc_house_err2(A))
-println("\n err3: ")
-print(calc_house_err3(A))
-println("\n err4: ")
-print(calc_house_err4(A))
 
-
+setprecision(64)
 
