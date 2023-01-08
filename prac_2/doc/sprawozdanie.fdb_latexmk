@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1673202166 "/home/sileanth/numerki_eupo/anal_num_prac/prac_2/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1673202167
+["pdflatex"] 1673204527 "/home/sileanth/numerki_eupo/anal_num_prac/prac_2/doc/sprawozdanie.tex" "sprawozdanie.pdf" "sprawozdanie" 1673204528
   "../../template.sty" 1673201599 4418 495ddc2d12b00c8a56442bc53be0b12f ""
   "/home/sileanth/numerki_eupo/anal_num_prac/prac_2/doc/sprawozdanie.tex" 1673201599 351 9b7b52ebc1902b404e7504b404b12eed ""
   "/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1668252018 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
@@ -288,11 +288,11 @@
   "gauss_alg.tex" 1673201599 1636 5a11bd27e42222be57fdf90885c51fc1 ""
   "podsumowanie.tex" 1673201599 998 2404a609835519b312c8b77dd87b6008 ""
   "qr_alg.tex" 1673202166 6885 dbceaa1e2f22ddbb1e08f0b0737ab995 ""
-  "sprawozdanie.aux" 1673202167 4411 2d38d0c0be8ceb4a5f7a191250f45766 "pdflatex"
-  "sprawozdanie.out" 1673202167 1809 3a457d836230cb1fed87f3efa4645592 "pdflatex"
+  "sprawozdanie.aux" 1673204528 4411 2d38d0c0be8ceb4a5f7a191250f45766 "pdflatex"
+  "sprawozdanie.out" 1673204528 1809 3a457d836230cb1fed87f3efa4645592 "pdflatex"
   "sprawozdanie.tex" 1673201599 351 9b7b52ebc1902b404e7504b404b12eed ""
-  "sprawozdanie.toc" 1673202167 1286 89328331894931adca863425c86e52b8 "pdflatex"
-  "wstep.tex" 1673201599 1929 9fe88c20fff1a06bbc2cc94e5950783e ""
+  "sprawozdanie.toc" 1673204528 1286 89328331894931adca863425c86e52b8 "pdflatex"
+  "wstep.tex" 1673204527 1929 4b1933be66736defe9fc5a9b08af5c78 ""
   "zaplecze_matematyczne.tex" 1673201599 4429 6e3ba76290a808673c146546cc9bbb55 ""
   (generated)
   "sprawozdanie.aux"
