@@ -1,5 +1,5 @@
 using LinearAlgebra
-setprecision(200)
+
 
 module gauss
   function gauss_elimination(matrix, n)
@@ -128,7 +128,7 @@ function matrix_norm(A)
   #x = ones(BigFloat, n)
   #x = gen_b(A, x)
   #return -log(norm(x))
-  return norm(A)
+  return -log(norm(A))
 end
 
 function calc_house_err1(A)
@@ -154,16 +154,16 @@ function calc_house_err4(A)
   T = A * inv(R) - Q
   return matrix_norm(T)
 end
-
-A, b, x = gen_test(1000, rand(BigFloat, 1000))
-
-print(calc_house_err1(rand(BigFloat, 100, 100)))
-#xg = gauss.calc_gauss(A, b)
-#xh = householder.calc_householder(A, b)
-#println("gauss: ")
-#print(calc_error(A, b, xg))
-#println("\nhouseholder: ")
-#print(calc_error(A, b, xh))
+setprecision(2136)
+A = rand(BigFloat, 400, 400)
+println("err1: ")
+print(calc_house_err1(A))
+println("\n err2: ")
+print(calc_house_err2(A))
+println("\n err3: ")
+print(calc_house_err3(A))
+println("\n err4: ")
+print(calc_house_err4(A))
 
 
 
