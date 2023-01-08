@@ -91,5 +91,5 @@ end
 A = [1.0 2.0 3.0; 2.0 7.0 5.0; 1.0 4.0 9.0]
 b = [1.0 6.0 -3.0]
 print(householder.calc_householder(A, b))
-#print(gauss.calc_gauss(A, b))
+print(gauss.calc_gauss(A, b))
 
