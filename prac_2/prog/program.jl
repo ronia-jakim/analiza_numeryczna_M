@@ -28,3 +28,8 @@ module gauss
 
 end
 
+module householder
+
+
+end
+
