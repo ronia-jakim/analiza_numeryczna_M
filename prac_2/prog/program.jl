@@ -1,5 +1,5 @@
 using LinearAlgebra
-setprecision(100)
+setprecision(200)
 
 module gauss
   function gauss_elimination(matrix, n)
@@ -94,48 +94,7 @@ module householder
   end
 end
 #histrioa zbugowana
-module house2
-  using LinearAlgebra
-  function backsub(U,b)
 
-    n = size(U,1)
-    x = zeros(n)
-    x[n] = b[n]/U[n,n]
-    for i = n-1:-1:1
-        s = sum( U[i,j]*x[j] for j=i+1:n )
-        x[i] = ( b[i] - s ) / U[i,i]
-    end
-    return x
-  end
-
-  function back_substitution(A, n)
-    b = A[:, end]
-    b[end] /= A[end, end-1]
-    for i in n-1:-1:1
-      pivot = A[i,i]
-      b[i] -= sum(A[i,i+1:end-1] .* b[i+1:end])
-      b[i] /= pivot
-    end
-    return b
-  end
-
-  function calc_householder(A, b)
-    n,m = size(A)
-    Q,R = qr(A)
-    Q = transpose(Q)
-    matrix = zeros(n,n+1)
-    for i in 1:n
-      for j in 1:n
-        matrix[i,j] = Q[i,j]
-      end
-    end
-
-    for i in 1:n
-      matrix[i,n+1] = b[i]
-    end
-    return back_substitution(matrix,n)
-  end
-end
 
 function gen_test(n, x)
   A = rand(BigFloat, n, n)
@@ -164,14 +123,47 @@ function calc_error(A, b, x)
   return -log(norm(nb .- b))
 end
 
-A, b, x = gen_test(200, rand(BigFloat, 200))
+function matrix_norm(A)
+  #n,m = size(A)
+  #x = ones(BigFloat, n)
+  #x = gen_b(A, x)
+  #return -log(norm(x))
+  return norm(A)
+end
 
-xg = gauss.calc_gauss(A, b)
-xh = householder.calc_householder(A, b)
-println("gauss: ")
-print(calc_error(A, b, xg))
-println("householder: ")
-print(calc_error(A, b, xh))
+function calc_house_err1(A)
+  Q,R = householder.qrfact(A)
+  T = A - (Q * R)
+  return matrix_norm(T)
+end
+
+function calc_house_err2(A)
+  Q,R = householder.qrfact(A)
+  T = Q' * Q - I
+  return matrix_norm(T)
+end
+
+function calc_house_err3(A)
+  Q,R = householder.qrfact(A)
+  T = Q' * A - R
+  return matrix_norm(T)
+end
+
+function calc_house_err4(A)
+  Q,R = householder.qrfact(A)
+  T = A * inv(R) - Q
+  return matrix_norm(T)
+end
+
+A, b, x = gen_test(1000, rand(BigFloat, 1000))
+
+print(calc_house_err1(rand(BigFloat, 100, 100)))
+#xg = gauss.calc_gauss(A, b)
+#xh = householder.calc_householder(A, b)
+#println("gauss: ")
+#print(calc_error(A, b, xg))
+#println("\nhouseholder: ")
+#print(calc_error(A, b, xh))
 
 
 
