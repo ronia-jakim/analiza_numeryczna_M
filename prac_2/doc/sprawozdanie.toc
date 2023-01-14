@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.2\relax .\enspace }Rozkład $QR$}{3}{subsection.2.2}%
 \contentsline {section}{\numberline {3\relax .\enspace }Algorytm eliminacji Gaussa}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1\relax .\enspace }Wyniki}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2\relax .\enspace }Złożoność obliczeniowa}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2\relax .\enspace }Złożoność obliczeniowa}{5}{subsection.3.2}%
 \contentsline {section}{\numberline {4\relax .\enspace }Transformacja Householdera}{5}{section.4}%
 \contentsline {subsection}{\numberline {4.1\relax .\enspace }Podstawy teoretyczne}{5}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2\relax .\enspace }Wyniki}{6}{subsection.4.2}%

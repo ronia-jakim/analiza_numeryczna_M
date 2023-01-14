@@ -1305,10 +1305,10 @@ INPUT sprawozdanie.aux
 INPUT ./sprawozdanie.out
 INPUT ./sprawozdanie.out
 INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc
-INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/pltt.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc
+INPUT /opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb
@@ -1320,6 +1320,5 @@ INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb
-INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy7.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb
 INPUT /opt/texlive/2022/texmf-dist/fonts/type1/public/pl/pltt10.pfb

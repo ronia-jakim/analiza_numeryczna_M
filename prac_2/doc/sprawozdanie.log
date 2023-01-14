@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.19)  8 JAN 2023 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.19)  14 JAN 2023 13:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -949,14 +949,14 @@ LaTeX Font Info:    External font `plex10' loaded for size
  (./wstep.tex [1
 
 {/opt/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 20.
+LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 21.
  (/opt/texlive/2022/texmf-dist/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `OT4/cmtt/m/n/10.95'. Switching off
-(microtype)                protrusion for this font on input line 20.
+(microtype)                protrusion for this font on input line 21.
 
 ) (./zaplecze_matematyczne.tex [2]
 
@@ -977,7 +977,7 @@ Underfull \hbox (badness 10000) in alignment at lines 24--24
 [][][][] 
  []
 
-) (./qr_alg.tex
+[4]) (./qr_alg.tex
 \flagwidth=\dimen316
 \flaglength=\dimen317
 \flagframe=\dimen318
@@ -986,10 +986,13 @@ Underfull \hbox (badness 10000) in alignment at lines 24--24
 \h=\dimen320
 \lwb=\dimen321
 \lws=\dimen322
-) [4] [5]
+) [5]
 Underfull \hbox (badness 10000) in alignment at lines 70--70
 [][][][] 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \hbox (badness 10000) in alignment at lines 95--95
@@ -1015,25 +1018,25 @@ Underfull \hbox (badness 10000) in alignment at lines 145--145
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6]) (./podsumowanie.tex
+[6]) (./podsumowanie.tex [7]
 Missing character: There is no ; in font nullfont!
-) [7] (./sprawozdanie.aux)
+) [8] (./sprawozdanie.aux)
 Package rerunfilecheck Info: File `sprawozdanie.out' has not changed.
 (rerunfilecheck)             Checksum: 3A457D836230CB1FED87F3EFA4645592;1809.
  ) 
 Here is how much of TeX's memory you used:
- 42492 strings out of 476093
- 961453 string characters out of 5768137
+ 42497 strings out of 476093
+ 961487 string characters out of 5768137
  1869793 words of memory out of 5000000
  62009 multiletter control sequences out of 15000+600000
- 530422 words of font info for 128 fonts, out of 8000000 for 9000
+ 530526 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,12n,105p,7193b,922s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi7.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy7.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie.pdf (7 pages, 127475 bytes).
+{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/opt/texlive/2022/texmf-dist/fonts/enc/dvips/pl/plms.enc}</opt/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plbx12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plex10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi7.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plmi8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr12.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plr8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy10.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/plsy8.pfb></opt/texlive/2022/texmf-dist/fonts/type1/public/pl/pltt10.pfb>
+Output written on sprawozdanie.pdf (8 pages, 125087 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
+ 240 PDF objects out of 1000 (max. 8388607)
  186 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 28 named destinations out of 1000 (max. 500000)
  28885 words of extra memory for PDF output out of 29859 (max. 10000000)
 

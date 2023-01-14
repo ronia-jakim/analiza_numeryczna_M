@@ -42,7 +42,7 @@ Dla polepszenia wyników algorytmu definicja wektora $v$ musi brać pod uwagę z
 
 \subsection{Wyniki}
 
-W ~Tabeli~\ref{house:error} umieszczona została ilość cyfr znaczących dla wektora $\|x'-x\|$ w zależności od wielkości macierzy $A$ oraz precyzji arytmetyki. Różnica między precyzja obliczeń dla różnych wielkości macierzy jest w okolicach $3$ cyfr znaczących i zachowuje się miedzy różnymi precyzjami, co jest wynikiem napawającym nadzieją. Z ~Tabeli~\ref{house:2matrix} widzimy też, że otrzymana przez nas macierz $Q$ jest bardzo bliska bycia macierzą ortogonalną, przynajmniej pod względem normy, to znaczy 
+W ~Tabeli~\ref{house:error} umieszczony został rząd wielkości błędu metody w zależności od wielkości macierzy $A$ oraz precyzji arytmetyki. Różnica między precyzja obliczeń dla różnych wielkości macierzy jest w okolicach $3$ i zachowuje się miedzy różnymi precyzjami, co jest wynikiem napawającym nadzieją. Z ~Tabeli~\ref{house:2matrix} widzimy też, że otrzymana przez nas macierz $Q$ jest bardzo bliska bycia macierzą ortogonalną, przynajmniej pod względem normy, to znaczy 
 $$\|Q\|=\sup\limits_{\|x\|\leq1}{\|Qx\|\over\|x\|}$$ 
 jest niewiele większe od zera. 
 
@@ -69,7 +69,7 @@ Co ciekawe, liczba cyfr znaczących różnicy między otrzymanym przez nas rozwi
 
 \end{tabularx}
 \renewcommand{\figurename}{Tablusia}
-\caption{Liczba cyfr znaczących normy wektora $(Ax'-b)$, gdzie $x'$ to wektor uzyskany z metody transformacji Householdera.}
+\caption{Rząd wielkości błędu metody transformacji Householdera.}
 \label{house:error}
 \end{figure}
 
@@ -94,7 +94,7 @@ Co ciekawe, liczba cyfr znaczących różnicy między otrzymanym przez nas rozwi
 
 \end{tabularx}
 \renewcommand{\figurename}{Tabelka}
-\caption{Rząd wielkości normy macierzy $A-QR$ (obliczany z $-\log\|A-QR\|$).}
+\caption{Rząd wielkości normy macierzy $A-QR$.}
 \label{house:1matrix}
 \end{figure}
 
@@ -119,7 +119,7 @@ Co ciekawe, liczba cyfr znaczących różnicy między otrzymanym przez nas rozwi
 
 \end{tabularx}
 \renewcommand{\figurename}{Tabelka}
-\caption{Rząd wielkości normy macierzy $Q^TQ-I$ (obliczany z $-\log\|Q^TQ-I\|$).}
+\caption{Rząd wielkości normy macierzy $Q^TQ-I$.}
 \label{house:2matrix}
 \end{figure}
 
@@ -144,7 +144,7 @@ Co ciekawe, liczba cyfr znaczących różnicy między otrzymanym przez nas rozwi
 
 \end{tabularx}
 \renewcommand{\figurename}{Tabelka}
-\caption{Rząd wielkości normy macierzy $Q^TA-R$ (obliczany z $-\log\|Q^TA-R\|$).}
+\caption{Rząd wielkości normy macierzy $Q^TA-R$.}
 \label{house:3matrix}
 \end{figure}
 

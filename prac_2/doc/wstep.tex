@@ -10,8 +10,9 @@ W poniższej pracy zostaną porównane dwa sposoby doprowadzania macierzy kwadra
 $$Ax=b$$
 dla odwracalnej macierzy $A$ oraz dowolnego wektora $x$.
 
-W ramach testowania praktycznego zastosowania naszych algorytmów, macierz $A$ będzie losowo wygenerowaną macierzą $A\in GL_n(\R)$ dla $n\in\{20,100,400\}$. Dalej losowany będzie wektor $x$ i na tej podstawie wyliczymy wektor $b$. Stosowane przez nas algorytmy dostaną jedynie macierz $A$ oraz wektor $b$, a zwrócą wektor $x'$ mający być rozwiązaniem jak wyżej. Co więcej, dla algorytmu rozkładu $QR$ jesteśmy w stanie sprawdzić poprawność obliczonej formy macierzy $A$.Błąd dla każdej z metod będzie obliczany jako
+W ramach testowania praktycznego zastosowania naszych algorytmów, macierz $A$ będzie losowo wygenerowaną macierzą $A\in GL_n(\R)$ dla $n\in\{20,100,400\}$. Wyrazy macierzy są kolejno losowane przy pomocy rozkładu jednostajnego ciągłego na przedziale $[-1, 1]$. Analogicznie losowany będzie wektor $x$ i na tej podstawie wyliczymy wektor $b$. Stosowane przez nas algorytmy dostaną jedynie macierz $A$ oraz wektor $b$, a zwrócą wektor $x'$ mający być rozwiązaniem jak wyżej. Co więcej, dla algorytmu rozkładu $QR$ jesteśmy w stanie sprawdzić poprawność obliczonej formy macierzy $A$. Rząd wielkości błędu dla każdej próby będzie liczony za pomocą wzoru:
 $$e=-\log(\|x'-x\|).$$
+Ze względu na dużą złożoność obliczeniową obu metod, tylko jedna macierz zostanie przetestowana dla każdego warunku.
 
 Dla metody Householdera, która produkuje macierz ortogonalną $Q$ oraz górnotrójkątną $R$, takie, że $A=QR$, porównane również zostaną macierze
 $$A-QR$$
@@ -19,4 +20,4 @@ $$Q^TA-R$$
 $$Q^TQ-I$$
 poprzez wyznaczenie normy macierzy $B$, gdzie $B$ to jedna z powyższych macierzy. Macierze będące wynikami powyższych przekształceń powinny być macierzami zerowymi, co wynika z przekształcenia $A=QR$ oraz ortogonalności macierzy $Q$ (wtedy $Q^{-1}=Q^T$). Do obliczania normy macierzy $B$ wykorzystana będzie biblioteczna funkcja \verb+norm(A, p)+ mająca zwracać $p$-normę macierzy $A$. Ponieważ jesteśmy w przestrzeni Euklidesowej, interesować nas będzie $p=2$. 
 
-Wszystkie obliczenia zostaną wykonane na \verb+BigFloatach+ w trzech precyzjach: $68$, $419$ oraz $2005$.
+Wszystkie obliczenia zostaną wykonane na \verb+BigFloatach+ w trzech precyzjach: $68$, $419$ oraz $2005$ bitów.

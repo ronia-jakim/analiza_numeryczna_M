@@ -30,7 +30,7 @@ Zapisanie układu równań w postaci macierzowej ma wiele zalet. Jesteśmy w sta
 
 \subsection{Eliminacja Gaussa}
 
-Metoda eliminacji Gaussa jest algorytmem stosowanym do rozwiązywania układu równań. Polega ona na doprowadzeniu macierzy do postaci schodkowej, tzn. zawierającej niezerowe wartości tylko na głównej przekątnej. W algorytmie dozwolone są tylko operacje na wierszach i kolumnach, czyli dodawanie lub odejmowanie od wiersza (kolumny) wielokrotności innego wiersza (kolumny) oraz zamienianie kolejności dwóch wierszy (kolumn).
+Metoda eliminacji Gaussa jest algorytmem stosowanym do rozwiązywania układu równań. Polega ona na doprowadzeniu macierzy do postaci schodkowej, tzn. zawierającej niezerowe wartości tylko na głównej przekątnej. W algorytmie dozwolone są tylko operacje na wierszach i kolumnach, czyli dodawanie lub odejmowanie od wiersza (kolumny) wielokrotności innego wiersza (kolumny) oraz zamienianie kolejności dwóch wierszy (kolumn). W naszej implementacji zastosowaliśmy klasyczny algorytm eliminacji Gaussa, bez optymalizacji mających na celu zmniejszenie błędu.
 
 Alternatywnie, na kursie algebry liniowej poznaliśmy metodę na odwracanie macierzy za pomocą eliminacji Gaussa. Wtedy z lewej stronie wpisujemy oryginalną macierz, z prawej macierz identyczności i dokonując operacji wierszowych na całości staramy się doprowadzić lewą macierz do macierzy identyczności. Wtedy to co, powstanie z prawej strony będzie szukaną macierzą odwrotną. W poniższej pracy nie skorzystamy z tej wariacji na tematy metody eliminacji Gaussa.
 
